@@ -1,0 +1,39 @@
+{
+  "captured_local_date": "2026-10-31",
+  "source_state": "Initial synthetic application before factory onboarding",
+  "environment": {
+    "python": "3.9.6",
+    "platform": "Darwin 25.6.0 arm64",
+    "dependencies": "Python standard library only"
+  },
+  "services": {
+    "legacy_order_api": "http://127.0.0.1:8080",
+    "shipping_quote_api": "http://127.0.0.1:8091"
+  },
+  "smoke_observations": {
+    "legacy_health": {"status": "ok", "service": "legacy-order-api"},
+    "shipping_health": {"status": "ok", "service": "shipping"},
+    "initial_mug_stock": 18,
+    "successful_order": {
+      "http_status": 201,
+      "id": 1,
+      "subtotal_cents": 2400,
+      "shipping_cents": 575,
+      "total_cents": 2975,
+      "mug_quantity": 2,
+      "resulting_mug_stock": 16
+    },
+    "unknown_sku": {"http_status": 404, "error": "unknown_sku"},
+    "insufficient_stock": {"http_status": 409, "error": "insufficient_stock", "available": 16}
+  },
+  "characterization_suite": {
+    "command": "python3 -m unittest discover -s tests -v",
+    "initial_run": "4 tests passed in 0.010 seconds",
+    "expanded_run": "5 tests passed in 0.010 seconds",
+    "shipping_outage_case": "503 returned; no order created and no stock changed"
+  },
+  "limitations": [
+    "One local smoke sequence; not a comparative agent experiment.",
+    "Synthetic data and rules do not represent an employer or production system."
+  ]
+}

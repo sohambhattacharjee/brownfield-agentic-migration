@@ -1,0 +1,5 @@
+[
+  {"sku": "MUG-BLUE", "name": "Blue Ceramic Mug", "price_cents": 1200, "stock": 18},
+  {"sku": "NOTE-GRID", "name": "Grid Notebook", "price_cents": 650, "stock": 35},
+  {"sku": "BAG-CANVAS", "name": "Canvas Tote", "price_cents": 1800, "stock": 12}
+]
