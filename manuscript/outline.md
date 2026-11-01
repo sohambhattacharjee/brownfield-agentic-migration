@@ -30,6 +30,12 @@ From Brownfield to Agentic: A Practical Method for Staged Onboarding of an Exist
 - Purpose: explain each factory capability introduced, its rationale, and its completion criteria.
 - Evidence placeholders: [stage definitions], [factory configuration], [human checkpoints].
 
+### Candidate research questions — author to refine
+
+- RQ1: Which repository context, execution, and verification capabilities are introduced at each onboarding stage?
+- RQ2: How do task outcomes and verification results change across the stages for the fixed task suite?
+- RQ3: What failures and human interventions occur as agent autonomy increases?
+
 ## 5. Evaluation Design
 
 - Purpose: define fixed engineering tasks, comparison conditions, outcome measures, and repeatability controls.
@@ -58,3 +64,4 @@ From Brownfield to Agentic: A Practical Method for Staged Onboarding of an Exist
 ## References
 
 - Placeholder: add verified, relevant sources after the literature review.
+
