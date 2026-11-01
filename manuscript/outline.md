@@ -20,15 +20,15 @@ From Brownfield to Agentic: A Practical Method for Staged Onboarding of an Exist
 - Purpose: situate agentic software engineering, brownfield modernization, and software-factory approaches.
 - Evidence placeholders: [literature search protocol], [related work table], [distinction from prior work].
 
-## 3. Study Context and Synthetic Application
+## 3. Study Context and Independently Built Systems
 
-- Purpose: describe the independently created order-management monolith and integrated shipping service.
-- Evidence placeholders: [architecture], [requirements], [baseline commit], [data-generation rules].
+- Purpose: describe the independently created order-management monolith, integrated shipping service, and companion factory built from scratch.
+- Evidence placeholders: [application architecture], [factory architecture], [requirements], [baseline revisions], [data-generation rules].
 
 ## 4. Staged Onboarding Method
 
-- Purpose: explain each factory capability introduced, its rationale, and its completion criteria.
-- Evidence placeholders: [stage definitions], [factory configuration], [human checkpoints].
+- Purpose: explain each independently implemented factory capability introduced to the synthetic application, its rationale, and completion criteria.
+- Evidence placeholders: [stage definitions], [factory configuration], [human checkpoints], [no employer system access].
 
 ### Candidate research questions — author to refine
 
@@ -64,4 +64,3 @@ From Brownfield to Agentic: A Practical Method for Staged Onboarding of an Exist
 ## References
 
 - Placeholder: add verified, relevant sources after the literature review.
-

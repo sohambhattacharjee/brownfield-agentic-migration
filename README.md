@@ -48,3 +48,5 @@ The baseline snapshot and evidence protocol are in [`evidence/baseline/`](eviden
 - `tests/` — characterization checks for current observable behavior.
 - `evidence/` — baseline and later experimental records.
 - `manuscript/outline.md` — rough structure and evidence placeholders only; manuscript prose is intentionally left to the author.
+
+The independent factory prototype is maintained separately in the private companion repository `agentic-software-factory-study`. Its CLI requires this repository's `.research-scope.json` marker and writes proposals only to a disposable workspace.

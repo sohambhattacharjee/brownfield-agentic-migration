@@ -1,0 +1,6 @@
+{
+  "study_id": "synthetic-brownfield-agentic",
+  "data_classification": "synthetic-only",
+  "purpose": "Independent reproducible software-engineering study",
+  "source_policy": "No employer code, data, documents, prompts, workflows, or infrastructure"
+}
