@@ -1,0 +1,17 @@
+{
+  "captured_local_date": "2026-11-03",
+  "purpose": "Fresh verification of the preserved synthetic application baseline",
+  "source_revision": "1f80afd25b7e9c6bf6478dc48ba17aceae90d372",
+  "environment": {
+    "python": "3.9.6",
+    "platform": "Darwin 25.6.0 arm64",
+    "dependencies": "Python standard library only"
+  },
+  "characterization_suite": {
+    "command": "python3 -m unittest discover -s tests -v",
+    "result": "5 tests passed in 0.010 seconds",
+    "status": "pass"
+  },
+  "scope": "Test-suite verification only; no service smoke sequence or model-backed run was performed.",
+  "interpretation": "Confirms the recorded source revision still passes its characterization suite. It is not evidence of migration effectiveness."
+}

@@ -35,10 +35,12 @@ List products and orders at `/api/products` and `/api/orders`. Both services exp
 ## Reproduce the baseline
 
 ```sh
-python3 -m unittest discover -s tests -v
+python3 -m unittest discover -s tests -p 'test_characterization.py' -v
 ```
 
 The baseline snapshot and evidence protocol are in [`evidence/baseline/`](evidence/baseline/). Do not overwrite that snapshot after factory onboarding begins; append later observations under versioned stage directories.
+
+The cancellation task has a separate fixed acceptance suite at `tests/test_cancellation_acceptance.py`. On the prepared pre-implementation revision, those three checks are expected to fail because cancellation is not implemented; the characterization suite above should continue to pass. Use the full suite as the factory's verification command.
 
 ## Repository map
 
