@@ -77,6 +77,27 @@ def all_orders():
     return result
 
 
+def order_by_id(order_id):
+    """Return one order using the same JSON shape as the order listing."""
+    db = connect()
+    try:
+        row = db.execute(
+            "SELECT id, customer, city, subtotal_cents, shipping_cents, total_cents, status "
+            "FROM orders WHERE id = ?", (order_id,)
+        ).fetchone()
+        if row is None:
+            return 404, {"error": "order_not_found"}
+        order = dict(row)
+        if order["status"] == "active":
+            order.pop("status")
+        order["items"] = [dict(item) for item in db.execute(
+            "SELECT sku, qty, unit_price_cents FROM order_items WHERE order_id = ?", (order_id,)
+        ).fetchall()]
+        return 200, order
+    finally:
+        db.close()
+
+
 def cancel_order(order_id):
     """Cancel one order atomically and restore its inventory exactly once."""
     db = connect()
@@ -176,6 +197,13 @@ class Handler(BaseHTTPRequestHandler):
             self._send(200, all_products())
         elif self.path == "/api/orders":
             self._send(200, all_orders())
+        elif self.path.startswith("/api/orders/"):
+            raw_id = self.path[len("/api/orders/"):]
+            if not raw_id.isascii() or not raw_id.isdigit():
+                self._send(400, {"error": "invalid_order_id"})
+                return
+            status, payload = order_by_id(int(raw_id))
+            self._send(status, payload)
         else:
             self._send(404, {"error": "not_found"})
 
@@ -185,7 +213,7 @@ class Handler(BaseHTTPRequestHandler):
             self._send(404, {"error": "not_found"})
             return
         raw_id = self.path[len(prefix):]
-        if not raw_id.isdigit():
+        if not raw_id.isascii() or not raw_id.isdigit():
             self._send(400, {"error": "invalid_order_id"})
             return
         status, payload = cancel_order(int(raw_id))
