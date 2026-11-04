@@ -1,0 +1,18 @@
+{
+  "captured_local_date": "2026-11-03",
+  "classification": "user-requested replacement-key diagnostic; not a scored model run",
+  "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+  "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+  "profile": "baseline",
+  "model_id": "gpt-6.1-sol",
+  "http_status": 401,
+  "api_error_code": "invalid_api_key",
+  "request_id": "req_e28d4cf2bed24d00b0626a7f449d77bb",
+  "provider_response_id": null,
+  "provider_usage": null,
+  "model_output_received": false,
+  "generated_code_executed": false,
+  "target_modified": false,
+  "key_material_logged": false,
+  "interpretation": "The replacement credential was rejected before model generation. This check is not part of the scored pilot. No further API requests should be made until the stored value and its platform status are verified."
+}
