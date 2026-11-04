@@ -1,0 +1,733 @@
+{
+  "cohort_id": "cohort-2026-11-03-key-verified",
+  "classification": "exploratory single-task synthetic pilot; descriptive evidence only",
+  "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+  "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+  "model": "gpt-6.1-sol",
+  "proposal_runs_completed": 25,
+  "planned_review_calls": 5,
+  "review_calls_completed": 0,
+  "review_status": "not performed: the expected Keychain lookup was unavailable in the review process; no review request was sent",
+  "evaluation_method": "Each proposal snapshot was copied to a separate local directory; its proposed tests were replaced with the pinned baseline tests before unittest discovery. OPENAI_API_KEY and OPENAI_MODEL were removed from test subprocess environments.",
+  "pinned_test_tree_sha256": "6687d3950f6b3bacca8117151cc34ab9d2746a4deb96d1f04e7cf58fbe9b8232",
+  "overall": {
+    "acceptance_checks_passed": 75,
+    "acceptance_checks_total": 75,
+    "characterization_checks_passed": 125,
+    "characterization_checks_total": 125,
+    "combined_checks_passed": 200,
+    "combined_checks_total": 200,
+    "all_eight_pass_runs": 25,
+    "all_eight_pass_rate": 1.0
+  },
+  "by_profile": {
+    "baseline": {
+      "n": 5,
+      "all_eight_pass": 5,
+      "acceptance_passed_total": 15,
+      "characterization_passed_total": 25,
+      "proposal_input_tokens": 18330,
+      "proposal_output_tokens": 14102,
+      "proposal_total_tokens": 32432,
+      "reviewed": 0,
+      "all_eight_pass_rate": 1.0
+    },
+    "context": {
+      "n": 5,
+      "all_eight_pass": 5,
+      "acceptance_passed_total": 15,
+      "characterization_passed_total": 25,
+      "proposal_input_tokens": 34085,
+      "proposal_output_tokens": 14467,
+      "proposal_total_tokens": 48552,
+      "reviewed": 0,
+      "all_eight_pass_rate": 1.0
+    },
+    "review": {
+      "n": 5,
+      "all_eight_pass": 5,
+      "acceptance_passed_total": 15,
+      "characterization_passed_total": 25,
+      "proposal_input_tokens": 34775,
+      "proposal_output_tokens": 14145,
+      "proposal_total_tokens": 48920,
+      "reviewed": 0,
+      "all_eight_pass_rate": 1.0
+    },
+    "memory": {
+      "n": 5,
+      "all_eight_pass": 5,
+      "acceptance_passed_total": 15,
+      "characterization_passed_total": 25,
+      "proposal_input_tokens": 34775,
+      "proposal_output_tokens": 14213,
+      "proposal_total_tokens": 48988,
+      "reviewed": 0,
+      "all_eight_pass_rate": 1.0
+    },
+    "verification": {
+      "n": 5,
+      "all_eight_pass": 5,
+      "acceptance_passed_total": 15,
+      "characterization_passed_total": 25,
+      "proposal_input_tokens": 34775,
+      "proposal_output_tokens": 14387,
+      "proposal_total_tokens": 49162,
+      "reviewed": 0,
+      "all_eight_pass_rate": 1.0
+    }
+  },
+  "records": [
+    {
+      "run_id": "20261104T004804914307Z",
+      "profile": "baseline",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 3666,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 3663
+        },
+        "output_tokens": 2827,
+        "output_tokens_details": {
+          "reasoning_tokens": 267
+        },
+        "total_tokens": 6493
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T004830854844Z",
+      "profile": "context",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6817,
+        "input_tokens_details": {
+          "cache_write_tokens": 6814,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2944,
+        "output_tokens_details": {
+          "reasoning_tokens": 400
+        },
+        "total_tokens": 9761
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T004859116772Z",
+      "profile": "review",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 6952,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2724,
+        "output_tokens_details": {
+          "reasoning_tokens": 214
+        },
+        "total_tokens": 9679
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T004923572166Z",
+      "profile": "memory",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6952
+        },
+        "output_tokens": 2835,
+        "output_tokens_details": {
+          "reasoning_tokens": 199
+        },
+        "total_tokens": 9790
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T004947001743Z",
+      "profile": "verification",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6952
+        },
+        "output_tokens": 2981,
+        "output_tokens_details": {
+          "reasoning_tokens": 340
+        },
+        "total_tokens": 9936
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005013995120Z",
+      "profile": "review",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6952
+        },
+        "output_tokens": 2961,
+        "output_tokens_details": {
+          "reasoning_tokens": 350
+        },
+        "total_tokens": 9916
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005043687747Z",
+      "profile": "context",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6817,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6814
+        },
+        "output_tokens": 2925,
+        "output_tokens_details": {
+          "reasoning_tokens": 388
+        },
+        "total_tokens": 9742
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005112136228Z",
+      "profile": "baseline",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 3666,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 3663
+        },
+        "output_tokens": 2740,
+        "output_tokens_details": {
+          "reasoning_tokens": 225
+        },
+        "total_tokens": 6406
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005136202187Z",
+      "profile": "verification",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6952
+        },
+        "output_tokens": 2815,
+        "output_tokens_details": {
+          "reasoning_tokens": 327
+        },
+        "total_tokens": 9770
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005202635216Z",
+      "profile": "memory",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6952
+        },
+        "output_tokens": 2904,
+        "output_tokens_details": {
+          "reasoning_tokens": 359
+        },
+        "total_tokens": 9859
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005230981810Z",
+      "profile": "context",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6817,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6814
+        },
+        "output_tokens": 2829,
+        "output_tokens_details": {
+          "reasoning_tokens": 171
+        },
+        "total_tokens": 9646
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005254653571Z",
+      "profile": "verification",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6952
+        },
+        "output_tokens": 2906,
+        "output_tokens_details": {
+          "reasoning_tokens": 388
+        },
+        "total_tokens": 9861
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005323784567Z",
+      "profile": "baseline",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 3666,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 3663
+        },
+        "output_tokens": 2877,
+        "output_tokens_details": {
+          "reasoning_tokens": 300
+        },
+        "total_tokens": 6543
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005349672713Z",
+      "profile": "review",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6952
+        },
+        "output_tokens": 2751,
+        "output_tokens_details": {
+          "reasoning_tokens": 247
+        },
+        "total_tokens": 9706
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005414617282Z",
+      "profile": "memory",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6952
+        },
+        "output_tokens": 2946,
+        "output_tokens_details": {
+          "reasoning_tokens": 281
+        },
+        "total_tokens": 9901
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005442167590Z",
+      "profile": "memory",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6952
+        },
+        "output_tokens": 2777,
+        "output_tokens_details": {
+          "reasoning_tokens": 249
+        },
+        "total_tokens": 9732
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005506362087Z",
+      "profile": "review",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6952
+        },
+        "output_tokens": 2919,
+        "output_tokens_details": {
+          "reasoning_tokens": 334
+        },
+        "total_tokens": 9874
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005534076234Z",
+      "profile": "context",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6817,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6814
+        },
+        "output_tokens": 2911,
+        "output_tokens_details": {
+          "reasoning_tokens": 219
+        },
+        "total_tokens": 9728
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005557827049Z",
+      "profile": "verification",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6952
+        },
+        "output_tokens": 2849,
+        "output_tokens_details": {
+          "reasoning_tokens": 277
+        },
+        "total_tokens": 9804
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005623711588Z",
+      "profile": "baseline",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 3666,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 3663
+        },
+        "output_tokens": 2748,
+        "output_tokens_details": {
+          "reasoning_tokens": 113
+        },
+        "total_tokens": 6414
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005645708567Z",
+      "profile": "context",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6817,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6814
+        },
+        "output_tokens": 2858,
+        "output_tokens_details": {
+          "reasoning_tokens": 220
+        },
+        "total_tokens": 9675
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005710866814Z",
+      "profile": "review",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6952
+        },
+        "output_tokens": 2790,
+        "output_tokens_details": {
+          "reasoning_tokens": 253
+        },
+        "total_tokens": 9745
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005737390288Z",
+      "profile": "memory",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6952
+        },
+        "output_tokens": 2751,
+        "output_tokens_details": {
+          "reasoning_tokens": 256
+        },
+        "total_tokens": 9706
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005801891966Z",
+      "profile": "baseline",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 3666,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 3663
+        },
+        "output_tokens": 2910,
+        "output_tokens_details": {
+          "reasoning_tokens": 228
+        },
+        "total_tokens": 6576
+      },
+      "review_performed": false,
+      "review_usage": null
+    },
+    {
+      "run_id": "20261104T005826578440Z",
+      "profile": "verification",
+      "model": "gpt-6.1-sol",
+      "proposal_exit_code": 0,
+      "test_exit_code": 0,
+      "acceptance_passed": 3,
+      "characterization_passed": 5,
+      "combined_passed": 8,
+      "all_eight_pass": true,
+      "proposed_test_files_differing_from_pinned_baseline": [],
+      "proposal_usage": {
+        "input_tokens": 6955,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 6952
+        },
+        "output_tokens": 2836,
+        "output_tokens_details": {
+          "reasoning_tokens": 309
+        },
+        "total_tokens": 9791
+      },
+      "review_performed": false,
+      "review_usage": null
+    }
+  ],
+  "interpretation_limit": "All proposed changes passed the fixed suite in this pilot, but there is no variance to distinguish profiles on this binary outcome; this does not establish causal or general claims. The review profile has not yet received its planned second-pass review."
+}
