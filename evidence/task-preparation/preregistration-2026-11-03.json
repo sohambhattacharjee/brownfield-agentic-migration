@@ -1,8 +1,9 @@
 {
   "captured_local_date": "2026-11-03",
   "classification": "frozen exploratory pilot plan; recorded before scored model runs",
+  "cohort_id": "cohort-2026-11-03-key-verified",
   "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
-  "factory_revision": "41bba9a57f9d7a2ffea076f6ab4a06b5afdb54d0",
+  "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
   "task_file": "tasks/add-cancellation.md",
   "model_id": "gpt-6.1-sol",
   "api": "OpenAI Responses API",
@@ -31,6 +32,9 @@
   "evaluation_procedure": "Generate proposals with --defer-test-execution so the API-enabled process never executes generated code. Then run the same fixed full unittest suite for every disposable scratch copy in the restricted local test environment. Do not feed the post-run result back into the proposal. For review-profile runs, pass the saved test result to the separate review command, which performs no code execution.",
   "failure_policy": "Record API errors, invalid JSON, timeouts, and test failures as observed; do not silently retry or replace an attempt.",
   "interpretation": "Exploratory single-task synthetic case study; this pilot is not powered to support broad causal claims.",
-  "excluded_runs": ["All earlier scripted-fixture smoke runs; they are protocol checks, not scored results."],
+  "excluded_runs": [
+    "All earlier scripted-fixture smoke runs; they are protocol checks, not scored results.",
+    "API authorization diagnostics, including successful baseline request 20261104T004516828736Z; diagnostics are not scored runs."
+  ],
   "privacy_and_scope": "Only independently created synthetic repository content and task text are sent. No employer material is included. The API request sets store=false."
 }
