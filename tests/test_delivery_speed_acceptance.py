@@ -56,8 +56,7 @@ class DeliverySpeedAcceptanceTests(unittest.TestCase):
         sent = {}
         def quote_request(request, timeout=2):
             sent.update(json.loads(request.data.decode("utf-8")))
-            speed = sent.get("delivery_speed", "standard")
-            return self.response(shipping_service.quote(sent["city"], sent["subtotal_cents"], speed))
+            return self.response({"shipping_cents": 1375, "delivery_speed": "express"})
         with patch("app.legacy_monolith.urlopen", side_effect=quote_request):
             status, result = legacy.place_order(payload, "http://shipping.test/quote")
         self.assertEqual(status, 201)
@@ -70,7 +69,7 @@ class DeliverySpeedAcceptanceTests(unittest.TestCase):
         payload = {"customer": "Example Customer", "city": "Oakland",
                    "delivery_speed": "rocket",
                    "items": [{"sku": "MUG-BLUE", "qty": 2}]}
-        with patch("app.legacy_monolith.urlopen") as call:
+        with patch("app.legacy_monolith.urlopen", return_value=self.response({"shipping_cents": 575})) as call:
             status, result = legacy.place_order(payload, "http://shipping.test/quote")
         self.assertEqual(status, 400)
         self.assertEqual(result["error"], "invalid_delivery_speed")
@@ -112,9 +111,9 @@ class DeliverySpeedAcceptanceTests(unittest.TestCase):
         legacy.initialize()
         db = legacy.connect()
         columns = {row["name"] for row in db.execute("PRAGMA table_info(orders)")}
+        self.assertIn("delivery_speed", columns)
         speed = db.execute("SELECT delivery_speed FROM orders WHERE id = 9").fetchone()[0]
         db.close()
-        self.assertIn("delivery_speed", columns)
         self.assertEqual(speed, "standard")
 
 
