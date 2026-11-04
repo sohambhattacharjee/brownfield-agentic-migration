@@ -8,7 +8,7 @@ import socket
 import threading
 
 
-def request_json(handler_class, method, path):
+def request_json(handler_class, method, path, payload=None):
     client, server = socket.socketpair()
     client.settimeout(3)
     worker = threading.Thread(
@@ -16,8 +16,12 @@ def request_json(handler_class, method, path):
     )
     worker.start()
     try:
-        request = "%s %s HTTP/1.0\r\nHost: study\r\nConnection: close\r\n\r\n" % (method, path)
-        client.sendall(request.encode("ascii"))
+        body = b"" if payload is None else json.dumps(payload).encode("utf-8")
+        headers = ["%s %s HTTP/1.0" % (method, path), "Host: study", "Connection: close"]
+        if payload is not None:
+            headers.extend(["Content-Type: application/json", "Content-Length: %d" % len(body)])
+        request = "\r\n".join(headers).encode("ascii") + b"\r\n\r\n" + body
+        client.sendall(request)
         response = bytearray()
         expected_size = None
         while expected_size is None or len(response) < expected_size:
