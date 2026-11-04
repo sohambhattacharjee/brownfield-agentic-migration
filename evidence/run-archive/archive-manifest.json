@@ -1,0 +1,1826 @@
+{
+  "scope": "Synthetic study proposal and evaluation artifacts only; scratch repository copies omitted because they are reconstructable from pinned revisions and diffs.",
+  "cohorts": [
+    {
+      "cohort_id": "cohort-2026-11-03-key-verified",
+      "source_root": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals",
+      "runs": [
+        {
+          "run_id": "20261104T004804914307Z",
+          "profile": "baseline",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 3808,
+              "sha256": "c9835dd911348e3b8d6a597335412997b9291dee30ebf8abea8d650063a26901"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3997,
+              "sha256": "a0f81699210a6ced2c3de2fae4955c5afc9f01d7412f47e27b9c38734e8aa1bd"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 10039,
+              "sha256": "fcf4bcbe4d719b40461d0c6a2edafef64bb9e59e0596409e44e3434ceec2dd1f"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "466fa97d249934fa27b37d58b3d45b6a200f45601a816ca0c59f46e85398950d"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T004830854844Z",
+          "profile": "context",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5123,
+              "sha256": "fabb3db2329f2549fc057576c0540cc69db24885d713e51dfa757dc7be9fa7ff"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3852,
+              "sha256": "02b87cd8c6d3356894af37d548670dc11ac9b839b6c112ad0f4eb92364db4e4a"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 9982,
+              "sha256": "9812be9de6d7d59dc8c01b4e7cd5f66f08e10afbda19704c5cf60f99203204b7"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1236,
+              "sha256": "1e5509863d72f18734f6bf9b90f43c41efa488ef280108d1b4db4068ec36003b"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T004859116772Z",
+          "profile": "review",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5510,
+              "sha256": "f742cfff8f58dc70bec3d45af985891a9aeb272a1002cf64d4f897aa9d82fd59"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3767,
+              "sha256": "28e5946d3215011ecca50f11edbc4b60c31fb0e47cb34d07cbf2921d3adbc7da"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 9787,
+              "sha256": "8f4f8dda3bd5f42e76a3cce99e0d6edb2af9fa5412121a8501fd6f34796f28da"
+            },
+            {
+              "file": "review.txt",
+              "bytes": 482,
+              "sha256": "71dac7202773893c1b60050959ea7fabb52d254092c9047090472ad0107cd480"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "0a5fba84658a4d4d790d1b43146750e575d871cb3e6a4f7aa44055c3c93e614b"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T004923572166Z",
+          "profile": "memory",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5121,
+              "sha256": "47145c1a4250be905010ce8e0c5c92374d8273f2bf461cd6e510fba3d5d35760"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 4058,
+              "sha256": "79af06c98c608c978a827e1e94a79c889b6c2389c2505ad146810e44ecd4905b"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 10265,
+              "sha256": "5192d8c8f1de380d829b6d73b5d8d45b79939a31ca21fd9cb3021a39297da446"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1236,
+              "sha256": "5e754349b418a10ed854a9cae8bc28011492d0ee2a6d2fdbc8c4dcb41b2230c6"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T004947001743Z",
+          "profile": "verification",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5125,
+              "sha256": "062ce15cb5d7832b62b8147ddae7a458fb3802a7155d0d60521fbd4948e53602"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 4359,
+              "sha256": "b8b8d2c4326826a823fbcacff1e25801f78ff830f61e04494e20a39692611c8a"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 10334,
+              "sha256": "2b455d53caf5f032a9716d8ac7485b9c66ea8c84b18ee54d8a848e662a1ccb3e"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "9896a7bd4a1db3ea1447363a6fd6bf1b8dd8f672cec0b7c71784a9163beecaea"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005013995120Z",
+          "profile": "review",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5510,
+              "sha256": "195c74f7002b28f8385530bd83bda0436242abc5fcac21ae43191f001bd2fabc"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 4223,
+              "sha256": "367581212d543a0dfce44a29f50a1544a0dbe1db022443acaeb4a5bb7e6ae6da"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 10178,
+              "sha256": "8be31c3fe6381971b1f95d3f3254d05d908a16bbc4ebd4da3a8127304780139d"
+            },
+            {
+              "file": "review.txt",
+              "bytes": 532,
+              "sha256": "ef6967cd2bcc13b07256c4794ae7b1536049101fbb8e27ecec715746115ecfaf"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "13ed9ce5e8b7703a6b0e142b1e5613dad9ef48f7b2e9f8cb2c8bf7959c3bfc0c"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005043687747Z",
+          "profile": "context",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5123,
+              "sha256": "f7258b1c536ab9fde75971db1d323fc94cbb6ed17008fe70899a4937ddbf5d9f"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3962,
+              "sha256": "51ee1337f26759209a45c0e9ea4fa243ea51b3dd2d64b3a53b970bec4c7dd16e"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 9974,
+              "sha256": "3f08fe76ed9fa74be2ce29fa8c51f82f9fc49e2610456b9f7ae0c1a0048d54aa"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "79b9db29814f322726013122a1321f5f64038424b9aea68dd1031beba340f09c"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005112136228Z",
+          "profile": "baseline",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 3808,
+              "sha256": "136c6811b2d5963aa1cb1007c02ed5510f6ba5064092ee4f32597037afbed9a9"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3893,
+              "sha256": "27aa0f0960a9b0681a654a98128441c80bfb61f2db74bde39bf75e8fcb0a2f60"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 9800,
+              "sha256": "be16c536106d9ee387bd2bc6783142407401b691410d134f66f0183439d6ebee"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "af9a825bffaba8825f75c254709565a4b8511d2469ce8cd3b3798b9e7416c7b4"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005136202187Z",
+          "profile": "verification",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5125,
+              "sha256": "1513c31aaf28de7d82fd09d459dab8a995ed7a8298bca4c0fb9ffcf9ae7998fc"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3719,
+              "sha256": "cb70343ece82964e575ca27fbc11f57f5adae72979511b0e4f9215a70559af93"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 9695,
+              "sha256": "ee6d41ac8d39bbce0a311c83a4889bc7f334c119b4eddcffb56da09257dabd82"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "0f471b0b7973e4143a0273c5df5b8efea6b7d44b3f16044302efb74a159b3139"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005202635216Z",
+          "profile": "memory",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5121,
+              "sha256": "60608e507a8b4decf98d379fcd731a1eae348872d8d6eed47462a2f5249bc84c"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3933,
+              "sha256": "6e6cca70ab506810f6d25bf6de7aafa4294084fb8d24641d3534af640a57c613"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 9990,
+              "sha256": "25a09ff99442e1fe6688f4874d8bf1129dc0569ff6a984fc35a6908194e2e144"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "68066d61ad68641581439655fde89ca1820ef075d80e4ec29508256a585e97ce"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005230981810Z",
+          "profile": "context",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5123,
+              "sha256": "6eaf46da36cb7e1c7a2f6c94f46d895c87ffc46c73755ccacdb7fadaa7392a3f"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 4169,
+              "sha256": "ac5455261765d8f1b3d7f7d01da9eed165b8a3f1b9bda72fd7b3e5854bd6adf5"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 10427,
+              "sha256": "4bc7605fe5d5dbf4fad695157cab0116e84b429e10c2d5f7ce028ec61b0d859a"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "125e79cd99b7a6d8719ec679ee8f42d4f7cd195895c50e3b88b620e27d68abc9"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005254653571Z",
+          "profile": "verification",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5125,
+              "sha256": "362f4db6ff0d2bd2aea8734ee24c8732ec635a76a8bc42903ee26ca67421885e"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3818,
+              "sha256": "5b5938eb976a5a028005030145e3116c2e65793d649cc8d139ee6ef2966bdaa1"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 9793,
+              "sha256": "659f8d01356ad28496cb8dbf9d923b8f7211ebb2cf47af2fc1d2ed07da6035b6"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "024b35f022c917ad160a5e3e3013780319fefe3c89c126591a6eddff534fd7cd"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005323784567Z",
+          "profile": "baseline",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 3808,
+              "sha256": "8f615bde780809bc260c18d61a3322c9032bd410beae28bd510b71a3b16cfb21"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 4016,
+              "sha256": "bbae88ba4aedec6ddf5c1ab2f689a6d5e9ae5c96bbaa84fb14c0b6009392f595"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 10028,
+              "sha256": "0a5032e01c5d896a9a263cd44cdabb73ebefdc5c55075617c5c1ff18d4e01b6a"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "fb293119d9020ca0d977ed26ae66b910b69068783f7acebccf8beda8fc31da10"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005349672713Z",
+          "profile": "review",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5510,
+              "sha256": "b7c9015b348cec0a2f40dacf9ea3b932f7df30229d996f7aad690daf8e6dcb8a"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3735,
+              "sha256": "6d34234da66b4ebf6cc5381f0e185f5ff7b108f586a6685cdc4164c19ad5e3c4"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 9761,
+              "sha256": "4b5048eaf4511603362b628ed0f080fc7996a35116017fefa39f07b18a70cb09"
+            },
+            {
+              "file": "review.txt",
+              "bytes": 408,
+              "sha256": "99679d05582fd63b04af58e7e3149e81d9493e2ecf97b11235f06cd89723483a"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "1addc7aeaf472a7403e8864672dcb3b57219c0af3aa7dd3aea055b55dc59d098"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005414617282Z",
+          "profile": "memory",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5121,
+              "sha256": "e40af00d65962f47aeaf9c58f6e881162873bf5756586663628e472d42144c46"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 4161,
+              "sha256": "452a8eab78f08c977f0306eea016d23d4fe5b3e4dd75c8244b2291d78670026e"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 10469,
+              "sha256": "5c378daff30bbede5a43aace9f25bb0df31c6f4f64e9a5271b8cf815e1345d3a"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "651da619740a32d307f3019f48d524bd8902c6897b90d85c53d0f86cf5d7563f"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005442167590Z",
+          "profile": "memory",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5121,
+              "sha256": "16707cb73a05e9fcb6eea1f129b90f83e12df71c36e395652d0b48aedaf053df"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3880,
+              "sha256": "b93b4e549898ac41d8994552d425ff244b5a55730f109d8514670423087ae72a"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 9900,
+              "sha256": "6b511e92b71733f8b721e4916c8cfffa01bdfcbd7e5e96e132fa76cb1204c611"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "5e978c9ed0fd1d25effe4e3402fe1a5902c1465f458a350c44de8d6424e89154"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005506362087Z",
+          "profile": "review",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5509,
+              "sha256": "219a2a0f4e0f757c7f81de6a79385aacf6784619d6ea7cdae3892b0f33ad55c1"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 4012,
+              "sha256": "2e468db8ac436b9447a473085780dd19e3cb20b54986bc73f6ce9d9e577768d7"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 10060,
+              "sha256": "0b3d9bc40eb80c3db35858d28492c0ecfea440068e4878a00e5b5915c85ad702"
+            },
+            {
+              "file": "review.txt",
+              "bytes": 473,
+              "sha256": "24933bf5148879681f193dc4fa44cd8bd4d66f6a0c9149e93ba9db38d750541b"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "1d340b4378f1a1a2030d37ad54abfb68f637fffdd6b392751e8d4b3f1bb82eca"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005534076234Z",
+          "profile": "context",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5123,
+              "sha256": "3c6de74df02170c67f26bfa939b891889d79965f6402a2b1c9ceddd95bb439f1"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 4297,
+              "sha256": "c2435f8197ab7230945db75804619adb880c6d89d15412f1fe9517325841718a"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 10486,
+              "sha256": "20ac016c176481ae8587629d6100b41bc83e3f87b4456e921fbf83954696c448"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "805e56c02200196d42d982ea99bcbce6330999481771c8c05f60367fb74cdc12"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005557827049Z",
+          "profile": "verification",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5125,
+              "sha256": "183130008a7904e3f1afd7631a43815b767a94275f54f17301ef9478bafc51d7"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 4011,
+              "sha256": "084ad6f8fd917ab5683c2874824374810eb59b18f1e42fda15cd9a9854350a41"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 10028,
+              "sha256": "d12f517cd90f80671a39fd8b555f733444997d38489d115f1ee9b6cf527fa913"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "6745215f4f153eb275c0f059dc9c207e7db5c0bdd343c413799e1d1b941ee73b"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005623711588Z",
+          "profile": "baseline",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 3808,
+              "sha256": "893e6b79ae0320695646f9004da6646ec680ca2f2cebe88931df481966786e90"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3623,
+              "sha256": "5063e22210787f37850dae8b8b41ccb877880d00412be8f24acadc755480b42f"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 10329,
+              "sha256": "beb6e2e40af6c3c189dfc84672190f529aecea2b0b5e79736fb5020847ed098a"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "f13907b8862e437b77c0b1208b4bd8c417ccce2794e0ebaa630c7d98954a039e"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005645708567Z",
+          "profile": "context",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5122,
+              "sha256": "3a4b6ce3bc46b5d75e3bad7c26b76df67ac2c5aafcc80762c5ea1dfb657dfed0"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3632,
+              "sha256": "0d34edb5788433c9756ae6f673cd62cb14d50cb0f45ffdeb83ae8473bb3e16c5"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 10324,
+              "sha256": "ff39e4ae851d73392888248111956b1d5fbba9c76ee1b4cedc6c81d384ff734d"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "751e0d74fdd012c07cc6bc71cba44d4eac24fe0d4a5e5d24a533c9b3686edfc9"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005710866814Z",
+          "profile": "review",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5511,
+              "sha256": "60408c47552a400f849d214f9fad895e918191eabc59a0830852c74ab894bf70"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3893,
+              "sha256": "8c23c069d84174d3000cc84d9db0a77b25ba360f7cc49374d54b746fa51edd0f"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 9900,
+              "sha256": "a3f58777be195ebeb2c424fe55725f7907219be5512f1cb1382ed60c6eac9077"
+            },
+            {
+              "file": "review.txt",
+              "bytes": 496,
+              "sha256": "5169c5d11b3c237c8b26e78cb2b7e5e256f0fc16ec38db8abf04c5743d45f22e"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1236,
+              "sha256": "bd2d2d08161e67c4928a3d4a9e3c98a4c05bdd380fbb4d44cd399a6c3aeb5439"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005737390288Z",
+          "profile": "memory",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5120,
+              "sha256": "db6a974c77f37919adc717e9650c204ada65fb119b422f9fabc081698f06fe04"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3731,
+              "sha256": "d6b5c11314da856db66582e65afd259089f2211ded83be222e685ea6a6044450"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 9761,
+              "sha256": "38b02ca7d0451bb82f64a6978d57a49c74c1bae7334b291a305bfdac7a716893"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "d37528812cc3e15bcd0f449f67bf5de02c591e7fabe8b11524cecaa067b77041"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005801891966Z",
+          "profile": "baseline",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 3808,
+              "sha256": "b45538728634501db2cbbf7e1c2560626db8c64e080a343cad0a72d3f7c625ee"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 4285,
+              "sha256": "3ba7dfa76d6563b2ee38943d92152510aa8fa607ab7d13212b15b6a0f979d53a"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 10519,
+              "sha256": "b3d03e342ae85a9b378247f927395e14247523e453c93c205071e6a77c21a792"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "832820926efea6f37b268c3159521ecd465aee41e66f7c1801120c8b17623964"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T005826578440Z",
+          "profile": "verification",
+          "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+          "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 5125,
+              "sha256": "e91ba3ebcc6f913d36ba551125cadcd91a502b84746b61a6880022cd96dbca03"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 3807,
+              "sha256": "ae7b451f88ccf5d6c1746e2016b8d7a3b80659799d11b78527d7aa6e7e5fe34b"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 9887,
+              "sha256": "9deb1674680656af038c57d8a9eed18f811cc4b0c2abf219fc3009915bdee03c"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 1237,
+              "sha256": "73c319bc32a9d96b4e21ace9da7a5eaf70669ebb3276aa95c8a0ce9f41bb9494"
+            }
+          ]
+        }
+      ],
+      "attempt_summary_sha256": "e3f56c1df503a7d59762a9641c33e0046a72c79c01389a641d98cf865f9cd9d5"
+    },
+    {
+      "cohort_id": "cohort-order-detail-2026-11-04-followup",
+      "source_root": "/Users/soham/Projects/agentic-software-factory-study/runs/cohort-order-detail-2026-11-04/proposals",
+      "runs": [
+        {
+          "run_id": "20261104T021134813008Z",
+          "profile": "context",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7047,
+              "sha256": "ce34bb4cd1776f0e0d649e7cdc6d56cbd4ed7f90e21d58f1ba1b9fe67eec11bb"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 2103,
+              "sha256": "040f5db5fb1034d36f7b2133cddd6a19d0cb60718f3ca688a78165a0c820e479"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 11658,
+              "sha256": "bd843c347bf97f94e7b5575f8e93d7c8ca25b69d2fb4f6d559d483111eb9ec21"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "53ac885d2b9178cc97fd481014b2800e3d37caef7c43234d07e5648a898e2deb"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2633,
+              "sha256": "f0073535f58dd95443ddc2eca6ad3dedabf357d8dab39bf6d16bad2665c47c7c"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T021204984236Z",
+          "profile": "memory",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7045,
+              "sha256": "11308a0b999406930c3498277d8a94ca2ce8b6345cd42be6f71f6cbc3f8fc63d"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 1986,
+              "sha256": "b89573aaa53564d4dea25a762ed76bf7e8d7f2d7dc5b887887a0616bef7b75af"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 11399,
+              "sha256": "bec0f99b731eca3d4fd6429b55dce203249513a74f24a8670da56583f1ddfdd8"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "75070ac76466a7992a5ec23fca5aa893ec9bf1390e048df9745a3a453bef10bc"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2632,
+              "sha256": "6b3376f45d1404a4fae7a3f0ddb860f695eb7065cf66735a7df7f4b109d9dbea"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T021233742699Z",
+          "profile": "review",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7434,
+              "sha256": "83c3a2e18ea8fb26ffaf301be09913e241e37d7bdfcfeb29c5c899b45e0c500d"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 1803,
+              "sha256": "bea791698fd10330239c0640727365bc04efbf9e5ac8f37eb21617fb0af12b7c"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 11280,
+              "sha256": "26601fe045c3e55958e841487bd92b6e9d3f5af5c62c74edb64e1577d50b59a0"
+            },
+            {
+              "file": "review.txt",
+              "bytes": 423,
+              "sha256": "a0d3fdc9c12fd299158581b9682afd703196289972baf096449b1bee90e00036"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "5e02cb254b37d164bdd264f136fa714e710d9348d85f63d05a89a6fbf5ff9218"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2632,
+              "sha256": "64f311e41e9973d7aba7a9043ff81ac1f33fdbe4b54865b252d395a973813ce4"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T021303237058Z",
+          "profile": "verification",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7049,
+              "sha256": "4758a5015df81fb490c98e39dec200b49efa46502c8d7ac28b6815e8f737c097"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 1910,
+              "sha256": "f0889a5b52ee4f94f27e9c0f2a96d8f31190443a22e0c2693e049426c218f322"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 11516,
+              "sha256": "bfd8db04240fbe686ddd4301c4735d33d05e324b01ae6e32de2da5d234cc9592"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "ea826932d46cdd2cb4bdc4e37cbb41a9d79b895d2840ff31a0a7c189b1364311"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2638,
+              "sha256": "0fd92974736b2b64ebdc328eb4e76197e4fafd0a2ef10d2016a3113c20e4e167"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T021332110411Z",
+          "profile": "baseline",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 4027,
+              "sha256": "e1e8674145f2c0c9ea102d5529d2ff0124188a9da8dbde4a3a9aa8c4d30b3433"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 2859,
+              "sha256": "66832c6fb32e73a40eb3a64d3862609300ca9b8b0dc1d18a725b6eecc27d396d"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 11402,
+              "sha256": "b98f8a963b7b1938d1cfb0d206f2b2c3206a60b3c86068ea6cec6cdc7cc2de30"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "ca4bf531173bfcc0670b8af37830ad69b078ec9181deb711021dd5c36cedff70"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2634,
+              "sha256": "cdcfb6c9ddc945fb107f541f647d8336c8f4a6c478e8cde1760d77e8e49bfd5f"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T021359391379Z",
+          "profile": "context",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7047,
+              "sha256": "acb0057f85701f309f46cf9484a809240768e65ae888db7b8e21283b30c23536"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 2042,
+              "sha256": "22dc1157edba835e055f85a8e47294ab66eca807e820172a55bcde1e097acc0e"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 11396,
+              "sha256": "75c67a66310a386e8ca9129f235b9d36fa4c994bcd6894b230fce4e4ecf54198"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "55728064c7009ee85755a4a1226f2ee7d58844d6a52b80f30c6cf48396e7a5dd"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2633,
+              "sha256": "3ba9f633f39d05095c3a54d17899cba1306d40463718b0967a2314839140a42e"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T021429103357Z",
+          "profile": "verification",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7049,
+              "sha256": "fdd0e8160483248361829aabd222eae88eab8be2a53503d43e6d157cbd6d1b65"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 887,
+              "sha256": "5ee6c92966ef292896ac83d6c76130287030cddfb3e0a81ffdc9bc1c3114d884"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 10627,
+              "sha256": "c756ba7ea994263fa07f69dd243ffac3b99057b111d20708cfbf2181a57c0ece"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "74ef8a3d5fbeb7dd61e6ffd6a6e1fa478bb9d7335a0dc243524ef5a2a36b249b"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2638,
+              "sha256": "d13bd24851175ec3e70e94e80a0ecb6e7aef7d1ee0f1ce9cdee284c74aa7e33e"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T021457750618Z",
+          "profile": "baseline",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 4026,
+              "sha256": "5e1a7c5ba0f701cb4dd6c369830d4e43cf18086553445779c833f1106c41ab58"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 2724,
+              "sha256": "4deb24120f0b3e7a83f995f2f2b1e3f3402fcb15c25d76b495187166e98ce5ba"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 11286,
+              "sha256": "ec9c6ab8c02614f97b1e96a0a2e34d1034a9a290993dc3e5afd3f2adf76cad2f"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "8525dfae097751c3336455a27965aa5fad86207279509efd24228ccf1e5314d0"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2634,
+              "sha256": "9a26122dce2a7a220d1b80f480b350b763d9ffb9ca218883c60a5720056a18a2"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T021523929414Z",
+          "profile": "memory",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7045,
+              "sha256": "84c9aa6107ad11ce73b947084c8d6a1aabcf10b160b38e810db9e8b3e6cf5dfa"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 2020,
+              "sha256": "d213d1277957df2f2c525392601d43cf934deb1b1b1fcdbe2f67f7d745fc1a59"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 11402,
+              "sha256": "b36325bce4bf8c4dfb31b798310485e6d1c0eb85e7f91ba11b3b34a07a6db3bd"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "73b7e34e35e290c69bbc38588b993d9fa1644a59434b4c9ea6764c68492a7abb"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2632,
+              "sha256": "191105fe668a8e51cfc58f297440dce17acd14d1275d98cf911964f5bdaf18d1"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T021548819109Z",
+          "profile": "review",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7434,
+              "sha256": "063140850c5aac332c270561c1e25592514707c1208cef878db6862965f90db4"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 2071,
+              "sha256": "ba6395b37f4f16653160d0808805e372525154866882e604ce3fe32f0ccdfa4f"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 11614,
+              "sha256": "94edc1767494ad64104f8f93804efc991a15df73ded25f3e419529f3daec7bc2"
+            },
+            {
+              "file": "review.txt",
+              "bytes": 423,
+              "sha256": "000dcdf7aefa4e83dec7bac0d593d9e2fffb7de9ed8c1b1f5fd7e187fb07ca30"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "3092cdb5b6dcf2532cf3c1c782fe3077dc20d9de4b69d537d2d188c2238543a6"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2632,
+              "sha256": "c04fb7919b4128eeddcef5adff1754c7c8745d3c5d796edfbad3fe348d481e2c"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T021615995398Z",
+          "profile": "verification",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7049,
+              "sha256": "6827a31ed647ed1276cd92842115e71768c93467caac5a4b15e7e315e398b59a"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 1738,
+              "sha256": "ff4bd8ea41d0235fdc3e622c954b3b26111af6e45ecf434afdcddef849e7e03f"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 11107,
+              "sha256": "ec011d3160862e6d1700b39990f7d78c5e4632edf125d1df741c81607e0169a9"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "d7ec07e77084e64315b2496e2f4a41b58fd86fba66a840381dc980d636506f9d"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2638,
+              "sha256": "f10be07203ee9f94efe893619ccb132cacc5400ce68c2d63252948ac18ca8957"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T021644674793Z",
+          "profile": "baseline",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 4027,
+              "sha256": "2dcbe0323c9854ef216594d6c2c1e0e59d91e31a72bc5082b7ac6cd97dbdb7cf"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 1898,
+              "sha256": "ebfa3a61c7333e7683d5d8a7cb590a1ac315b8821ff8e82b27a164b0aa65f678"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 11487,
+              "sha256": "95a465ceeb2233b6a38a4d15cdd3dee134818dff1be41f71d8664b956f8e1eee"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "bca24f212f3d369f3d9cbe90cef0a0eeb9a5b5305d16f48c3eed9f09ae11e44c"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2634,
+              "sha256": "83b5d096859adc1da27146291c28030cbce8df54015e3df9b4c489db647f482f"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T021712627064Z",
+          "profile": "context",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7047,
+              "sha256": "ff884f2a8f90973d71e576194f68756e9df75627982290c6cfbc9f43e333df5a"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 2863,
+              "sha256": "ff083ceaa6ecabd7cf650d803651ef1743361fe4e700c658b760a9af9e5ad60e"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 11482,
+              "sha256": "ffd43245b668014eb63374ffc0ddad52aa817a93eb7162b9db47f5eb364c2079"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "8e28caaab21095ea43fad94a0d360a489299b2244ad825ef5f24fd690798b1b8"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2633,
+              "sha256": "131e3a7bb834864b91093b8cdd48c6bc26c9f0d6799e788d5f2379aad098b81f"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T021740361082Z",
+          "profile": "review",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7433,
+              "sha256": "7faa810f5035e8abbc8730db956f2da31f09972b97f629b721c5508e7240f568"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 1801,
+              "sha256": "1bfed03cac0ac4e16b91108b8c023cd86ec2e147d06a85ccfb492f4d46b1fdf6"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 11175,
+              "sha256": "3e05431086d459aae5bd9ba3e012d55fd9daa1c68d95bdfdafc47b2f0aff471b"
+            },
+            {
+              "file": "review.txt",
+              "bytes": 451,
+              "sha256": "9f684170c8209f7e0d32265a4208ed88554d492e789e052ad5fdb23b3052ca98"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "63952c37e2f669fbf6dde0a2948a5b6e94c4fa64787f3a46f7164869eb21f1e8"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2632,
+              "sha256": "27ad1c13f9bd4a6610aa29cdf8aa72877a8a35ebc86a52b10d0152049f12f27b"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T021807830063Z",
+          "profile": "memory",
+          "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+          "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7045,
+              "sha256": "f2fffd65af8d64480ea203bead3cef94acbb64ad901707f56a015d093266dd56"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 1906,
+              "sha256": "b78ad4c20d5bb91c1af0961f1377e813a6432afce8b7d66155ae92c1f6c420c9"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 11333,
+              "sha256": "1faf6203b7061ead74188b73a34dbf1d37b0318ed29dba514efde8995ae3d0b8"
+            },
+            {
+              "file": "verification.environment-blocked.json",
+              "bytes": 6398,
+              "sha256": "e7f43994157d78a39854c546d792749d5d17652e1a79fd8cc8db7ed843f4c599"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 2632,
+              "sha256": "4657f9a1d83b7a74c8361111c932c005baa9ff9e989e1934d13b591b415b4225"
+            }
+          ]
+        }
+      ],
+      "attempt_summary_sha256": "ee363dac424a0b3e0c7015c9d1a8134a2a7f052e57c21b5b4128fb4bafccd1b4"
+    },
+    {
+      "cohort_id": "cohort-express-delivery-2026-11-03-stage",
+      "source_root": "/Users/soham/Projects/agentic-software-factory-study/runs/cohort-express-delivery-2026-11-03/proposals",
+      "runs": [
+        {
+          "run_id": "20261104T024113122880Z",
+          "profile": "baseline",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 4772,
+              "sha256": "a915acadaf34795c21eaccc2afda0bb7f2aafb871d3956ffbb312918063e52c0"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6811,
+              "sha256": "1e888a017199f00217780395ea952819a622c8bbaca97b9203c5801e280613ee"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14593,
+              "sha256": "82752a41a0e74ce0d0784d9c7987fda936f4f2634f3d435b91b8dcc90334582d"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3443,
+              "sha256": "e87608b28a6623a31c8f67e071028b14f00dae20afb5b76e575fc37945e432a0"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 3653,
+              "sha256": "ce50c0f90d37991955fc6a02fec34c6e9228279a1c247a1d7ee3af92b774d0c1"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T024140820083Z",
+          "profile": "context",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7845,
+              "sha256": "c5b36a32e5709c0718e66c61771678c5868334f19ee227f9f17401933424dfee"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6680,
+              "sha256": "52b365c66d3cf18d90e98b331cb33e30484777cc8bfe207eb6236eadaffcb5d6"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14465,
+              "sha256": "c5eafb6de0ea4b53bce76d715fce228a77237d6de9d050ff842ff6e6ddb2fe9c"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3442,
+              "sha256": "52fc37c68a39f688bcdae5494d98db51d9d98f93f03119ec03e086a787b8cf33"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 2937,
+              "sha256": "f589978048dbed8dbe6e390e459171d3bf0ed995179beb14dfe2bb9af08cb565"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T024209915634Z",
+          "profile": "review",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 8231,
+              "sha256": "a76eb7c48af1c7b9f315ca5420887bb8a28543c303bf1253795dd11c38a88136"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6768,
+              "sha256": "592aaf1f49d4d37adf511a23cb4d4af41e0393d4639396e6996e6bfa80d94e3c"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14658,
+              "sha256": "19d51edf043998d20a629d86efe80ab79039896c73a1348e5aa8f302a369fda6"
+            },
+            {
+              "file": "review.txt",
+              "bytes": 447,
+              "sha256": "b1ec6a7cd460f4144c991e774fe886c791909f6ceb3f56aec085f30da7cf6dd9"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3441,
+              "sha256": "59cf3582f6edafa4737ed3cd58757d0cad50788d2b980d6e44843ec2a21e2d26"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 3653,
+              "sha256": "dc81c191e30efe28d635415ba274f30f27a4afbbb28066a3cd4554c08f412b5d"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T024237349585Z",
+          "profile": "memory",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7842,
+              "sha256": "96f5a4f9949049e8c134f96b7a5d80aa425bade6f1ec5846c5e13e0a27cdfdd7"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6855,
+              "sha256": "97abf5e5630049d04032213c429269c2bae6086e530179160b00e56164cbf85e"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14687,
+              "sha256": "131015cb9fb4ab73fcdde6e938e8478babf3b735673453f1d4fb97c5141984bb"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3441,
+              "sha256": "f7d522a1653c69e14f7d62be785ea0e8685c92afd5bc59123e3cfcbaa1923494"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 3653,
+              "sha256": "1170922e7439446e60aa1b26f823bf5a6bab8c7f0d0434ce3718fe960555905a"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T024305039399Z",
+          "profile": "verification",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7847,
+              "sha256": "8532476c800b6b94bc3baca576672e63dd73423b10575129b10c8717c98ceed5"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6869,
+              "sha256": "9644d610817ac9a7f9d9d64c5e5ee5f28b0b7fb699833d6ec6525f69707e4701"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14743,
+              "sha256": "5447b4317d1f87d256d8422ac70a8a4da843b0c4d926b9c9eedf539943e5b59e"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3447,
+              "sha256": "34009167f2eb3fd53a71c515fc6eeb64c004d96494ac0530996bec20c91fcf73"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 3653,
+              "sha256": "9037c67efaaca810a767a45d3522733bcb116b3cef85d5b2758fd32d453b9ff4"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T024334549864Z",
+          "profile": "review",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 8230,
+              "sha256": "64f2bc7fa640fe50782b899a3a7616d052c03d125f5d036d1ff8eae4a132fd4f"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6813,
+              "sha256": "5e7696a84034522a45cdff71b03f90a8c270c2b1cf20cffd49dd35c0820d73f9"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14754,
+              "sha256": "96cbc8d2355ba07d57cc3b0791c2b66710950f954f92b8386854bb297d3ce628"
+            },
+            {
+              "file": "review.txt",
+              "bytes": 516,
+              "sha256": "f907c29d858a63f8255a8a3823f8a9efe2b1e60b0a6dd16f825c74453289e4f8"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3441,
+              "sha256": "52d7fb3d0fed7da0ddf7013922696e7713ec507695ac27db098474d2550eb282"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 3653,
+              "sha256": "5895197781dbf81b3681ca2a5b84e9a5380da6b5a4eeab0287bf9e93611c8477"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T024403686984Z",
+          "profile": "context",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7845,
+              "sha256": "f2d02e5f24f63998a992728036f03c8491c0fb852add9f97328f2e9d17a096e3"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6811,
+              "sha256": "1e888a017199f00217780395ea952819a622c8bbaca97b9203c5801e280613ee"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14524,
+              "sha256": "079a9c0521c0f86e05bdbd8add7ccb1f1f10742367554b2b68e26dbd433bff2d"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3442,
+              "sha256": "02075447c42de361f777b982846257362f9ed8617f43b31fcf7c410ba2be1e6a"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 3653,
+              "sha256": "68196e8f7aac74486db29a741f54e587e968f049a31238548ba4d6a616f51206"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T024431333388Z",
+          "profile": "baseline",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 4772,
+              "sha256": "5f5da99b0605d52a66be8855aa82fe191c2bb9009d9e3f1094bb7fdb68e47453"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6768,
+              "sha256": "592aaf1f49d4d37adf511a23cb4d4af41e0393d4639396e6996e6bfa80d94e3c"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14708,
+              "sha256": "41ecf71528f8985fa3ccc11c0bb8b17582d0e555438a6fb5c4a0e7d8daf5d23b"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3443,
+              "sha256": "11fb8611d6de93699327afbbd7de47cca4b665fdbbddcea1c9e524b1f60a15e1"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 3653,
+              "sha256": "6606d2bbca79478ed9365bd17c7cedcd9c1c121d9a6d6d0ff048107e2fa70916"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T024500212124Z",
+          "profile": "verification",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7847,
+              "sha256": "9c3fdcf32055feaf091727366621fa404b0e354777346c5ef9fd169c365b01c8"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6859,
+              "sha256": "077a004fc4020b29df5aeb7574614190a0a125fcbf14e4f9a645b4c6f3b5a3c4"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14591,
+              "sha256": "860bbfe973a6dd54a1c6accf1cfebbaade88711b35f54137f95c6032ab6526a4"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3447,
+              "sha256": "5369fd3ee4d3f600273c740b490c5e5d952b036444e7c8e8faa696ce78ec1b78"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 3653,
+              "sha256": "931a9efb1ee3b055b59578cd5676e1de10ae0f7864531f495c49caf5c90e46e0"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T024528064564Z",
+          "profile": "memory",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7842,
+              "sha256": "c3faf8c51ba1ede3539b3d8b443e8b13abe9f7ddbb6bc4daeaabe7f596b91c06"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6811,
+              "sha256": "1e888a017199f00217780395ea952819a622c8bbaca97b9203c5801e280613ee"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14680,
+              "sha256": "ab30994789dffe25e957b876ffe8ffcef1fcc325a176bc74ededa3077472a322"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3441,
+              "sha256": "830a4814d47b3f96e58040dc594472f0c65f70d27aba7dce644acc6735eddb9a"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 3653,
+              "sha256": "00c8aa0bf9ff6e56b3ce58ff55d837ea546ca278966daa7892d0c2ff3b77785c"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T024556532719Z",
+          "profile": "context",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7844,
+              "sha256": "30ed60d1792efbedd5bb10950b21c260351b0eeb67984e6b47bc57d8709702e4"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6811,
+              "sha256": "1e888a017199f00217780395ea952819a622c8bbaca97b9203c5801e280613ee"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14668,
+              "sha256": "f471ef76bf29048633ea2bc25e81299d84c4e0ef6ea373fdd421049348b35725"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3442,
+              "sha256": "66c2d1117151bc4afe1e040addd10ada7938489e0b9c536171e0ddb07bb1ede4"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 3653,
+              "sha256": "591bd416fdb51e936bc21516c9c89171dd6edb77183c1c23d3d410a70b79add6"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T024623084786Z",
+          "profile": "verification",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7847,
+              "sha256": "02a4a0cf3124f31320d09073cabd4dc94eb7ef930f76f44eef9b1fd506250424"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6852,
+              "sha256": "a62c429f9b4e0310a1474042d702e9a73756bac24a2afd4cced77ed25c9dacf9"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14728,
+              "sha256": "205eee6505e6882112f63109f78f90479563545638f3ca112b0abf527e1353cd"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3447,
+              "sha256": "f3b3a84291674c728de640a39ef22cfd1f3250fb065887361fa1ceb333cbe7ff"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 3653,
+              "sha256": "4e8a83f54de082c29ab842693331f6b452bc751a6dd23400d485ca17bc5e5f7c"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T024651770484Z",
+          "profile": "baseline",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 4772,
+              "sha256": "3b829a1beaa0af10601aa77e74c780ecbb57bf5f7fced2d5b406c41009c780bf"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6811,
+              "sha256": "1e888a017199f00217780395ea952819a622c8bbaca97b9203c5801e280613ee"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14794,
+              "sha256": "0e5406f5f3a29b6dc5821486a5407542f780f8ba01bfb43f7ae25afa19a2cf81"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3443,
+              "sha256": "5083f48fd34cbda066961218d6de3967f70af97418c5296b8119d3a0accae460"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 3653,
+              "sha256": "dfca2f88a59fc27b9a190895270278674d14f0fd19e264aa2c0c0d5828d8e989"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T024721043814Z",
+          "profile": "review",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 8232,
+              "sha256": "eb44a59c05d97ac997f40c267e4e31af170f088e8fec795489fa6ac4833f8a0f"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6811,
+              "sha256": "1e888a017199f00217780395ea952819a622c8bbaca97b9203c5801e280613ee"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14659,
+              "sha256": "8fc366f28bdc1f6bf3aeb07c12b7f200879e67a538051192a68fe65b0fc0a719"
+            },
+            {
+              "file": "review.txt",
+              "bytes": 410,
+              "sha256": "9d75c078538872cce78dd9a5f9109f669eceecda4b6edaf87231ec68c140f799"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3441,
+              "sha256": "74e82a9cc68b5e7cf24271bcdb9654ed81137c88e4d3c41f2531a8293a844b65"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 3653,
+              "sha256": "960800765e7df212967bc486f5a00a8a7164437a9a6d2e9d9b1aa6341f740e52"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T024749952744Z",
+          "profile": "memory",
+          "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+          "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+          "model": "gpt-6.1-sol",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 7842,
+              "sha256": "b787acc8db89e0812d7ee24dfe2f071cfc7024fb4b3a7935e1e87ec20fe8f334"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 6768,
+              "sha256": "592aaf1f49d4d37adf511a23cb4d4af41e0393d4639396e6996e6bfa80d94e3c"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 14667,
+              "sha256": "e007cf5c4c88b3339a11711c5558588d37fbb8cd84cc7946991bc9fb1fcfb944"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 3441,
+              "sha256": "d08064baf5c372543d76e2063e36832fd1dc0b6a508744414e209db5b56a2945"
+            },
+            {
+              "file": "verification.pre-amendment.json",
+              "bytes": 3653,
+              "sha256": "4f3b95189480890de9e25b1458ec65593fa92d2a8a1ef4202cb9a67ee5386f44"
+            }
+          ]
+        }
+      ],
+      "attempt_summary_sha256": "7045af1e9dd48270abc5eb09806b4d6e42ec96f35d9534b804f095403932b2e8"
+    }
+  ]
+}

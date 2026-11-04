@@ -1,0 +1,702 @@
+[
+  {
+    "sequence": 1,
+    "block": 1,
+    "position": 1,
+    "profile": "baseline",
+    "exit_code": 0,
+    "run_id": "20261104T004804914307Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 3666,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 3663
+      },
+      "output_tokens": 2827,
+      "output_tokens_details": {
+        "reasoning_tokens": 267
+      },
+      "total_tokens": 6493
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 25.8588,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T004804914307Z"
+  },
+  {
+    "sequence": 2,
+    "block": 1,
+    "position": 2,
+    "profile": "context",
+    "exit_code": 0,
+    "run_id": "20261104T004830854844Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6817,
+      "input_tokens_details": {
+        "cache_write_tokens": 6814,
+        "cached_tokens": 0
+      },
+      "output_tokens": 2944,
+      "output_tokens_details": {
+        "reasoning_tokens": 400
+      },
+      "total_tokens": 9761
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 28.1772,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T004830854844Z"
+  },
+  {
+    "sequence": 3,
+    "block": 1,
+    "position": 3,
+    "profile": "review",
+    "exit_code": 0,
+    "run_id": "20261104T004859116772Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 6952,
+        "cached_tokens": 0
+      },
+      "output_tokens": 2724,
+      "output_tokens_details": {
+        "reasoning_tokens": 214
+      },
+      "total_tokens": 9679
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 24.3576,
+    "verification_deferred": true,
+    "review_deferred": true,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T004859116772Z"
+  },
+  {
+    "sequence": 4,
+    "block": 1,
+    "position": 4,
+    "profile": "memory",
+    "exit_code": 0,
+    "run_id": "20261104T004923572166Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6952
+      },
+      "output_tokens": 2835,
+      "output_tokens_details": {
+        "reasoning_tokens": 199
+      },
+      "total_tokens": 9790
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 23.3334,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T004923572166Z"
+  },
+  {
+    "sequence": 5,
+    "block": 1,
+    "position": 5,
+    "profile": "verification",
+    "exit_code": 0,
+    "run_id": "20261104T004947001743Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6952
+      },
+      "output_tokens": 2981,
+      "output_tokens_details": {
+        "reasoning_tokens": 340
+      },
+      "total_tokens": 9936
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 26.8977,
+    "verification_deferred": true,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T004947001743Z"
+  },
+  {
+    "sequence": 6,
+    "block": 2,
+    "position": 1,
+    "profile": "review",
+    "exit_code": 0,
+    "run_id": "20261104T005013995120Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6952
+      },
+      "output_tokens": 2961,
+      "output_tokens_details": {
+        "reasoning_tokens": 350
+      },
+      "total_tokens": 9916
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 29.5956,
+    "verification_deferred": true,
+    "review_deferred": true,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005013995120Z"
+  },
+  {
+    "sequence": 7,
+    "block": 2,
+    "position": 2,
+    "profile": "context",
+    "exit_code": 0,
+    "run_id": "20261104T005043687747Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6817,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6814
+      },
+      "output_tokens": 2925,
+      "output_tokens_details": {
+        "reasoning_tokens": 388
+      },
+      "total_tokens": 9742
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 28.3664,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005043687747Z"
+  },
+  {
+    "sequence": 8,
+    "block": 2,
+    "position": 3,
+    "profile": "baseline",
+    "exit_code": 0,
+    "run_id": "20261104T005112136228Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 3666,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 3663
+      },
+      "output_tokens": 2740,
+      "output_tokens_details": {
+        "reasoning_tokens": 225
+      },
+      "total_tokens": 6406
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 23.9813,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005112136228Z"
+  },
+  {
+    "sequence": 9,
+    "block": 2,
+    "position": 4,
+    "profile": "verification",
+    "exit_code": 0,
+    "run_id": "20261104T005136202187Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6952
+      },
+      "output_tokens": 2815,
+      "output_tokens_details": {
+        "reasoning_tokens": 327
+      },
+      "total_tokens": 9770
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 26.3339,
+    "verification_deferred": true,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005136202187Z"
+  },
+  {
+    "sequence": 10,
+    "block": 2,
+    "position": 5,
+    "profile": "memory",
+    "exit_code": 0,
+    "run_id": "20261104T005202635216Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6952
+      },
+      "output_tokens": 2904,
+      "output_tokens_details": {
+        "reasoning_tokens": 359
+      },
+      "total_tokens": 9859
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 28.2605,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005202635216Z"
+  },
+  {
+    "sequence": 11,
+    "block": 3,
+    "position": 1,
+    "profile": "context",
+    "exit_code": 0,
+    "run_id": "20261104T005230981810Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6817,
+      "input_tokens_details": {
+        "cached_tokens": 6814,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 2829,
+      "output_tokens_details": {
+        "reasoning_tokens": 171
+      },
+      "total_tokens": 9646
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 23.5735,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005230981810Z"
+  },
+  {
+    "sequence": 12,
+    "block": 3,
+    "position": 2,
+    "profile": "verification",
+    "exit_code": 0,
+    "run_id": "20261104T005254653571Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6952
+      },
+      "output_tokens": 2906,
+      "output_tokens_details": {
+        "reasoning_tokens": 388
+      },
+      "total_tokens": 9861
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 29.0298,
+    "verification_deferred": true,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005254653571Z"
+  },
+  {
+    "sequence": 13,
+    "block": 3,
+    "position": 3,
+    "profile": "baseline",
+    "exit_code": 0,
+    "run_id": "20261104T005323784567Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 3666,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 3663
+      },
+      "output_tokens": 2877,
+      "output_tokens_details": {
+        "reasoning_tokens": 300
+      },
+      "total_tokens": 6543
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 25.8021,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005323784567Z"
+  },
+  {
+    "sequence": 14,
+    "block": 3,
+    "position": 4,
+    "profile": "review",
+    "exit_code": 0,
+    "run_id": "20261104T005349672713Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6952
+      },
+      "output_tokens": 2751,
+      "output_tokens_details": {
+        "reasoning_tokens": 247
+      },
+      "total_tokens": 9706
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 24.8591,
+    "verification_deferred": true,
+    "review_deferred": true,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005349672713Z"
+  },
+  {
+    "sequence": 15,
+    "block": 3,
+    "position": 5,
+    "profile": "memory",
+    "exit_code": 0,
+    "run_id": "20261104T005414617282Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6952
+      },
+      "output_tokens": 2946,
+      "output_tokens_details": {
+        "reasoning_tokens": 281
+      },
+      "total_tokens": 9901
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 27.4648,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005414617282Z"
+  },
+  {
+    "sequence": 16,
+    "block": 4,
+    "position": 1,
+    "profile": "memory",
+    "exit_code": 0,
+    "run_id": "20261104T005442167590Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6952
+      },
+      "output_tokens": 2777,
+      "output_tokens_details": {
+        "reasoning_tokens": 249
+      },
+      "total_tokens": 9732
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 24.1144,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005442167590Z"
+  },
+  {
+    "sequence": 17,
+    "block": 4,
+    "position": 2,
+    "profile": "review",
+    "exit_code": 0,
+    "run_id": "20261104T005506362087Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6952
+      },
+      "output_tokens": 2919,
+      "output_tokens_details": {
+        "reasoning_tokens": 334
+      },
+      "total_tokens": 9874
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 27.6328,
+    "verification_deferred": true,
+    "review_deferred": true,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005506362087Z"
+  },
+  {
+    "sequence": 18,
+    "block": 4,
+    "position": 3,
+    "profile": "context",
+    "exit_code": 0,
+    "run_id": "20261104T005534076234Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6817,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6814
+      },
+      "output_tokens": 2911,
+      "output_tokens_details": {
+        "reasoning_tokens": 219
+      },
+      "total_tokens": 9728
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 23.6528,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005534076234Z"
+  },
+  {
+    "sequence": 19,
+    "block": 4,
+    "position": 4,
+    "profile": "verification",
+    "exit_code": 0,
+    "run_id": "20261104T005557827049Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6952
+      },
+      "output_tokens": 2849,
+      "output_tokens_details": {
+        "reasoning_tokens": 277
+      },
+      "total_tokens": 9804
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 25.7991,
+    "verification_deferred": true,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005557827049Z"
+  },
+  {
+    "sequence": 20,
+    "block": 4,
+    "position": 5,
+    "profile": "baseline",
+    "exit_code": 0,
+    "run_id": "20261104T005623711588Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 3666,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 3663
+      },
+      "output_tokens": 2748,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 6414
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 21.9026,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005623711588Z"
+  },
+  {
+    "sequence": 21,
+    "block": 5,
+    "position": 1,
+    "profile": "context",
+    "exit_code": 0,
+    "run_id": "20261104T005645708567Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6817,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6814
+      },
+      "output_tokens": 2858,
+      "output_tokens_details": {
+        "reasoning_tokens": 220
+      },
+      "total_tokens": 9675
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 25.049,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005645708567Z"
+  },
+  {
+    "sequence": 22,
+    "block": 5,
+    "position": 2,
+    "profile": "review",
+    "exit_code": 0,
+    "run_id": "20261104T005710866814Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6952
+      },
+      "output_tokens": 2790,
+      "output_tokens_details": {
+        "reasoning_tokens": 253
+      },
+      "total_tokens": 9745
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 26.4202,
+    "verification_deferred": true,
+    "review_deferred": true,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005710866814Z"
+  },
+  {
+    "sequence": 23,
+    "block": 5,
+    "position": 3,
+    "profile": "memory",
+    "exit_code": 0,
+    "run_id": "20261104T005737390288Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6952
+      },
+      "output_tokens": 2751,
+      "output_tokens_details": {
+        "reasoning_tokens": 256
+      },
+      "total_tokens": 9706
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 24.378,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005737390288Z"
+  },
+  {
+    "sequence": 24,
+    "block": 5,
+    "position": 4,
+    "profile": "baseline",
+    "exit_code": 0,
+    "run_id": "20261104T005801891966Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 3666,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 3663
+      },
+      "output_tokens": 2910,
+      "output_tokens_details": {
+        "reasoning_tokens": 228
+      },
+      "total_tokens": 6576
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 24.5826,
+    "verification_deferred": false,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005801891966Z"
+  },
+  {
+    "sequence": 25,
+    "block": 5,
+    "position": 5,
+    "profile": "verification",
+    "exit_code": 0,
+    "run_id": "20261104T005826578440Z",
+    "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+    "factory_revision": "3f371997922b9d0bf2b764f723e4379f59273049",
+    "model": "gpt-6.1-sol",
+    "provider_usage": {
+      "input_tokens": 6955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6952
+      },
+      "output_tokens": 2836,
+      "output_tokens_details": {
+        "reasoning_tokens": 309
+      },
+      "total_tokens": 9791
+    },
+    "proposed_file_count": 1,
+    "elapsed_seconds": 26.8995,
+    "verification_deferred": true,
+    "review_deferred": false,
+    "run_dir": "/Users/soham/Projects/agentic-software-factory-study/runs/scored-cohort-key-verified-2026-11-03/proposals/20261104T005826578440Z"
+  }
+]

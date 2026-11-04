@@ -1,0 +1,71 @@
+--- a/app/legacy_monolith.py
++++ b/app/legacy_monolith.py
+@@ -60,21 +60,48 @@
+     return [dict(row) for row in rows]
+ 
+ 
++def order_payload(db, row):
++    """Build the representation shared by order list and detail responses."""
++    order = dict(row)
++    order["items"] = [dict(item) for item in db.execute(
++        "SELECT sku, qty, unit_price_cents FROM order_items WHERE order_id = ?", (order["id"],)
++    ).fetchall()]
++    state = db.execute("SELECT status FROM orders WHERE id = ?", (order["id"],)).fetchone()[0]
++    if state != "active":
++        order["status"] = state
++    return order
++
++
+ def all_orders():
+     db = connect()
+     rows = db.execute("SELECT id, customer, city, subtotal_cents, shipping_cents, total_cents FROM orders ORDER BY id").fetchall()
+-    result = []
+-    for row in rows:
+-        order = dict(row)
+-        order["items"] = [dict(item) for item in db.execute(
+-            "SELECT sku, qty, unit_price_cents FROM order_items WHERE order_id = ?", (order["id"],)
+-        ).fetchall()]
+-        state = db.execute("SELECT status FROM orders WHERE id = ?", (order["id"],)).fetchone()[0]
+-        if state != "active":
+-            order["status"] = state
+-        result.append(order)
++    result = [order_payload(db, row) for row in rows]
+     db.close()
+     return result
++
++
++def order_detail(raw_id):
++    """Validate an ID and retrieve one order without changing persisted state."""
++    if not raw_id or not raw_id.isascii() or not raw_id.isdigit():
++        return 400, {"error": "invalid_order_id"}
++    normalized_id = raw_id.lstrip("0") or "0"
++    # SQLite integer primary keys cannot exceed the signed 64-bit range.
++    # Check before conversion to also handle arbitrarily long numeric IDs.
++    if len(normalized_id) > 19 or (
++        len(normalized_id) == 19 and normalized_id > "9223372036854775807"
++    ):
++        return 404, {"error": "order_not_found"}
++    db = connect()
++    try:
++        row = db.execute(
++            "SELECT id, customer, city, subtotal_cents, shipping_cents, total_cents FROM orders WHERE id = ?",
++            (int(normalized_id),),
++        ).fetchone()
++        if row is None:
++            return 404, {"error": "order_not_found"}
++        return 200, order_payload(db, row)
++    finally:
++        db.close()
+ 
+ 
+ def cancel_order(order_id):
+@@ -176,6 +203,9 @@
+             self._send(200, all_products())
+         elif self.path == "/api/orders":
+             self._send(200, all_orders())
++        elif self.path.startswith("/api/orders/"):
++            status, payload = order_detail(self.path[len("/api/orders/"):])
++            self._send(status, payload)
+         else:
+             self._send(404, {"error": "not_found"})
+ 

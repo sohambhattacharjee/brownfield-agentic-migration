@@ -1,0 +1,140 @@
+--- a/app/legacy_monolith.py
++++ b/app/legacy_monolith.py
+@@ -32,7 +32,8 @@
+             id INTEGER PRIMARY KEY AUTOINCREMENT, customer TEXT NOT NULL,
+             city TEXT NOT NULL, subtotal_cents INTEGER NOT NULL,
+             shipping_cents INTEGER NOT NULL, total_cents INTEGER NOT NULL,
+-            status TEXT NOT NULL DEFAULT 'active'
++            status TEXT NOT NULL DEFAULT 'active',
++            delivery_speed TEXT NOT NULL DEFAULT 'standard'
+         );
+         CREATE TABLE IF NOT EXISTS order_items (
+             order_id INTEGER NOT NULL, sku TEXT NOT NULL, qty INTEGER NOT NULL,
+@@ -43,6 +44,8 @@
+     order_columns = {row["name"] for row in db.execute("PRAGMA table_info(orders)")}
+     if "status" not in order_columns:
+         db.execute("ALTER TABLE orders ADD COLUMN status TEXT NOT NULL DEFAULT 'active'")
++    if "delivery_speed" not in order_columns:
++        db.execute("ALTER TABLE orders ADD COLUMN delivery_speed TEXT NOT NULL DEFAULT 'standard'")
+     if db.execute("SELECT COUNT(*) FROM products").fetchone()[0] == 0:
+         with open(SEED_PATH, encoding="utf-8") as seed_file:
+             products = json.load(seed_file)
+@@ -62,10 +65,12 @@
+ 
+ def all_orders():
+     db = connect()
+-    rows = db.execute("SELECT id, customer, city, subtotal_cents, shipping_cents, total_cents FROM orders ORDER BY id").fetchall()
++    rows = db.execute("SELECT id, customer, city, subtotal_cents, shipping_cents, total_cents, delivery_speed FROM orders ORDER BY id").fetchall()
+     result = []
+     for row in rows:
+         order = dict(row)
++        if order["delivery_speed"] == "standard":
++            order.pop("delivery_speed")
+         order["items"] = [dict(item) for item in db.execute(
+             "SELECT sku, qty, unit_price_cents FROM order_items WHERE order_id = ?", (order["id"],)
+         ).fetchall()]
+@@ -82,7 +87,7 @@
+     db = connect()
+     try:
+         row = db.execute(
+-            "SELECT id, customer, city, subtotal_cents, shipping_cents, total_cents, status "
++            "SELECT id, customer, city, subtotal_cents, shipping_cents, total_cents, status, delivery_speed "
+             "FROM orders WHERE id = ?", (order_id,)
+         ).fetchone()
+         if row is None:
+@@ -90,6 +95,8 @@
+         order = dict(row)
+         if order["status"] == "active":
+             order.pop("status")
++        if order["delivery_speed"] == "standard":
++            order.pop("delivery_speed")
+         order["items"] = [dict(item) for item in db.execute(
+             "SELECT sku, qty, unit_price_cents FROM order_items WHERE order_id = ?", (order_id,)
+         ).fetchall()]
+@@ -128,6 +135,9 @@
+     """Validate and persist one order; returns (status, response) for the HTTP layer."""
+     if not isinstance(payload, dict):
+         return 400, {"error": "invalid_request"}
++    delivery_speed = payload.get("delivery_speed", "standard")
++    if delivery_speed not in ("standard", "express"):
++        return 400, {"error": "invalid_delivery_speed"}
+     customer = payload.get("customer")
+     city = payload.get("city")
+     items = payload.get("items")
+@@ -158,7 +168,8 @@
+         normalized.append((sku, qty, product["price_cents"]))
+         subtotal += product["price_cents"] * qty
+ 
+-    encoded = json.dumps({"city": city, "subtotal_cents": subtotal}).encode("utf-8")
++    encoded = json.dumps({"city": city, "subtotal_cents": subtotal,
++                          "delivery_speed": delivery_speed}).encode("utf-8")
+     request = Request(shipping_url or SHIP_URL, data=encoded, headers={"Content-Type": "application/json"})
+     try:
+         with urlopen(request, timeout=2) as response:
+@@ -171,8 +182,8 @@
+     try:
+         db.execute("BEGIN")
+         cur = db.execute(
+-            "INSERT INTO orders (customer, city, subtotal_cents, shipping_cents, total_cents) VALUES (?, ?, ?, ?, ?)",
+-            (customer.strip(), city.strip(), subtotal, shipping_cost, subtotal + shipping_cost),
++            "INSERT INTO orders (customer, city, subtotal_cents, shipping_cents, total_cents, delivery_speed) VALUES (?, ?, ?, ?, ?, ?)",
++            (customer.strip(), city.strip(), subtotal, shipping_cost, subtotal + shipping_cost, delivery_speed),
+         )
+         order_id = cur.lastrowid
+         for sku, qty, price in normalized:
+@@ -184,9 +195,12 @@
+         db.close()
+         return 500, {"error": "persistence_error", "detail": str(exc)}
+     db.close()
+-    return 201, {"id": order_id, "customer": customer.strip(), "city": city.strip(),
+-                 "subtotal_cents": subtotal, "shipping_cents": shipping_cost,
+-                 "total_cents": subtotal + shipping_cost}
++    result = {"id": order_id, "customer": customer.strip(), "city": city.strip(),
++              "subtotal_cents": subtotal, "shipping_cents": shipping_cost,
++              "total_cents": subtotal + shipping_cost}
++    if delivery_speed == "express":
++        result["delivery_speed"] = delivery_speed
++    return 201, result
+ 
+ 
+ class Handler(BaseHTTPRequestHandler):
+--- a/app/shipping_service.py
++++ b/app/shipping_service.py
+@@ -4,8 +4,10 @@
+ import json
+ 
+ 
+-def quote(city, subtotal_cents):
++def quote(city, subtotal_cents, delivery_speed="standard"):
+     """Return a deterministic fictional shipping quote."""
++    if delivery_speed not in ("standard", "express"):
++        raise ValueError("invalid_delivery_speed")
+     if not isinstance(city, str) or not city.strip():
+         raise ValueError("city is required")
+     city_key = city.strip().lower()
+@@ -13,7 +15,11 @@
+     zone = zones.get(city_key, 4)
+     base = {1: 450, 2: 700, 3: 950, 4: 1200}[zone]
+     handling = 0 if subtotal_cents >= 5000 else 125
+-    return {"city": city.strip(), "zone": zone, "shipping_cents": base + handling}
++    result = {"city": city.strip(), "zone": zone, "shipping_cents": base + handling}
++    if delivery_speed == "express":
++        result["shipping_cents"] += 800
++        result["delivery_speed"] = delivery_speed
++    return result
+ 
+ 
+ class Handler(BaseHTTPRequestHandler):
+@@ -29,7 +35,11 @@
+             return
+         try:
+             body = json.loads(self.rfile.read(int(self.headers.get("Content-Length", "0"))))
+-            result = quote(body.get("city"), int(body.get("subtotal_cents", 0)))
++            delivery_speed = body.get("delivery_speed", "standard")
++            if delivery_speed not in ("standard", "express"):
++                self._send(400, {"error": "invalid_delivery_speed"})
++                return
++            result = quote(body.get("city"), int(body.get("subtotal_cents", 0)), delivery_speed)
+             self._send(200, result)
+         except (ValueError, TypeError, json.JSONDecodeError) as exc:
+             self._send(400, {"error": "invalid_request", "detail": str(exc)})

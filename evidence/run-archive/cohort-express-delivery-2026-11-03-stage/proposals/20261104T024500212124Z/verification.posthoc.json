@@ -1,0 +1,20 @@
+{
+  "run_id": "20261104T024500212124Z",
+  "profile": "verification",
+  "returncode": 0,
+  "timed_out": false,
+  "acceptance_passed": 5,
+  "acceptance_total": 5,
+  "regression_passed": 14,
+  "regression_total": 14,
+  "combined_passed": 19,
+  "combined_total": 19,
+  "failed_or_errored": 0,
+  "all_nineteen_pass": true,
+  "duration_seconds": 0.092,
+  "test_tree_restored_from_verification_revision": "cdd78a3671120e99fdb8ef96711895186d859cbd",
+  "stdout": "test_cancel_marks_order_and_restores_stock (test_cancellation_acceptance.CancellationAcceptanceTests) ... ok\ntest_cancel_unknown_order_returns_not_found (test_cancellation_acceptance.CancellationAcceptanceTests) ... ok\ntest_repeated_cancel_does_not_restore_stock_twice (test_cancellation_acceptance.CancellationAcceptanceTests) ... ok\ntest_concurrent_cancellation_restores_stock_once (test_cancellation_hardening.CancellationHardeningTests) ... ok\ntest_http_handler_routes_delete_and_returns_canceled_order_status (test_cancellation_hardening.CancellationHardeningTests) ... ok\ntest_initialize_migrates_legacy_orders_and_is_idempotent (test_cancellation_hardening.CancellationHardeningTests) ... ok\ntest_insufficient_stock_does_not_call_shipping_service (test_characterization.CharacterizationTests) ... ok\ntest_order_persists_total_items_and_stock_decrement (test_characterization.CharacterizationTests) ... ok\ntest_seeded_products_are_stable (test_characterization.CharacterizationTests) ... ok\ntest_shipping_unavailable_does_not_create_order_or_change_stock (test_characterization.CharacterizationTests) ... ok\ntest_shipping_zone_quote_is_deterministic (test_characterization.CharacterizationTests) ... ok\ntest_express_speed_is_forwarded_persisted_and_surcharged (test_delivery_speed_acceptance.DeliverySpeedAcceptanceTests) ... ok\ntest_legacy_schema_migration_defaults_existing_orders_to_standard (test_delivery_speed_acceptance.DeliverySpeedAcceptanceTests) ... ok\ntest_shipping_http_contract_keeps_standard_default_and_supports_express (test_delivery_speed_acceptance.DeliverySpeedAcceptanceTests) ... ok\ntest_standard_speed_is_default_and_preserves_existing_totals (test_delivery_speed_acceptance.DeliverySpeedAcceptanceTests) ... ok\ntest_unsupported_speed_is_rejected_before_shipping_or_mutation (test_delivery_speed_acceptance.DeliverySpeedAcceptanceTests) ... ok\ntest_detail_endpoint_returns_same_representation_as_order_list (test_order_detail_acceptance.OrderDetailAcceptanceTests) ... ok\ntest_detail_malformed_order_id_returns_bad_request (test_order_detail_acceptance.OrderDetailAcceptanceTests) ... ok\ntest_detail_unknown_order_returns_not_found (test_order_detail_acceptance.OrderDetailAcceptanceTests) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.036s\n\nOK\nlegacy: \"DELETE /api/orders/1 HTTP/1.0\" 200 -\nlegacy: \"GET /api/orders HTTP/1.0\" 200 -\nshipping: \"POST /quote HTTP/1.0\" 200 -\nshipping: \"POST /quote HTTP/1.0\" 200 -\nshipping: \"POST /quote HTTP/1.0\" 400 -\nlegacy: \"GET /api/orders HTTP/1.0\" 200 -\nlegacy: \"GET /api/orders/1 HTTP/1.0\" 200 -\nlegacy: \"GET /api/orders/not-a-number HTTP/1.0\" 400 -\nlegacy: \"GET /api/orders/99999 HTTP/1.0\" 404 -\n",
+  "proposed_test_files_differing_from_original_generation_target": [],
+  "proposal_target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+  "verification_target_revision": "cdd78a3671120e99fdb8ef96711895186d859cbd"
+}

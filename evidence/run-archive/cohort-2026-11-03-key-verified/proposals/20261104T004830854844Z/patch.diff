@@ -1,0 +1,90 @@
+--- a/app/legacy_monolith.py
++++ b/app/legacy_monolith.py
+@@ -31,7 +31,8 @@
+         CREATE TABLE IF NOT EXISTS orders (
+             id INTEGER PRIMARY KEY AUTOINCREMENT, customer TEXT NOT NULL,
+             city TEXT NOT NULL, subtotal_cents INTEGER NOT NULL,
+-            shipping_cents INTEGER NOT NULL, total_cents INTEGER NOT NULL
++            shipping_cents INTEGER NOT NULL, total_cents INTEGER NOT NULL,
++            canceled INTEGER NOT NULL DEFAULT 0
+         );
+         CREATE TABLE IF NOT EXISTS order_items (
+             order_id INTEGER NOT NULL, sku TEXT NOT NULL, qty INTEGER NOT NULL,
+@@ -39,6 +40,8 @@
+             FOREIGN KEY(order_id) REFERENCES orders(id)
+         );
+     """)
++    if "canceled" not in {row["name"] for row in db.execute("PRAGMA table_info(orders)")}:
++        db.execute("ALTER TABLE orders ADD COLUMN canceled INTEGER NOT NULL DEFAULT 0")
+     if db.execute("SELECT COUNT(*) FROM products").fetchone()[0] == 0:
+         with open(SEED_PATH, encoding="utf-8") as seed_file:
+             products = json.load(seed_file)
+@@ -58,16 +61,47 @@
+ 
+ def all_orders():
+     db = connect()
+-    rows = db.execute("SELECT id, customer, city, subtotal_cents, shipping_cents, total_cents FROM orders ORDER BY id").fetchall()
++    rows = db.execute("SELECT id, customer, city, subtotal_cents, shipping_cents, total_cents, canceled FROM orders ORDER BY id").fetchall()
+     result = []
+     for row in rows:
+         order = dict(row)
++        # Preserve the existing response shape for orders that have not been canceled.
++        if order.pop("canceled"):
++            order["status"] = "canceled"
+         order["items"] = [dict(item) for item in db.execute(
+             "SELECT sku, qty, unit_price_cents FROM order_items WHERE order_id = ?", (order["id"],)
+         ).fetchall()]
+         result.append(order)
+     db.close()
+     return result
++
++
++def cancel_order(order_id):
++    """Cancel and restore stock atomically; serialize competing cancellations."""
++    db = connect()
++    try:
++        db.execute("BEGIN IMMEDIATE")
++        order = db.execute("SELECT canceled FROM orders WHERE id = ?", (order_id,)).fetchone()
++        if order is None:
++            db.rollback()
++            return 404, {"error": "order_not_found"}
++        if order["canceled"]:
++            db.rollback()
++            return 409, {"error": "already_canceled"}
++        items = db.execute(
++            "SELECT sku, qty FROM order_items WHERE order_id = ?", (order_id,)
++        ).fetchall()
++        for item in items:
++            db.execute("UPDATE products SET stock = stock + ? WHERE sku = ?",
++                       (item["qty"], item["sku"]))
++        db.execute("UPDATE orders SET canceled = 1 WHERE id = ?", (order_id,))
++        db.commit()
++        return 200, {"status": "canceled"}
++    except sqlite3.Error as exc:
++        db.rollback()
++        return 500, {"error": "persistence_error", "detail": str(exc)}
++    finally:
++        db.close()
+ 
+ 
+ def place_order(payload, shipping_url=None):
+@@ -157,6 +191,19 @@
+         except (ValueError, json.JSONDecodeError) as exc:
+             self._send(400, {"error": "invalid_json", "detail": str(exc)})
+ 
++    def do_DELETE(self):
++        prefix = "/api/orders/"
++        if not self.path.startswith(prefix):
++            self._send(404, {"error": "not_found"})
++            return
++        order_id = self.path[len(prefix):]
++        if not order_id.isascii() or not order_id.isdecimal():
++            self._send(404, {"error": "not_found"})
++            return
++        # Bind the numeric text directly to avoid integer overflow for unknown IDs.
++        status, response = cancel_order(order_id)
++        self._send(status, response)
++
+     def _send(self, status, payload):
+         encoded = json.dumps(payload).encode("utf-8")
+         self.send_response(status)

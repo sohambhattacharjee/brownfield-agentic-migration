@@ -1,0 +1,21 @@
+--- a/app/legacy_monolith.py
++++ b/app/legacy_monolith.py
+@@ -176,6 +176,18 @@
+             self._send(200, all_products())
+         elif self.path == "/api/orders":
+             self._send(200, all_orders())
++        elif self.path.startswith("/api/orders/"):
++            raw_id = self.path[len("/api/orders/"):]
++            if not raw_id.isascii() or not raw_id.isdigit():
++                self._send(400, {"error": "invalid_order_id"})
++                return
++            # Compare normalized decimal strings to handle even very large IDs.
++            order_id = raw_id.lstrip("0") or "0"
++            for order in all_orders():
++                if str(order["id"]) == order_id:
++                    self._send(200, order)
++                    return
++            self._send(404, {"error": "order_not_found"})
+         else:
+             self._send(404, {"error": "not_found"})
+ 

@@ -1,0 +1,20 @@
+{
+  "run_id": "20261104T021548819109Z",
+  "profile": "review",
+  "returncode": 0,
+  "timed_out": false,
+  "acceptance_passed": 3,
+  "acceptance_total": 3,
+  "regression_passed": 11,
+  "regression_total": 11,
+  "combined_passed": 14,
+  "combined_total": 14,
+  "failed_or_errored": 0,
+  "all_fourteen_pass": true,
+  "duration_seconds": 0.083,
+  "stdout": "test_cancel_marks_order_and_restores_stock (test_cancellation_acceptance.CancellationAcceptanceTests) ... ok\ntest_cancel_unknown_order_returns_not_found (test_cancellation_acceptance.CancellationAcceptanceTests) ... ok\ntest_repeated_cancel_does_not_restore_stock_twice (test_cancellation_acceptance.CancellationAcceptanceTests) ... ok\ntest_concurrent_cancellation_restores_stock_once (test_cancellation_hardening.CancellationHardeningTests) ... ok\ntest_http_handler_routes_delete_and_returns_canceled_order_status (test_cancellation_hardening.CancellationHardeningTests) ... ok\ntest_initialize_migrates_legacy_orders_and_is_idempotent (test_cancellation_hardening.CancellationHardeningTests) ... ok\ntest_insufficient_stock_does_not_call_shipping_service (test_characterization.CharacterizationTests) ... ok\ntest_order_persists_total_items_and_stock_decrement (test_characterization.CharacterizationTests) ... ok\ntest_seeded_products_are_stable (test_characterization.CharacterizationTests) ... ok\ntest_shipping_unavailable_does_not_create_order_or_change_stock (test_characterization.CharacterizationTests) ... ok\ntest_shipping_zone_quote_is_deterministic (test_characterization.CharacterizationTests) ... ok\ntest_detail_endpoint_returns_same_representation_as_order_list (test_order_detail_acceptance.OrderDetailAcceptanceTests) ... ok\ntest_detail_malformed_order_id_returns_bad_request (test_order_detail_acceptance.OrderDetailAcceptanceTests) ... ok\ntest_detail_unknown_order_returns_not_found (test_order_detail_acceptance.OrderDetailAcceptanceTests) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.026s\n\nOK\nlegacy: \"DELETE /api/orders/1 HTTP/1.0\" 200 -\nlegacy: \"GET /api/orders HTTP/1.0\" 200 -\nlegacy: \"GET /api/orders HTTP/1.0\" 200 -\nlegacy: \"GET /api/orders/1 HTTP/1.0\" 200 -\nlegacy: \"GET /api/orders/not-a-number HTTP/1.0\" 400 -\nlegacy: \"GET /api/orders/99999 HTTP/1.0\" 404 -\n",
+  "proposed_test_files_differing_from_original_pinned_baseline": [],
+  "test_tree_diff_from_amended_verification_revision_due_to_harness_update": true,
+  "verification_target_revision": "18871992998bb88d7dc239adb072efb820b3f9f7",
+  "proposal_target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5"
+}

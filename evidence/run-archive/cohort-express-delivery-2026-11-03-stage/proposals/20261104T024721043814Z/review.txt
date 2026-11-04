@@ -1,0 +1,5 @@
+{
+  "summary": "The patch consistently adds optional express delivery while preserving standard-delivery pricing and response shapes. It includes backward-compatible schema migration, validation before order processing, forwarding to shipping, persistence, and retrieval. The supplied independent verification reports all 19 acceptance and regression tests passing.",
+  "findings": [],
+  "verdict": "approve"
+}

@@ -1,0 +1,49 @@
+--- a/app/legacy_monolith.py
++++ b/app/legacy_monolith.py
+@@ -77,6 +77,28 @@
+     return result
+ 
+ 
++def get_order(order_id):
++    """Read one order using the same representation as the order list."""
++    db = connect()
++    try:
++        row = db.execute(
++            "SELECT id, customer, city, subtotal_cents, shipping_cents, total_cents, status "
++            "FROM orders WHERE id = ?", (order_id,)
++        ).fetchone()
++        if row is None:
++            return None
++        order = dict(row)
++        state = order.pop("status")
++        order["items"] = [dict(item) for item in db.execute(
++            "SELECT sku, qty, unit_price_cents FROM order_items WHERE order_id = ?", (order["id"],)
++        ).fetchall()]
++        if state != "active":
++            order["status"] = state
++        return order
++    finally:
++        db.close()
++
++
+ def cancel_order(order_id):
+     """Cancel one order atomically and restore its inventory exactly once."""
+     db = connect()
+@@ -176,6 +198,17 @@
+             self._send(200, all_products())
+         elif self.path == "/api/orders":
+             self._send(200, all_orders())
++        elif self.path.startswith("/api/orders/"):
++            raw_id = self.path[len("/api/orders/"):]
++            if not raw_id.isascii() or not raw_id.isdigit():
++                self._send(400, {"error": "invalid_order_id"})
++                return
++            # Bind decimal text so even IDs larger than SQLite integers return 404.
++            order = get_order(raw_id)
++            if order is None:
++                self._send(404, {"error": "order_not_found"})
++            else:
++                self._send(200, order)
+         else:
+             self._send(404, {"error": "not_found"})
+ 
