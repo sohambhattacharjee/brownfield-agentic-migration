@@ -1,0 +1,67 @@
+{
+  "captured_local_date": "2026-11-03",
+  "classification": "frozen exploratory follow-up pilot plan; recorded before scored model runs",
+  "cohort_id": "cohort-express-delivery-2026-11-03-stage",
+  "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+  "factory_revision": "a7ea40c",
+  "task_file": "tasks/add-express-delivery.md",
+  "model_id": "gpt-6.1-sol",
+  "api": "OpenAI Responses API",
+  "request_settings": {
+    "store": false,
+    "other_generation_parameters": "API defaults"
+  },
+  "repetitions_per_profile": 3,
+  "profiles": [
+    "baseline",
+    "context",
+    "memory",
+    "verification",
+    "review"
+  ],
+  "planned_proposal_responses": 15,
+  "planned_review_responses": 3,
+  "planned_model_responses": 18,
+  "order_randomization": {
+    "algorithm": "Python random.Random(seed).sample(all_profiles, 5), independently per block",
+    "seed": 20261103,
+    "blocks": [
+      [
+        "baseline",
+        "context",
+        "review",
+        "memory",
+        "verification"
+      ],
+      [
+        "review",
+        "context",
+        "baseline",
+        "verification",
+        "memory"
+      ],
+      [
+        "context",
+        "verification",
+        "baseline",
+        "review",
+        "memory"
+      ]
+    ]
+  },
+  "per_run_outcomes": {
+    "primary": "Count of 5 fixed cross-service acceptance checks passed (0-5).",
+    "regression": "Count of 14 existing cancellation, order-detail, and characterization checks passed (0-14).",
+    "combined": "Count across all 19 fixed checks (0-19), plus all-checks-passed indicator.",
+    "review": "Record findings separately; same provider/model is not independent review."
+  },
+  "baseline_record": "evidence/task-preparation/express-delivery-baseline-2026-11-03.json",
+  "evaluation_procedure": "For each proposal, defer code execution in the API-enabled process. Evaluate the saved proposal in a separate restricted local copy, replacing its test tree with the exact pinned tests. Remove OPENAI_API_KEY and OPENAI_MODEL from test subprocesses. The HTTP handler tests use Unix socket pairs; no TCP listener is required. For review-profile runs, send the saved diff and verification record to a separate review call after evaluation.",
+  "failure_policy": "Record API errors, invalid JSON, timeouts, and test failures as observed; do not silently retry or replace attempts.",
+  "interpretation": "Exploratory synthetic case study with three repetitions per profile. The task crosses a legacy monolith, database migration, and integrated shipping service; findings remain task-specific and are not powered for broad causal claims.",
+  "excluded_runs": [
+    "Prior cancellation and order-detail cohorts; distinct tasks/revisions.",
+    "API credential diagnostics; not scored."
+  ],
+  "privacy_and_scope": "Only independently created synthetic repository content, requirements, and tests are sent. No employer material or work-factory access is used. Requests set store=false; both repositories remain private."
+}
