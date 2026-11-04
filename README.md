@@ -42,6 +42,8 @@ The baseline snapshot and evidence protocol are in [`evidence/baseline/`](eviden
 
 The cancellation task has a separate fixed acceptance suite at `tests/test_cancellation_acceptance.py`. On the prepared pre-implementation revision, those three checks are expected to fail because cancellation is not implemented; the characterization suite above should continue to pass. Use the full suite as the factory's verification command.
 
+The private follow-up branch `codex/followup-onboarding` adds a schema upgrade for legacy databases, idempotent order cancellation, a read-only order-detail endpoint, and sandbox-compatible HTTP handler tests. Its 14-test verification record is in [`evidence/stages/order-detail-implementation-verification.json`](evidence/stages/order-detail-implementation-verification.json). The original `main` baseline and first scored cohort remain unchanged.
+
 ## Repository map
 
 - `app/legacy_monolith.py` — legacy order workflow, persistence, validation, and shipping-service client in one module.

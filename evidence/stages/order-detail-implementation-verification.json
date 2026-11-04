@@ -1,0 +1,20 @@
+{
+  "captured_local_date": "2026-11-04",
+  "classification": "follow-up synthetic implementation verification",
+  "implementation_revision": "161700760aadade284d13636c0b810d553815df2",
+  "pre_feature_verification_revision": "18871992998bb88d7dc239adb072efb820b3f9f7",
+  "command": "python3 -m unittest discover -s tests -v",
+  "test_count": 14,
+  "passed": 14,
+  "failed": 0,
+  "errors": 0,
+  "breakdown": {
+    "order_detail_acceptance": 3,
+    "cancellation_acceptance": 3,
+    "cancellation_hardening": 3,
+    "characterization": 5
+  },
+  "api_key_in_test_process": false,
+  "network_test_method": "Raw HTTP over AF_UNIX socket pairs; no TCP listener or external network required.",
+  "implementation_source": "Independently authored on the private follow-up branch; no proposal patch was transferred into the target."
+}
