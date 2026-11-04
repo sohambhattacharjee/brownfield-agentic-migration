@@ -3,7 +3,7 @@
   "classification": "frozen exploratory follow-up pilot plan; recorded before scored model runs",
   "cohort_id": "cohort-express-delivery-2026-11-03-stage",
   "target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
-  "factory_revision": "a7ea40c",
+  "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
   "task_file": "tasks/add-express-delivery.md",
   "model_id": "gpt-6.1-sol",
   "api": "OpenAI Responses API",
