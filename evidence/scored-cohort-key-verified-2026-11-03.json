@@ -6,8 +6,8 @@
   "model": "gpt-6.1-sol",
   "proposal_runs_completed": 25,
   "planned_review_calls": 5,
-  "review_calls_completed": 0,
-  "review_status": "not completed: no review response or response ID was saved. A direct Keychain lookup afterward could not find the expected item; local evidence cannot establish whether the first waiting request reached the API before interruption.",
+  "review_calls_completed": 5,
+  "review_status": "complete: all five planned second-pass reviews saved",
   "evaluation_method": "Each proposal snapshot was copied to a separate local directory; its proposed tests were replaced with the pinned baseline tests before unittest discovery. OPENAI_API_KEY and OPENAI_MODEL were removed from test subprocess environments.",
   "pinned_test_tree_sha256": "6687d3950f6b3bacca8117151cc34ab9d2746a4deb96d1f04e7cf58fbe9b8232",
   "overall": {
@@ -102,7 +102,8 @@
         "total_tokens": 6493
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T004830854844Z",
@@ -128,7 +129,8 @@
         "total_tokens": 9761
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T004859116772Z",
@@ -154,7 +156,26 @@
         "total_tokens": 9679
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": {
+        "verdict": "approve",
+        "finding_count": 0,
+        "summary": "Approve based on the supplied patch and verification record. Cancellation atomically restores inventory and marks the order canceled, rejects repeated cancellation without restoring stock twice, and returns 404 for unknown orders. The schema change includes migration support for existing databases, and active orders retain their existing response shape. All eight independently run tests passed, with no test modifications reported.",
+        "response_id": "resp_077b3ca873b1782c016aea91bc67e487d086ad3672a1b61ebc",
+        "model": "gpt-6.1-sol",
+        "usage": {
+          "input_tokens": 1377,
+          "input_tokens_details": {
+            "cache_write_tokens": 1374,
+            "cached_tokens": 0
+          },
+          "output_tokens": 178,
+          "output_tokens_details": {
+            "reasoning_tokens": 91
+          },
+          "total_tokens": 1555
+        }
+      }
     },
     {
       "run_id": "20261104T004923572166Z",
@@ -180,7 +201,8 @@
         "total_tokens": 9790
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T004947001743Z",
@@ -206,7 +228,8 @@
         "total_tokens": 9936
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005013995120Z",
@@ -232,7 +255,26 @@
         "total_tokens": 9916
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": {
+        "verdict": "approve",
+        "finding_count": 0,
+        "summary": "The patch adds order cancellation with transactional inventory restoration, prevents duplicate restoration on repeated or concurrent cancellations, and migrates existing databases while preserving the representation of active orders. The independent verification reports all eight tests passing with no test modifications. No blocking issues were identified in the supplied context; concurrent cancellation and legacy-schema migration are not explicitly covered by the reported tests.",
+        "response_id": "resp_0a2bf069fed30151016aea91e0908487d09a578d698c4dc865",
+        "model": "gpt-6.1-sol",
+        "usage": {
+          "input_tokens": 1485,
+          "input_tokens_details": {
+            "cache_write_tokens": 1482,
+            "cached_tokens": 0
+          },
+          "output_tokens": 145,
+          "output_tokens_details": {
+            "reasoning_tokens": 57
+          },
+          "total_tokens": 1630
+        }
+      }
     },
     {
       "run_id": "20261104T005043687747Z",
@@ -258,7 +300,8 @@
         "total_tokens": 9742
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005112136228Z",
@@ -284,7 +327,8 @@
         "total_tokens": 6406
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005136202187Z",
@@ -310,7 +354,8 @@
         "total_tokens": 9770
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005202635216Z",
@@ -336,7 +381,8 @@
         "total_tokens": 9859
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005230981810Z",
@@ -362,7 +408,8 @@
         "total_tokens": 9646
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005254653571Z",
@@ -388,7 +435,8 @@
         "total_tokens": 9861
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005323784567Z",
@@ -414,7 +462,8 @@
         "total_tokens": 6543
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005349672713Z",
@@ -440,7 +489,26 @@
         "total_tokens": 9706
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": {
+        "verdict": "approve",
+        "finding_count": 0,
+        "summary": "Approve based on the supplied patch and verification record. Cancellation restores inventory and marks the order canceled within one serialized transaction, rejects missing or already canceled orders, and preserves existing active-order response fields. The migration supports existing databases. All eight recorded tests passed, with no proposed test changes.",
+        "response_id": "resp_003aff75231cfd3f016aea91e5add487d0888b715cd7a2b63c",
+        "model": "gpt-6.1-sol",
+        "usage": {
+          "input_tokens": 1367,
+          "input_tokens_details": {
+            "cache_write_tokens": 1364,
+            "cached_tokens": 0
+          },
+          "output_tokens": 165,
+          "output_tokens_details": {
+            "reasoning_tokens": 91
+          },
+          "total_tokens": 1532
+        }
+      }
     },
     {
       "run_id": "20261104T005414617282Z",
@@ -466,7 +534,8 @@
         "total_tokens": 9901
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005442167590Z",
@@ -492,7 +561,8 @@
         "total_tokens": 9732
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005506362087Z",
@@ -518,7 +588,26 @@
         "total_tokens": 9874
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": {
+        "verdict": "approve",
+        "finding_count": 0,
+        "summary": "Approve based on the supplied patch and verification record. Cancellation restores stock and marks the order canceled in one transaction, while repeated cancellation is rejected without restoring stock twice. The schema migration supports existing orders, and active-order response fields remain unchanged. All eight reported tests passed; HTTP routing and migration coverage are not demonstrated by the supplied test output.",
+        "response_id": "resp_040b68af2859b678016aea91eb003087d0a3c104598f189c1e",
+        "model": "gpt-6.1-sol",
+        "usage": {
+          "input_tokens": 1445,
+          "input_tokens_details": {
+            "cache_write_tokens": 1442,
+            "cached_tokens": 0
+          },
+          "output_tokens": 169,
+          "output_tokens_details": {
+            "reasoning_tokens": 84
+          },
+          "total_tokens": 1614
+        }
+      }
     },
     {
       "run_id": "20261104T005534076234Z",
@@ -544,7 +633,8 @@
         "total_tokens": 9728
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005557827049Z",
@@ -570,7 +660,8 @@
         "total_tokens": 9804
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005623711588Z",
@@ -596,7 +687,8 @@
         "total_tokens": 6414
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005645708567Z",
@@ -622,7 +714,8 @@
         "total_tokens": 9675
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005710866814Z",
@@ -648,7 +741,26 @@
         "total_tokens": 9745
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": {
+        "verdict": "approve",
+        "finding_count": 0,
+        "summary": "Approve based on the supplied patch and verification record. Cancellation restores stock and marks the order canceled in one serialized transaction, prevents duplicate restoration, and preserves the response shape for active orders. The schema update handles existing databases. All eight reported tests passed without changes to the pinned tests; migration, HTTP routing, and concurrent cancellation are not explicitly covered by the listed tests.",
+        "response_id": "resp_02bed4fa34072821016aea91f0490487d0ace4d87426a39885",
+        "model": "gpt-6.1-sol",
+        "usage": {
+          "input_tokens": 1405,
+          "input_tokens_details": {
+            "cache_write_tokens": 1402,
+            "cached_tokens": 0
+          },
+          "output_tokens": 191,
+          "output_tokens_details": {
+            "reasoning_tokens": 101
+          },
+          "total_tokens": 1596
+        }
+      }
     },
     {
       "run_id": "20261104T005737390288Z",
@@ -674,7 +786,8 @@
         "total_tokens": 9706
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005801891966Z",
@@ -700,7 +813,8 @@
         "total_tokens": 6576
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     },
     {
       "run_id": "20261104T005826578440Z",
@@ -726,8 +840,25 @@
         "total_tokens": 9791
       },
       "review_performed": false,
-      "review_usage": null
+      "review_usage": null,
+      "review": null
     }
   ],
-  "interpretation_limit": "All proposed changes passed the fixed suite in this pilot, but there is no variance to distinguish profiles on this binary outcome; this does not establish causal or general claims. The review profile has not yet received its planned second-pass review."
+  "interpretation_limit": "All proposed changes passed the fixed suite, and all five same-model second-pass reviews returned approve with no findings. This single-task exploratory pilot has ceiling effects and non-independent reviews; it does not establish causal or general claims. Reviewer-noted coverage gaps are recorded separately from the preregistered outcome.",
+  "review_summary": {
+    "calls_completed": 5,
+    "verdict_counts": {
+      "approve": 5
+    },
+    "finding_count_total": 0,
+    "input_tokens": 7079,
+    "output_tokens": 848,
+    "total_tokens": 7927,
+    "independence_note": "The review model was the same model used to produce proposals; reviews are a second pass, not an independent assessment."
+  },
+  "review_evidence_gaps_noted_by_reviewer": [
+    "Migration behavior is not explicitly covered by the fixed tests (noted in 3 of 5 review summaries).",
+    "HTTP routing behavior is not explicitly demonstrated by the fixed test output (noted in 2 of 5 summaries).",
+    "Concurrent cancellation behavior is not explicitly covered by the fixed tests (noted in 2 of 5 summaries)."
+  ]
 }
