@@ -1,0 +1,783 @@
+{
+  "cohort_id": "cohort-express-delivery-2026-11-03-stage",
+  "classification": "exploratory follow-up pilot; three repetitions per profile for one synthetic cross-service task",
+  "task": "add optional express delivery across the legacy order API and newer shipping service",
+  "proposal_target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+  "verification_target_revision": "cdd78a3671120e99fdb8ef96711895186d859cbd",
+  "factory_revision": "a7ea40c92249da5f71e1c52f352f4c98761f3aa0",
+  "model": "gpt-6.1-sol",
+  "proposal_calls_completed": 15,
+  "review_calls_completed": 3,
+  "model_responses_total": 18,
+  "preregistration": "evidence/task-preparation/preregistration-express-delivery-2026-11-03.json",
+  "verification_amendment": "evidence/task-preparation/protocol-amendment-express-delivery-2026-11-03.json",
+  "initial_test_spec_mismatch": {
+    "runs": 15,
+    "all_acceptance_passed_runs": 1,
+    "acceptance_checks_passed": 61,
+    "regression_checks_passed": 210,
+    "description": "The initial test asserted a particular invalid-speed error body that the frozen task did not require. All runs returned HTTP 400; this over-specific assertion failed for 14 of 15 proposals. Those provisional results are preserved in verification.pre-amendment.json."
+  },
+  "evaluation_method": "Saved proposals were evaluated in independent disposable directories using the corrected pinned test tree. Proposed test files were compared with the original generation revision; none changed. API credentials and model variables were removed from test subprocesses. HTTP tests use AF_UNIX socket pairs, with no TCP listeners.",
+  "baseline_on_verification_revision": {
+    "passed": 14,
+    "failed": 5,
+    "errors": 0,
+    "expected_failures": "Five new express-delivery acceptance checks are unimplemented on the fixed pre-feature revision."
+  },
+  "overall": {
+    "acceptance_passed": 75,
+    "acceptance_total": 75,
+    "regression_passed": 210,
+    "regression_total": 210,
+    "combined_passed": 285,
+    "combined_total": 285,
+    "all_nineteen_pass_runs": 15,
+    "proposals_changing_original_test_files": 0
+  },
+  "by_profile": {
+    "baseline": {
+      "n": 3,
+      "acceptance_passed": 15,
+      "regression_passed": 42,
+      "all_nineteen_pass": 3,
+      "proposal_input_tokens": 14631,
+      "proposal_output_tokens": 11833,
+      "proposal_total_tokens": 26464,
+      "review_calls": 0,
+      "review_verdicts": {}
+    },
+    "context": {
+      "n": 3,
+      "acceptance_passed": 15,
+      "regression_passed": 42,
+      "all_nineteen_pass": 3,
+      "proposal_input_tokens": 79824,
+      "proposal_output_tokens": 11623,
+      "proposal_total_tokens": 91447,
+      "review_calls": 0,
+      "review_verdicts": {}
+    },
+    "review": {
+      "n": 3,
+      "acceptance_passed": 15,
+      "regression_passed": 42,
+      "all_nineteen_pass": 3,
+      "proposal_input_tokens": 80238,
+      "proposal_output_tokens": 11798,
+      "proposal_total_tokens": 92036,
+      "review_calls": 3,
+      "review_verdicts": {
+        "approve": 3
+      }
+    },
+    "memory": {
+      "n": 3,
+      "acceptance_passed": 15,
+      "regression_passed": 42,
+      "all_nineteen_pass": 3,
+      "proposal_input_tokens": 80238,
+      "proposal_output_tokens": 11696,
+      "proposal_total_tokens": 91934,
+      "review_calls": 0,
+      "review_verdicts": {}
+    },
+    "verification": {
+      "n": 3,
+      "acceptance_passed": 15,
+      "regression_passed": 42,
+      "all_nineteen_pass": 3,
+      "proposal_input_tokens": 80238,
+      "proposal_output_tokens": 11678,
+      "proposal_total_tokens": 91916,
+      "review_calls": 0,
+      "review_verdicts": {}
+    }
+  },
+  "reviews": {
+    "verdict_counts": {
+      "approve": 3
+    },
+    "findings_total": 0,
+    "input_tokens": 7982,
+    "output_tokens": 433,
+    "total_tokens": 8415,
+    "independence_note": "The review model is the same as the proposal model; these are not independent assessments."
+  },
+  "review_evidence": [
+    {
+      "run_id": "20261104T024209915634Z",
+      "profile": "review",
+      "proposal_response_id": "resp_02af759634aa7977016aea9b82212487d09ea856f2a5052301",
+      "proposal_usage": {
+        "input_tokens": 26746,
+        "input_tokens_details": {
+          "cache_write_tokens": 26743,
+          "cached_tokens": 0
+        },
+        "output_tokens": 3909,
+        "output_tokens_details": {
+          "reasoning_tokens": 99
+        },
+        "total_tokens": 30655
+      },
+      "proposal_elapsed_seconds": 27.3514,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.096,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": {
+        "verdict": "approve",
+        "finding_count": 0,
+        "summary": "The patch consistently validates, forwards, persists, and returns express delivery speed while preserving standard-delivery totals and response representations. Schema migration defaults existing orders to standard delivery and remains idempotent. The supplied verification record reports all 5 acceptance and 14 regression tests passing. No actionable defects were identified in the supplied patch.",
+        "response_id": "resp_0c2ce7cf6d4061e0016aea9dd5278887d08d977ab83f56e8db",
+        "model": "gpt-6.1-sol",
+        "usage": {
+          "input_tokens": 2657,
+          "input_tokens_details": {
+            "cache_write_tokens": 2654,
+            "cached_tokens": 0
+          },
+          "output_tokens": 132,
+          "output_tokens_details": {
+            "reasoning_tokens": 50
+          },
+          "total_tokens": 2789
+        }
+      }
+    },
+    {
+      "run_id": "20261104T024334549864Z",
+      "profile": "review",
+      "proposal_response_id": "resp_0e65e06f15aae2bd016aea9bd6c55487d0b5d6c34f69ef9b68",
+      "proposal_usage": {
+        "input_tokens": 26746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 26743
+        },
+        "output_tokens": 3950,
+        "output_tokens_details": {
+          "reasoning_tokens": 154
+        },
+        "total_tokens": 30696
+      },
+      "proposal_elapsed_seconds": 29.053,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.093,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": {
+        "verdict": "approve",
+        "finding_count": 0,
+        "summary": "Approve based on the supplied patch and independent verification record. The change validates delivery speed before order processing, forwards it for shipping quotes, applies the express surcharge, persists the selection, and migrates existing orders to standard delivery. Standard response representations and pricing remain unchanged. Verification reports all 19 acceptance and regression tests passing. No actionable defects were identified in the supplied context.",
+        "response_id": "resp_0ee538211bf319c2016aea9dd95f4487d0bf7d44f175c0477f",
+        "model": "gpt-6.1-sol",
+        "usage": {
+          "input_tokens": 2663,
+          "input_tokens_details": {
+            "cache_write_tokens": 2660,
+            "cached_tokens": 0
+          },
+          "output_tokens": 160,
+          "output_tokens_details": {
+            "reasoning_tokens": 69
+          },
+          "total_tokens": 2823
+        }
+      }
+    },
+    {
+      "run_id": "20261104T024721043814Z",
+      "profile": "review",
+      "proposal_response_id": "resp_0e3aec93aa58e37f016aea9cb93d4c87d096f33e405800edd7",
+      "proposal_usage": {
+        "input_tokens": 26746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 26743
+        },
+        "output_tokens": 3939,
+        "output_tokens_details": {
+          "reasoning_tokens": 129
+        },
+        "total_tokens": 30685
+      },
+      "proposal_elapsed_seconds": 28.8271,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.094,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": {
+        "verdict": "approve",
+        "finding_count": 0,
+        "summary": "The patch consistently adds optional express delivery while preserving standard-delivery pricing and response shapes. It includes backward-compatible schema migration, validation before order processing, forwarding to shipping, persistence, and retrieval. The supplied independent verification reports all 19 acceptance and regression tests passing.",
+        "response_id": "resp_0c231033ce434d34016aea9dde2a5487d0b5563b3d7d7c35c6",
+        "model": "gpt-6.1-sol",
+        "usage": {
+          "input_tokens": 2662,
+          "input_tokens_details": {
+            "cache_write_tokens": 2659,
+            "cached_tokens": 0
+          },
+          "output_tokens": 141,
+          "output_tokens_details": {
+            "reasoning_tokens": 62
+          },
+          "total_tokens": 2803
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "One synthetic cross-service task and three repetitions per profile; exploratory only.",
+    "All corrected evaluations passed, producing a ceiling result with no profile separation.",
+    "Same-model review is not independent.",
+    "The invalid-speed error-body assertion was amended to match the frozen task; both preliminary and corrected evaluations are preserved."
+  ],
+  "records": [
+    {
+      "run_id": "20261104T024113122880Z",
+      "profile": "baseline",
+      "proposal_response_id": "resp_083cb19f81499bce016aea9b49678487d0b0423cdf2caa00c6",
+      "proposal_usage": {
+        "input_tokens": 4877,
+        "input_tokens_details": {
+          "cache_write_tokens": 4874,
+          "cached_tokens": 0
+        },
+        "output_tokens": 3940,
+        "output_tokens_details": {
+          "reasoning_tokens": 169
+        },
+        "total_tokens": 8817
+      },
+      "proposal_elapsed_seconds": 27.6174,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.096,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": null
+    },
+    {
+      "run_id": "20261104T024140820083Z",
+      "profile": "context",
+      "proposal_response_id": "resp_06e8b9ca27c02664016aea9b651d5087d0aa1d8780ee998943",
+      "proposal_usage": {
+        "input_tokens": 26608,
+        "input_tokens_details": {
+          "cache_write_tokens": 26605,
+          "cached_tokens": 0
+        },
+        "output_tokens": 3880,
+        "output_tokens_details": {
+          "reasoning_tokens": 148
+        },
+        "total_tokens": 30488
+      },
+      "proposal_elapsed_seconds": 29.0137,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.095,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": null
+    },
+    {
+      "run_id": "20261104T024209915634Z",
+      "profile": "review",
+      "proposal_response_id": "resp_02af759634aa7977016aea9b82212487d09ea856f2a5052301",
+      "proposal_usage": {
+        "input_tokens": 26746,
+        "input_tokens_details": {
+          "cache_write_tokens": 26743,
+          "cached_tokens": 0
+        },
+        "output_tokens": 3909,
+        "output_tokens_details": {
+          "reasoning_tokens": 99
+        },
+        "total_tokens": 30655
+      },
+      "proposal_elapsed_seconds": 27.3514,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.096,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": {
+        "verdict": "approve",
+        "finding_count": 0,
+        "summary": "The patch consistently validates, forwards, persists, and returns express delivery speed while preserving standard-delivery totals and response representations. Schema migration defaults existing orders to standard delivery and remains idempotent. The supplied verification record reports all 5 acceptance and 14 regression tests passing. No actionable defects were identified in the supplied patch.",
+        "response_id": "resp_0c2ce7cf6d4061e0016aea9dd5278887d08d977ab83f56e8db",
+        "model": "gpt-6.1-sol",
+        "usage": {
+          "input_tokens": 2657,
+          "input_tokens_details": {
+            "cache_write_tokens": 2654,
+            "cached_tokens": 0
+          },
+          "output_tokens": 132,
+          "output_tokens_details": {
+            "reasoning_tokens": 50
+          },
+          "total_tokens": 2789
+        }
+      }
+    },
+    {
+      "run_id": "20261104T024237349585Z",
+      "profile": "memory",
+      "proposal_response_id": "resp_0ebaf0b25d6fd04f016aea9b9d8f4887d0a13ac24b54c62cb4",
+      "proposal_usage": {
+        "input_tokens": 26746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 26743
+        },
+        "output_tokens": 3903,
+        "output_tokens_details": {
+          "reasoning_tokens": 93
+        },
+        "total_tokens": 30649
+      },
+      "proposal_elapsed_seconds": 27.6061,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.095,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": null
+    },
+    {
+      "run_id": "20261104T024305039399Z",
+      "profile": "verification",
+      "proposal_response_id": "resp_0326c86adbed9d23016aea9bb943c487d0b4043c3f323ac790",
+      "proposal_usage": {
+        "input_tokens": 26746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 26743
+        },
+        "output_tokens": 3892,
+        "output_tokens_details": {
+          "reasoning_tokens": 104
+        },
+        "total_tokens": 30638
+      },
+      "proposal_elapsed_seconds": 29.4275,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.093,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": null
+    },
+    {
+      "run_id": "20261104T024334549864Z",
+      "profile": "review",
+      "proposal_response_id": "resp_0e65e06f15aae2bd016aea9bd6c55487d0b5d6c34f69ef9b68",
+      "proposal_usage": {
+        "input_tokens": 26746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 26743
+        },
+        "output_tokens": 3950,
+        "output_tokens_details": {
+          "reasoning_tokens": 154
+        },
+        "total_tokens": 30696
+      },
+      "proposal_elapsed_seconds": 29.053,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.093,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": {
+        "verdict": "approve",
+        "finding_count": 0,
+        "summary": "Approve based on the supplied patch and independent verification record. The change validates delivery speed before order processing, forwards it for shipping quotes, applies the express surcharge, persists the selection, and migrates existing orders to standard delivery. Standard response representations and pricing remain unchanged. Verification reports all 19 acceptance and regression tests passing. No actionable defects were identified in the supplied context.",
+        "response_id": "resp_0ee538211bf319c2016aea9dd95f4487d0bf7d44f175c0477f",
+        "model": "gpt-6.1-sol",
+        "usage": {
+          "input_tokens": 2663,
+          "input_tokens_details": {
+            "cache_write_tokens": 2660,
+            "cached_tokens": 0
+          },
+          "output_tokens": 160,
+          "output_tokens_details": {
+            "reasoning_tokens": 69
+          },
+          "total_tokens": 2823
+        }
+      }
+    },
+    {
+      "run_id": "20261104T024403686984Z",
+      "profile": "context",
+      "proposal_response_id": "resp_0d1b74e8f94d2ddb016aea9bf3dd6487d0978565159eb41ba9",
+      "proposal_usage": {
+        "input_tokens": 26608,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 26605
+        },
+        "output_tokens": 3892,
+        "output_tokens_details": {
+          "reasoning_tokens": 134
+        },
+        "total_tokens": 30500
+      },
+      "proposal_elapsed_seconds": 27.5645,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.095,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": null
+    },
+    {
+      "run_id": "20261104T024431333388Z",
+      "profile": "baseline",
+      "proposal_response_id": "resp_0d2c6b56523810bc016aea9c0f839087d0b94ac3a5ceb86496",
+      "proposal_usage": {
+        "input_tokens": 4877,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4874
+        },
+        "output_tokens": 3933,
+        "output_tokens_details": {
+          "reasoning_tokens": 145
+        },
+        "total_tokens": 8810
+      },
+      "proposal_elapsed_seconds": 28.7966,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.094,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": null
+    },
+    {
+      "run_id": "20261104T024500212124Z",
+      "profile": "verification",
+      "proposal_response_id": "resp_0f2ea91af9fc8f4a016aea9c2c6af087d080ba71e97adcfc9b",
+      "proposal_usage": {
+        "input_tokens": 26746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 26743
+        },
+        "output_tokens": 3872,
+        "output_tokens_details": {
+          "reasoning_tokens": 108
+        },
+        "total_tokens": 30618
+      },
+      "proposal_elapsed_seconds": 27.7692,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.092,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": null
+    },
+    {
+      "run_id": "20261104T024528064564Z",
+      "profile": "memory",
+      "proposal_response_id": "resp_05373dee60265fdf016aea9c48410487d09087033ff7a3e6e4",
+      "proposal_usage": {
+        "input_tokens": 26746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 26743
+        },
+        "output_tokens": 3906,
+        "output_tokens_details": {
+          "reasoning_tokens": 92
+        },
+        "total_tokens": 30652
+      },
+      "proposal_elapsed_seconds": 28.3861,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.092,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": null
+    },
+    {
+      "run_id": "20261104T024556532719Z",
+      "profile": "context",
+      "proposal_response_id": "resp_00462a1472887ead016aea9c655e8087d08fb19853e56b6ba0",
+      "proposal_usage": {
+        "input_tokens": 26608,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 26605
+        },
+        "output_tokens": 3851,
+        "output_tokens_details": {
+          "reasoning_tokens": 71
+        },
+        "total_tokens": 30459
+      },
+      "proposal_elapsed_seconds": 26.4696,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.095,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": null
+    },
+    {
+      "run_id": "20261104T024623084786Z",
+      "profile": "verification",
+      "proposal_response_id": "resp_08f1936adcbf011e016aea9c7fa36487d0bc1cb1f55151ce9e",
+      "proposal_usage": {
+        "input_tokens": 26746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 26743
+        },
+        "output_tokens": 3914,
+        "output_tokens_details": {
+          "reasoning_tokens": 127
+        },
+        "total_tokens": 30660
+      },
+      "proposal_elapsed_seconds": 28.5991,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.096,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": null
+    },
+    {
+      "run_id": "20261104T024651770484Z",
+      "profile": "baseline",
+      "proposal_response_id": "resp_09957dfadbf9288d016aea9c9bee5087d08b128499c0aa0231",
+      "proposal_usage": {
+        "input_tokens": 4877,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4874
+        },
+        "output_tokens": 3960,
+        "output_tokens_details": {
+          "reasoning_tokens": 124
+        },
+        "total_tokens": 8837
+      },
+      "proposal_elapsed_seconds": 29.1912,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.094,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": null
+    },
+    {
+      "run_id": "20261104T024721043814Z",
+      "profile": "review",
+      "proposal_response_id": "resp_0e3aec93aa58e37f016aea9cb93d4c87d096f33e405800edd7",
+      "proposal_usage": {
+        "input_tokens": 26746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 26743
+        },
+        "output_tokens": 3939,
+        "output_tokens_details": {
+          "reasoning_tokens": 129
+        },
+        "total_tokens": 30685
+      },
+      "proposal_elapsed_seconds": 28.8271,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.094,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": {
+        "verdict": "approve",
+        "finding_count": 0,
+        "summary": "The patch consistently adds optional express delivery while preserving standard-delivery pricing and response shapes. It includes backward-compatible schema migration, validation before order processing, forwarding to shipping, persistence, and retrieval. The supplied independent verification reports all 19 acceptance and regression tests passing.",
+        "response_id": "resp_0c231033ce434d34016aea9dde2a5487d0b5563b3d7d7c35c6",
+        "model": "gpt-6.1-sol",
+        "usage": {
+          "input_tokens": 2662,
+          "input_tokens_details": {
+            "cache_write_tokens": 2659,
+            "cached_tokens": 0
+          },
+          "output_tokens": 141,
+          "output_tokens_details": {
+            "reasoning_tokens": 62
+          },
+          "total_tokens": 2803
+        }
+      }
+    },
+    {
+      "run_id": "20261104T024749952744Z",
+      "profile": "memory",
+      "proposal_response_id": "resp_0ba3f41de91a4cb6016aea9cd6242c87d0973d72d4ecc8aec1",
+      "proposal_usage": {
+        "input_tokens": 26746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 26743
+        },
+        "output_tokens": 3887,
+        "output_tokens_details": {
+          "reasoning_tokens": 78
+        },
+        "total_tokens": 30633
+      },
+      "proposal_elapsed_seconds": 26.0247,
+      "proposed_file_count": 2,
+      "verification": {
+        "acceptance_passed": 5,
+        "acceptance_total": 5,
+        "regression_passed": 14,
+        "regression_total": 14,
+        "combined_passed": 19,
+        "combined_total": 19,
+        "all_nineteen_pass": true,
+        "duration_seconds": 0.095,
+        "proposed_test_files_differing_from_original_generation_target": []
+      },
+      "review": null
+    }
+  ]
+}
