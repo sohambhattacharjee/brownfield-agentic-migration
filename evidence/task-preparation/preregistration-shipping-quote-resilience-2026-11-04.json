@@ -1,0 +1,111 @@
+{
+  "acceptance_suite": "tests/test_shipping_quote_resilience_acceptance.py",
+  "acceptance_test_count": 7,
+  "baseline": {
+    "acceptance_tests": {
+      "errors": 2,
+      "failed": 4,
+      "passed": 1
+    },
+    "api_calls": 0,
+    "existing_regression_tests_passed": 19,
+    "failing_cases": [
+      "missing shipping_cents",
+      "non-object JSON",
+      "numeric string shipping_cents",
+      "fractional shipping_cents",
+      "boolean shipping_cents",
+      "negative shipping_cents"
+    ],
+    "full_suite_exit_code": 1,
+    "malformed_json_case_already_returns_503": true,
+    "recorded_against_target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+    "total_tests": 26
+  },
+  "cohort_id": "cohort-shipping-resilience-2026-11-04-stage",
+  "execution_safety": {
+    "proposal_code_is_evaluated_after_api_process_ends_with_OPENAI_API_KEY_removed_from_test_process": true,
+    "proposals_are_generated_in_disposable_copies_and_never_applied_to_target": true,
+    "review_receives_saved_patch_and_separate_verification_record": true,
+    "target_revision_is_immutable_and_expected_clean": true,
+    "test_timeout_seconds": 30
+  },
+  "frozen_date_utc": "2026-11-04",
+  "primary_outcomes": [
+    "Acceptance checks passed out of 7 per proposal.",
+    "All 7 acceptance checks passed per proposal."
+  ],
+  "profiles": [
+    "baseline",
+    "context",
+    "memory",
+    "verification",
+    "review"
+  ],
+  "proposal_slots": 15,
+  "provider": {
+    "generation_settings": "Use provider defaults; no additional sampling parameters are sent.",
+    "kind": "OpenAI Responses API",
+    "model": "gpt-6.1-sol",
+    "request_options": {
+      "store": false,
+      "temperature": "not explicitly set"
+    }
+  },
+  "randomization": {
+    "block_orders": [
+      [
+        "baseline",
+        "verification",
+        "review",
+        "memory",
+        "context"
+      ],
+      [
+        "memory",
+        "context",
+        "verification",
+        "baseline",
+        "review"
+      ],
+      [
+        "verification",
+        "memory",
+        "context",
+        "review",
+        "baseline"
+      ]
+    ],
+    "method": "Shuffle all five profiles once within each of three blocks using Python random.Random.",
+    "seed": 20261104
+  },
+  "regression_test_count_at_freeze": 19,
+  "repetitions_per_profile": 3,
+  "review_slots": 3,
+  "scoring_rules": [
+    "Each scheduled run slot is retained, including provider failures and invalid outputs; no replacement runs.",
+    "Only app/legacy_monolith.py edits satisfy the task edit boundary.",
+    "Review is a second pass from the same model, not independent validation.",
+    "Profiles are cumulative capability bundles and comparisons remain descriptive.",
+    "Report this as a separate task cohort; do not pool task outcomes or claim causal profile effects.",
+    "Do not infer cost unless dated price inputs and provider usage are both recorded."
+  ],
+  "secondary_outcomes": [
+    "Regression checks passed out of 19.",
+    "Elapsed time, provider-reported token usage, proposed file count, added/deleted lines, provider errors, and same-model review verdict/findings."
+  ],
+  "status": "frozen_before_scored_runs",
+  "target_repository": "brownfield-agentic-migration",
+  "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+  "task_file": "tasks/shipping-quote-resilience.md",
+  "task_sha256_normalized": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+  "test_command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ]
+}

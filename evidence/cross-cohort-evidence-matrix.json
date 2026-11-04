@@ -1,1786 +1,2326 @@
 {
-  "saved_successful_model_responses": 66,
-  "proposal_runs": 55,
-  "review_calls_with_saved_responses": 11,
   "cohorts": [
     {
-      "cohort_id": "cohort-2026-11-03-key-verified",
-      "proposal_runs": 25,
-      "task_acceptance_checks_per_run": 3,
-      "regression_checks_per_run": 5,
       "acceptance_passed_total": 75,
       "acceptance_total": 75,
+      "all_checks_passed_runs": 25,
+      "by_profile": {
+        "baseline": {
+          "acceptance_passed_total": 15,
+          "added_lines": {
+            "max": 54,
+            "mean": 49,
+            "median": 48,
+            "min": 45
+          },
+          "all_checks_passed": 5,
+          "deleted_lines": {
+            "max": 2,
+            "mean": 1.8,
+            "median": 2,
+            "min": 1
+          },
+          "input_tokens": {
+            "max": 3666,
+            "mean": 3666,
+            "median": 3666,
+            "min": 3666
+          },
+          "n": 5,
+          "output_tokens": {
+            "max": 2910,
+            "mean": 2820.4,
+            "median": 2827,
+            "min": 2740
+          },
+          "proposal_elapsed_seconds": {
+            "max": 25.8588,
+            "mean": 24.425,
+            "median": 24.583,
+            "min": 21.9026
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 25,
+          "review_verdicts": {
+            "approve": 0,
+            "revise": 0,
+            "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 6576,
+            "mean": 6486.4,
+            "median": 6493,
+            "min": 6406
+          }
+        },
+        "context": {
+          "acceptance_passed_total": 15,
+          "added_lines": {
+            "max": 59,
+            "mean": 53,
+            "median": 54,
+            "min": 47
+          },
+          "all_checks_passed": 5,
+          "deleted_lines": {
+            "max": 2,
+            "mean": 1.8,
+            "median": 2,
+            "min": 1
+          },
+          "input_tokens": {
+            "max": 6817,
+            "mean": 6817,
+            "median": 6817,
+            "min": 6817
+          },
+          "n": 5,
+          "output_tokens": {
+            "max": 2944,
+            "mean": 2893.4,
+            "median": 2911,
+            "min": 2829
+          },
+          "proposal_elapsed_seconds": {
+            "max": 28.3664,
+            "mean": 25.764,
+            "median": 25.049,
+            "min": 23.5735
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 25,
+          "review_verdicts": {
+            "approve": 0,
+            "revise": 0,
+            "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 9761,
+            "mean": 9710.4,
+            "median": 9728,
+            "min": 9646
+          }
+        },
+        "memory": {
+          "acceptance_passed_total": 15,
+          "added_lines": {
+            "max": 56,
+            "mean": 49.4,
+            "median": 48,
+            "min": 44
+          },
+          "all_checks_passed": 5,
+          "deleted_lines": {
+            "max": 2,
+            "mean": 2,
+            "median": 2,
+            "min": 2
+          },
+          "input_tokens": {
+            "max": 6955,
+            "mean": 6955,
+            "median": 6955,
+            "min": 6955
+          },
+          "n": 5,
+          "output_tokens": {
+            "max": 2946,
+            "mean": 2842.6,
+            "median": 2835,
+            "min": 2751
+          },
+          "proposal_elapsed_seconds": {
+            "max": 28.2605,
+            "mean": 25.51,
+            "median": 24.378,
+            "min": 23.3334
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 25,
+          "review_verdicts": {
+            "approve": 0,
+            "revise": 0,
+            "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 9901,
+            "mean": 9797.6,
+            "median": 9790,
+            "min": 9706
+          }
+        },
+        "review": {
+          "acceptance_passed_total": 15,
+          "added_lines": {
+            "max": 52,
+            "mean": 47,
+            "median": 45,
+            "min": 42
+          },
+          "all_checks_passed": 5,
+          "deleted_lines": {
+            "max": 2,
+            "mean": 2,
+            "median": 2,
+            "min": 2
+          },
+          "input_tokens": {
+            "max": 6955,
+            "mean": 6955,
+            "median": 6955,
+            "min": 6955
+          },
+          "n": 5,
+          "output_tokens": {
+            "max": 2961,
+            "mean": 2829,
+            "median": 2790,
+            "min": 2724
+          },
+          "proposal_elapsed_seconds": {
+            "max": 29.5956,
+            "mean": 26.573,
+            "median": 26.42,
+            "min": 24.3576
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 25,
+          "review_verdicts": {
+            "approve": 5,
+            "revise": 0,
+            "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 9916,
+            "mean": 9784,
+            "median": 9745,
+            "min": 9679
+          }
+        },
+        "verification": {
+          "acceptance_passed_total": 15,
+          "added_lines": {
+            "max": 54,
+            "mean": 47.2,
+            "median": 46,
+            "min": 44
+          },
+          "all_checks_passed": 5,
+          "deleted_lines": {
+            "max": 2,
+            "mean": 2,
+            "median": 2,
+            "min": 2
+          },
+          "input_tokens": {
+            "max": 6955,
+            "mean": 6955,
+            "median": 6955,
+            "min": 6955
+          },
+          "n": 5,
+          "output_tokens": {
+            "max": 2981,
+            "mean": 2877.4,
+            "median": 2849,
+            "min": 2815
+          },
+          "proposal_elapsed_seconds": {
+            "max": 29.0298,
+            "mean": 26.992,
+            "median": 26.898,
+            "min": 25.7991
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 25,
+          "review_verdicts": {
+            "approve": 0,
+            "revise": 0,
+            "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 9936,
+            "mean": 9832.4,
+            "median": 9804,
+            "min": 9770
+          }
+        }
+      },
+      "cohort_id": "cohort-2026-11-03-key-verified",
+      "proposal_runs": 25,
+      "records": [
+        {
+          "acceptance_passed": 3,
+          "added_lines": 48,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 3666,
+          "output_tokens": 2827,
+          "profile": "baseline",
+          "proposal_elapsed_seconds": 25.8588,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T004804914307Z",
+          "total_tokens": 6493
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 49,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6817,
+          "output_tokens": 2944,
+          "profile": "context",
+          "proposal_elapsed_seconds": 28.1772,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T004830854844Z",
+          "total_tokens": 9761
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 42,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2724,
+          "profile": "review",
+          "proposal_elapsed_seconds": 24.3576,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": {
+            "finding_count": 0,
+            "verdict": "approve"
+          },
+          "run_id": "20261104T004859116772Z",
+          "total_tokens": 9679
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 53,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2835,
+          "profile": "memory",
+          "proposal_elapsed_seconds": 23.3334,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T004923572166Z",
+          "total_tokens": 9790
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 54,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2981,
+          "profile": "verification",
+          "proposal_elapsed_seconds": 26.8977,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T004947001743Z",
+          "total_tokens": 9936
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 52,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2961,
+          "profile": "review",
+          "proposal_elapsed_seconds": 29.5956,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": {
+            "finding_count": 0,
+            "verdict": "approve"
+          },
+          "run_id": "20261104T005013995120Z",
+          "total_tokens": 9916
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 47,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6817,
+          "output_tokens": 2925,
+          "profile": "context",
+          "proposal_elapsed_seconds": 28.3664,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005043687747Z",
+          "total_tokens": 9742
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 45,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 3666,
+          "output_tokens": 2740,
+          "profile": "baseline",
+          "proposal_elapsed_seconds": 23.9813,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005112136228Z",
+          "total_tokens": 6406
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 44,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2815,
+          "profile": "verification",
+          "proposal_elapsed_seconds": 26.3339,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005136202187Z",
+          "total_tokens": 9770
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 48,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2904,
+          "profile": "memory",
+          "proposal_elapsed_seconds": 28.2605,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005202635216Z",
+          "total_tokens": 9859
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 56,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6817,
+          "output_tokens": 2829,
+          "profile": "context",
+          "proposal_elapsed_seconds": 23.5735,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005230981810Z",
+          "total_tokens": 9646
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 45,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2906,
+          "profile": "verification",
+          "proposal_elapsed_seconds": 29.0298,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005254653571Z",
+          "total_tokens": 9861
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 48,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 3666,
+          "output_tokens": 2877,
+          "profile": "baseline",
+          "proposal_elapsed_seconds": 25.8021,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005323784567Z",
+          "total_tokens": 6543
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 44,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2751,
+          "profile": "review",
+          "proposal_elapsed_seconds": 24.8591,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": {
+            "finding_count": 0,
+            "verdict": "approve"
+          },
+          "run_id": "20261104T005349672713Z",
+          "total_tokens": 9706
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 56,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2946,
+          "profile": "memory",
+          "proposal_elapsed_seconds": 27.4648,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005414617282Z",
+          "total_tokens": 9901
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 46,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2777,
+          "profile": "memory",
+          "proposal_elapsed_seconds": 24.1144,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005442167590Z",
+          "total_tokens": 9732
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 52,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2919,
+          "profile": "review",
+          "proposal_elapsed_seconds": 27.6328,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": {
+            "finding_count": 0,
+            "verdict": "approve"
+          },
+          "run_id": "20261104T005506362087Z",
+          "total_tokens": 9874
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 59,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6817,
+          "output_tokens": 2911,
+          "profile": "context",
+          "proposal_elapsed_seconds": 23.6528,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005534076234Z",
+          "total_tokens": 9728
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 47,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2849,
+          "profile": "verification",
+          "proposal_elapsed_seconds": 25.7991,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005557827049Z",
+          "total_tokens": 9804
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 50,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 1,
+          "input_tokens": 3666,
+          "output_tokens": 2748,
+          "profile": "baseline",
+          "proposal_elapsed_seconds": 21.9026,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005623711588Z",
+          "total_tokens": 6414
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 54,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 1,
+          "input_tokens": 6817,
+          "output_tokens": 2858,
+          "profile": "context",
+          "proposal_elapsed_seconds": 25.049,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005645708567Z",
+          "total_tokens": 9675
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 45,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2790,
+          "profile": "review",
+          "proposal_elapsed_seconds": 26.4202,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": {
+            "finding_count": 0,
+            "verdict": "approve"
+          },
+          "run_id": "20261104T005710866814Z",
+          "total_tokens": 9745
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 44,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2751,
+          "profile": "memory",
+          "proposal_elapsed_seconds": 24.378,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005737390288Z",
+          "total_tokens": 9706
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 54,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 3666,
+          "output_tokens": 2910,
+          "profile": "baseline",
+          "proposal_elapsed_seconds": 24.5826,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005801891966Z",
+          "total_tokens": 6576
+        },
+        {
+          "acceptance_passed": 3,
+          "added_lines": 46,
+          "all_checks_passed": true,
+          "combined_passed": 8,
+          "deleted_lines": 2,
+          "input_tokens": 6955,
+          "output_tokens": 2836,
+          "profile": "verification",
+          "proposal_elapsed_seconds": 26.8995,
+          "proposed_files": 1,
+          "regression_passed": 5,
+          "review": null,
+          "run_id": "20261104T005826578440Z",
+          "total_tokens": 9791
+        }
+      ],
+      "regression_checks_per_run": 5,
       "regression_passed_total": 125,
       "regression_total": 125,
-      "all_checks_passed_runs": 25,
       "review_calls_with_saved_responses": 5,
       "review_verdicts": {
         "approve": 5,
         "revise": 0,
         "unable_to_assess": 0
       },
-      "by_profile": {
-        "baseline": {
-          "n": 5,
-          "all_checks_passed": 5,
-          "acceptance_passed_total": 15,
-          "regression_passed_total": 25,
-          "proposal_elapsed_seconds": {
-            "mean": 24.425,
-            "median": 24.583,
-            "min": 21.9026,
-            "max": 25.8588
-          },
-          "input_tokens": {
-            "mean": 3666,
-            "median": 3666,
-            "min": 3666,
-            "max": 3666
-          },
-          "output_tokens": {
-            "mean": 2820.4,
-            "median": 2827,
-            "min": 2740,
-            "max": 2910
-          },
-          "total_tokens": {
-            "mean": 6486.4,
-            "median": 6493,
-            "min": 6406,
-            "max": 6576
-          },
-          "proposed_files": {
-            "mean": 1,
-            "median": 1,
-            "min": 1,
-            "max": 1
-          },
-          "added_lines": {
-            "mean": 49,
-            "median": 48,
-            "min": 45,
-            "max": 54
-          },
-          "deleted_lines": {
-            "mean": 1.8,
-            "median": 2,
-            "min": 1,
-            "max": 2
-          },
-          "review_verdicts": {
-            "approve": 0,
-            "revise": 0,
-            "unable_to_assess": 0
-          }
-        },
-        "context": {
-          "n": 5,
-          "all_checks_passed": 5,
-          "acceptance_passed_total": 15,
-          "regression_passed_total": 25,
-          "proposal_elapsed_seconds": {
-            "mean": 25.764,
-            "median": 25.049,
-            "min": 23.5735,
-            "max": 28.3664
-          },
-          "input_tokens": {
-            "mean": 6817,
-            "median": 6817,
-            "min": 6817,
-            "max": 6817
-          },
-          "output_tokens": {
-            "mean": 2893.4,
-            "median": 2911,
-            "min": 2829,
-            "max": 2944
-          },
-          "total_tokens": {
-            "mean": 9710.4,
-            "median": 9728,
-            "min": 9646,
-            "max": 9761
-          },
-          "proposed_files": {
-            "mean": 1,
-            "median": 1,
-            "min": 1,
-            "max": 1
-          },
-          "added_lines": {
-            "mean": 53,
-            "median": 54,
-            "min": 47,
-            "max": 59
-          },
-          "deleted_lines": {
-            "mean": 1.8,
-            "median": 2,
-            "min": 1,
-            "max": 2
-          },
-          "review_verdicts": {
-            "approve": 0,
-            "revise": 0,
-            "unable_to_assess": 0
-          }
-        },
-        "memory": {
-          "n": 5,
-          "all_checks_passed": 5,
-          "acceptance_passed_total": 15,
-          "regression_passed_total": 25,
-          "proposal_elapsed_seconds": {
-            "mean": 25.51,
-            "median": 24.378,
-            "min": 23.3334,
-            "max": 28.2605
-          },
-          "input_tokens": {
-            "mean": 6955,
-            "median": 6955,
-            "min": 6955,
-            "max": 6955
-          },
-          "output_tokens": {
-            "mean": 2842.6,
-            "median": 2835,
-            "min": 2751,
-            "max": 2946
-          },
-          "total_tokens": {
-            "mean": 9797.6,
-            "median": 9790,
-            "min": 9706,
-            "max": 9901
-          },
-          "proposed_files": {
-            "mean": 1,
-            "median": 1,
-            "min": 1,
-            "max": 1
-          },
-          "added_lines": {
-            "mean": 49.4,
-            "median": 48,
-            "min": 44,
-            "max": 56
-          },
-          "deleted_lines": {
-            "mean": 2,
-            "median": 2,
-            "min": 2,
-            "max": 2
-          },
-          "review_verdicts": {
-            "approve": 0,
-            "revise": 0,
-            "unable_to_assess": 0
-          }
-        },
-        "review": {
-          "n": 5,
-          "all_checks_passed": 5,
-          "acceptance_passed_total": 15,
-          "regression_passed_total": 25,
-          "proposal_elapsed_seconds": {
-            "mean": 26.573,
-            "median": 26.42,
-            "min": 24.3576,
-            "max": 29.5956
-          },
-          "input_tokens": {
-            "mean": 6955,
-            "median": 6955,
-            "min": 6955,
-            "max": 6955
-          },
-          "output_tokens": {
-            "mean": 2829,
-            "median": 2790,
-            "min": 2724,
-            "max": 2961
-          },
-          "total_tokens": {
-            "mean": 9784,
-            "median": 9745,
-            "min": 9679,
-            "max": 9916
-          },
-          "proposed_files": {
-            "mean": 1,
-            "median": 1,
-            "min": 1,
-            "max": 1
-          },
-          "added_lines": {
-            "mean": 47,
-            "median": 45,
-            "min": 42,
-            "max": 52
-          },
-          "deleted_lines": {
-            "mean": 2,
-            "median": 2,
-            "min": 2,
-            "max": 2
-          },
-          "review_verdicts": {
-            "approve": 5,
-            "revise": 0,
-            "unable_to_assess": 0
-          }
-        },
-        "verification": {
-          "n": 5,
-          "all_checks_passed": 5,
-          "acceptance_passed_total": 15,
-          "regression_passed_total": 25,
-          "proposal_elapsed_seconds": {
-            "mean": 26.992,
-            "median": 26.898,
-            "min": 25.7991,
-            "max": 29.0298
-          },
-          "input_tokens": {
-            "mean": 6955,
-            "median": 6955,
-            "min": 6955,
-            "max": 6955
-          },
-          "output_tokens": {
-            "mean": 2877.4,
-            "median": 2849,
-            "min": 2815,
-            "max": 2981
-          },
-          "total_tokens": {
-            "mean": 9832.4,
-            "median": 9804,
-            "min": 9770,
-            "max": 9936
-          },
-          "proposed_files": {
-            "mean": 1,
-            "median": 1,
-            "min": 1,
-            "max": 1
-          },
-          "added_lines": {
-            "mean": 47.2,
-            "median": 46,
-            "min": 44,
-            "max": 54
-          },
-          "deleted_lines": {
-            "mean": 2,
-            "median": 2,
-            "min": 2,
-            "max": 2
-          },
-          "review_verdicts": {
-            "approve": 0,
-            "revise": 0,
-            "unable_to_assess": 0
-          }
-        }
-      },
-      "records": [
-        {
-          "run_id": "20261104T004804914307Z",
-          "profile": "baseline",
-          "proposal_elapsed_seconds": 25.8588,
-          "input_tokens": 3666,
-          "output_tokens": 2827,
-          "total_tokens": 6493,
-          "proposed_files": 1,
-          "added_lines": 48,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T004830854844Z",
-          "profile": "context",
-          "proposal_elapsed_seconds": 28.1772,
-          "input_tokens": 6817,
-          "output_tokens": 2944,
-          "total_tokens": 9761,
-          "proposed_files": 1,
-          "added_lines": 49,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T004859116772Z",
-          "profile": "review",
-          "proposal_elapsed_seconds": 24.3576,
-          "input_tokens": 6955,
-          "output_tokens": 2724,
-          "total_tokens": 9679,
-          "proposed_files": 1,
-          "added_lines": 42,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": {
-            "verdict": "approve",
-            "finding_count": 0
-          }
-        },
-        {
-          "run_id": "20261104T004923572166Z",
-          "profile": "memory",
-          "proposal_elapsed_seconds": 23.3334,
-          "input_tokens": 6955,
-          "output_tokens": 2835,
-          "total_tokens": 9790,
-          "proposed_files": 1,
-          "added_lines": 53,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T004947001743Z",
-          "profile": "verification",
-          "proposal_elapsed_seconds": 26.8977,
-          "input_tokens": 6955,
-          "output_tokens": 2981,
-          "total_tokens": 9936,
-          "proposed_files": 1,
-          "added_lines": 54,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005013995120Z",
-          "profile": "review",
-          "proposal_elapsed_seconds": 29.5956,
-          "input_tokens": 6955,
-          "output_tokens": 2961,
-          "total_tokens": 9916,
-          "proposed_files": 1,
-          "added_lines": 52,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": {
-            "verdict": "approve",
-            "finding_count": 0
-          }
-        },
-        {
-          "run_id": "20261104T005043687747Z",
-          "profile": "context",
-          "proposal_elapsed_seconds": 28.3664,
-          "input_tokens": 6817,
-          "output_tokens": 2925,
-          "total_tokens": 9742,
-          "proposed_files": 1,
-          "added_lines": 47,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005112136228Z",
-          "profile": "baseline",
-          "proposal_elapsed_seconds": 23.9813,
-          "input_tokens": 3666,
-          "output_tokens": 2740,
-          "total_tokens": 6406,
-          "proposed_files": 1,
-          "added_lines": 45,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005136202187Z",
-          "profile": "verification",
-          "proposal_elapsed_seconds": 26.3339,
-          "input_tokens": 6955,
-          "output_tokens": 2815,
-          "total_tokens": 9770,
-          "proposed_files": 1,
-          "added_lines": 44,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005202635216Z",
-          "profile": "memory",
-          "proposal_elapsed_seconds": 28.2605,
-          "input_tokens": 6955,
-          "output_tokens": 2904,
-          "total_tokens": 9859,
-          "proposed_files": 1,
-          "added_lines": 48,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005230981810Z",
-          "profile": "context",
-          "proposal_elapsed_seconds": 23.5735,
-          "input_tokens": 6817,
-          "output_tokens": 2829,
-          "total_tokens": 9646,
-          "proposed_files": 1,
-          "added_lines": 56,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005254653571Z",
-          "profile": "verification",
-          "proposal_elapsed_seconds": 29.0298,
-          "input_tokens": 6955,
-          "output_tokens": 2906,
-          "total_tokens": 9861,
-          "proposed_files": 1,
-          "added_lines": 45,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005323784567Z",
-          "profile": "baseline",
-          "proposal_elapsed_seconds": 25.8021,
-          "input_tokens": 3666,
-          "output_tokens": 2877,
-          "total_tokens": 6543,
-          "proposed_files": 1,
-          "added_lines": 48,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005349672713Z",
-          "profile": "review",
-          "proposal_elapsed_seconds": 24.8591,
-          "input_tokens": 6955,
-          "output_tokens": 2751,
-          "total_tokens": 9706,
-          "proposed_files": 1,
-          "added_lines": 44,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": {
-            "verdict": "approve",
-            "finding_count": 0
-          }
-        },
-        {
-          "run_id": "20261104T005414617282Z",
-          "profile": "memory",
-          "proposal_elapsed_seconds": 27.4648,
-          "input_tokens": 6955,
-          "output_tokens": 2946,
-          "total_tokens": 9901,
-          "proposed_files": 1,
-          "added_lines": 56,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005442167590Z",
-          "profile": "memory",
-          "proposal_elapsed_seconds": 24.1144,
-          "input_tokens": 6955,
-          "output_tokens": 2777,
-          "total_tokens": 9732,
-          "proposed_files": 1,
-          "added_lines": 46,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005506362087Z",
-          "profile": "review",
-          "proposal_elapsed_seconds": 27.6328,
-          "input_tokens": 6955,
-          "output_tokens": 2919,
-          "total_tokens": 9874,
-          "proposed_files": 1,
-          "added_lines": 52,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": {
-            "verdict": "approve",
-            "finding_count": 0
-          }
-        },
-        {
-          "run_id": "20261104T005534076234Z",
-          "profile": "context",
-          "proposal_elapsed_seconds": 23.6528,
-          "input_tokens": 6817,
-          "output_tokens": 2911,
-          "total_tokens": 9728,
-          "proposed_files": 1,
-          "added_lines": 59,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005557827049Z",
-          "profile": "verification",
-          "proposal_elapsed_seconds": 25.7991,
-          "input_tokens": 6955,
-          "output_tokens": 2849,
-          "total_tokens": 9804,
-          "proposed_files": 1,
-          "added_lines": 47,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005623711588Z",
-          "profile": "baseline",
-          "proposal_elapsed_seconds": 21.9026,
-          "input_tokens": 3666,
-          "output_tokens": 2748,
-          "total_tokens": 6414,
-          "proposed_files": 1,
-          "added_lines": 50,
-          "deleted_lines": 1,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005645708567Z",
-          "profile": "context",
-          "proposal_elapsed_seconds": 25.049,
-          "input_tokens": 6817,
-          "output_tokens": 2858,
-          "total_tokens": 9675,
-          "proposed_files": 1,
-          "added_lines": 54,
-          "deleted_lines": 1,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005710866814Z",
-          "profile": "review",
-          "proposal_elapsed_seconds": 26.4202,
-          "input_tokens": 6955,
-          "output_tokens": 2790,
-          "total_tokens": 9745,
-          "proposed_files": 1,
-          "added_lines": 45,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": {
-            "verdict": "approve",
-            "finding_count": 0
-          }
-        },
-        {
-          "run_id": "20261104T005737390288Z",
-          "profile": "memory",
-          "proposal_elapsed_seconds": 24.378,
-          "input_tokens": 6955,
-          "output_tokens": 2751,
-          "total_tokens": 9706,
-          "proposed_files": 1,
-          "added_lines": 44,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005801891966Z",
-          "profile": "baseline",
-          "proposal_elapsed_seconds": 24.5826,
-          "input_tokens": 3666,
-          "output_tokens": 2910,
-          "total_tokens": 6576,
-          "proposed_files": 1,
-          "added_lines": 54,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        },
-        {
-          "run_id": "20261104T005826578440Z",
-          "profile": "verification",
-          "proposal_elapsed_seconds": 26.8995,
-          "input_tokens": 6955,
-          "output_tokens": 2836,
-          "total_tokens": 9791,
-          "proposed_files": 1,
-          "added_lines": 46,
-          "deleted_lines": 2,
-          "acceptance_passed": 3,
-          "regression_passed": 5,
-          "combined_passed": 8,
-          "all_checks_passed": true,
-          "review": null
-        }
-      ]
+      "task_acceptance_checks_per_run": 3
     },
     {
-      "cohort_id": "cohort-order-detail-2026-11-04-followup",
-      "proposal_runs": 15,
-      "task_acceptance_checks_per_run": 3,
-      "regression_checks_per_run": 11,
       "acceptance_passed_total": 45,
       "acceptance_total": 45,
-      "regression_passed_total": 165,
-      "regression_total": 165,
       "all_checks_passed_runs": 15,
-      "review_calls_with_saved_responses": 3,
-      "review_verdicts": {
-        "approve": 3,
-        "revise": 0,
-        "unable_to_assess": 0
-      },
       "by_profile": {
         "baseline": {
-          "n": 3,
-          "all_checks_passed": 3,
           "acceptance_passed_total": 9,
-          "regression_passed_total": 33,
-          "proposal_elapsed_seconds": {
-            "mean": 27.045,
-            "median": 27.18,
-            "min": 26.097,
-            "max": 27.8581
-          },
-          "input_tokens": {
-            "mean": 4412,
-            "median": 4412,
-            "min": 4412,
-            "max": 4412
-          },
-          "output_tokens": {
-            "mean": 3217.667,
-            "median": 3236,
-            "min": 3179,
-            "max": 3238
-          },
-          "total_tokens": {
-            "mean": 7629.667,
-            "median": 7648,
-            "min": 7591,
-            "max": 7650
-          },
-          "proposed_files": {
-            "mean": 1,
-            "median": 1,
-            "min": 1,
-            "max": 1
-          },
           "added_lines": {
+            "max": 41,
             "mean": 39,
             "median": 40,
-            "min": 36,
-            "max": 41
+            "min": 36
           },
+          "all_checks_passed": 3,
           "deleted_lines": {
+            "max": 10,
             "mean": 6.667,
             "median": 10,
-            "min": 0,
-            "max": 10
+            "min": 0
           },
+          "input_tokens": {
+            "max": 4412,
+            "mean": 4412,
+            "median": 4412,
+            "min": 4412
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3238,
+            "mean": 3217.667,
+            "median": 3236,
+            "min": 3179
+          },
+          "proposal_elapsed_seconds": {
+            "max": 27.8581,
+            "mean": 27.045,
+            "median": 27.18,
+            "min": 26.097
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 33,
           "review_verdicts": {
             "approve": 0,
             "revise": 0,
             "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 7650,
+            "mean": 7629.667,
+            "median": 7648,
+            "min": 7591
           }
         },
         "context": {
-          "n": 3,
-          "all_checks_passed": 3,
           "acceptance_passed_total": 9,
-          "regression_passed_total": 33,
-          "proposal_elapsed_seconds": {
-            "mean": 29.12,
-            "median": 29.629,
-            "min": 27.6506,
-            "max": 30.0808
-          },
-          "input_tokens": {
-            "mean": 18967,
-            "median": 18967,
-            "min": 18967,
-            "max": 18967
-          },
-          "output_tokens": {
-            "mean": 3251,
-            "median": 3294,
-            "min": 3151,
-            "max": 3308
-          },
-          "total_tokens": {
-            "mean": 22218,
-            "median": 22261,
-            "min": 22118,
-            "max": 22275
-          },
-          "proposed_files": {
-            "mean": 1,
-            "median": 1,
-            "min": 1,
-            "max": 1
-          },
           "added_lines": {
+            "max": 41,
             "mean": 39.333,
             "median": 39,
-            "min": 38,
-            "max": 41
+            "min": 38
           },
+          "all_checks_passed": 3,
           "deleted_lines": {
+            "max": 10,
             "mean": 3.333,
             "median": 0,
-            "min": 0,
-            "max": 10
+            "min": 0
           },
+          "input_tokens": {
+            "max": 18967,
+            "mean": 18967,
+            "median": 18967,
+            "min": 18967
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3308,
+            "mean": 3251,
+            "median": 3294,
+            "min": 3151
+          },
+          "proposal_elapsed_seconds": {
+            "max": 30.0808,
+            "mean": 29.12,
+            "median": 29.629,
+            "min": 27.6506
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 33,
           "review_verdicts": {
             "approve": 0,
             "revise": 0,
             "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 22275,
+            "mean": 22218,
+            "median": 22261,
+            "min": 22118
           }
         },
         "memory": {
-          "n": 3,
-          "all_checks_passed": 3,
           "acceptance_passed_total": 9,
-          "regression_passed_total": 33,
-          "proposal_elapsed_seconds": {
-            "mean": 28.19,
-            "median": 28.676,
-            "min": 24.8041,
-            "max": 31.0912
-          },
-          "input_tokens": {
-            "mean": 19105,
-            "median": 19105,
-            "min": 19105,
-            "max": 19105
-          },
-          "output_tokens": {
-            "mean": 3207.667,
-            "median": 3185,
-            "min": 3166,
-            "max": 3272
-          },
-          "total_tokens": {
-            "mean": 22312.667,
-            "median": 22290,
-            "min": 22271,
-            "max": 22377
-          },
-          "proposed_files": {
-            "mean": 1,
-            "median": 1,
-            "min": 1,
-            "max": 1
-          },
           "added_lines": {
+            "max": 39,
             "mean": 38,
             "median": 38,
-            "min": 37,
-            "max": 39
+            "min": 37
           },
+          "all_checks_passed": 3,
           "deleted_lines": {
+            "max": 0,
             "mean": 0,
             "median": 0,
-            "min": 0,
-            "max": 0
+            "min": 0
           },
+          "input_tokens": {
+            "max": 19105,
+            "mean": 19105,
+            "median": 19105,
+            "min": 19105
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3272,
+            "mean": 3207.667,
+            "median": 3185,
+            "min": 3166
+          },
+          "proposal_elapsed_seconds": {
+            "max": 31.0912,
+            "mean": 28.19,
+            "median": 28.676,
+            "min": 24.8041
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 33,
           "review_verdicts": {
             "approve": 0,
             "revise": 0,
             "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 22377,
+            "mean": 22312.667,
+            "median": 22290,
+            "min": 22271
           }
         },
         "review": {
-          "n": 3,
-          "all_checks_passed": 3,
           "acceptance_passed_total": 9,
-          "regression_passed_total": 33,
-          "proposal_elapsed_seconds": {
-            "mean": 27.961,
-            "median": 27.385,
-            "min": 27.0894,
-            "max": 29.4092
-          },
-          "input_tokens": {
-            "mean": 19105,
-            "median": 19105,
-            "min": 19105,
-            "max": 19105
-          },
-          "output_tokens": {
-            "mean": 3180,
-            "median": 3170,
-            "min": 3150,
-            "max": 3220
-          },
-          "total_tokens": {
-            "mean": 22285,
-            "median": 22275,
-            "min": 22255,
-            "max": 22325
-          },
-          "proposed_files": {
-            "mean": 1,
-            "median": 1,
-            "min": 1,
-            "max": 1
-          },
           "added_lines": {
+            "max": 38,
             "mean": 35.333,
             "median": 34,
-            "min": 34,
-            "max": 38
+            "min": 34
           },
+          "all_checks_passed": 3,
           "deleted_lines": {
+            "max": 0,
             "mean": 0,
             "median": 0,
-            "min": 0,
-            "max": 0
+            "min": 0
           },
+          "input_tokens": {
+            "max": 19105,
+            "mean": 19105,
+            "median": 19105,
+            "min": 19105
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3220,
+            "mean": 3180,
+            "median": 3170,
+            "min": 3150
+          },
+          "proposal_elapsed_seconds": {
+            "max": 29.4092,
+            "mean": 27.961,
+            "median": 27.385,
+            "min": 27.0894
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 33,
           "review_verdicts": {
             "approve": 3,
             "revise": 0,
             "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 22325,
+            "mean": 22285,
+            "median": 22275,
+            "min": 22255
           }
         },
         "verification": {
-          "n": 3,
-          "all_checks_passed": 3,
           "acceptance_passed_total": 9,
-          "regression_passed_total": 33,
-          "proposal_elapsed_seconds": {
-            "mean": 28.647,
-            "median": 28.584,
-            "min": 28.5651,
-            "max": 28.7906
-          },
-          "input_tokens": {
-            "mean": 19105,
-            "median": 19105,
-            "min": 19105,
-            "max": 19105
-          },
-          "output_tokens": {
-            "mean": 3155.333,
-            "median": 3138,
-            "min": 3045,
-            "max": 3283
-          },
-          "total_tokens": {
-            "mean": 22260.333,
-            "median": 22243,
-            "min": 22150,
-            "max": 22388
-          },
-          "proposed_files": {
-            "mean": 1,
-            "median": 1,
-            "min": 1,
-            "max": 1
-          },
           "added_lines": {
+            "max": 38,
             "mean": 27.667,
             "median": 33,
-            "min": 12,
-            "max": 38
+            "min": 12
           },
+          "all_checks_passed": 3,
           "deleted_lines": {
+            "max": 0,
             "mean": 0,
             "median": 0,
-            "min": 0,
-            "max": 0
+            "min": 0
           },
+          "input_tokens": {
+            "max": 19105,
+            "mean": 19105,
+            "median": 19105,
+            "min": 19105
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3283,
+            "mean": 3155.333,
+            "median": 3138,
+            "min": 3045
+          },
+          "proposal_elapsed_seconds": {
+            "max": 28.7906,
+            "mean": 28.647,
+            "median": 28.584,
+            "min": 28.5651
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 33,
           "review_verdicts": {
             "approve": 0,
             "revise": 0,
             "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 22388,
+            "mean": 22260.333,
+            "median": 22243,
+            "min": 22150
           }
         }
       },
+      "cohort_id": "cohort-order-detail-2026-11-04-followup",
+      "proposal_runs": 15,
       "records": [
         {
-          "run_id": "20261104T021134813008Z",
-          "profile": "context",
-          "proposal_elapsed_seconds": 30.0808,
+          "acceptance_passed": 3,
+          "added_lines": 39,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 0,
           "input_tokens": 18967,
           "output_tokens": 3294,
-          "total_tokens": 22261,
+          "profile": "context",
+          "proposal_elapsed_seconds": 30.0808,
           "proposed_files": 1,
-          "added_lines": 39,
-          "deleted_lines": 0,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T021134813008Z",
+          "total_tokens": 22261
         },
         {
-          "run_id": "20261104T021204984236Z",
-          "profile": "memory",
-          "proposal_elapsed_seconds": 28.6758,
+          "acceptance_passed": 3,
+          "added_lines": 37,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 0,
           "input_tokens": 19105,
           "output_tokens": 3185,
-          "total_tokens": 22290,
+          "profile": "memory",
+          "proposal_elapsed_seconds": 28.6758,
           "proposed_files": 1,
-          "added_lines": 37,
-          "deleted_lines": 0,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T021204984236Z",
+          "total_tokens": 22290
         },
         {
-          "run_id": "20261104T021233742699Z",
-          "profile": "review",
-          "proposal_elapsed_seconds": 29.4092,
+          "acceptance_passed": 3,
+          "added_lines": 34,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 0,
           "input_tokens": 19105,
           "output_tokens": 3170,
-          "total_tokens": 22275,
+          "profile": "review",
+          "proposal_elapsed_seconds": 29.4092,
           "proposed_files": 1,
-          "added_lines": 34,
-          "deleted_lines": 0,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
           "review": {
-            "verdict": "approve",
-            "finding_count": 0
-          }
+            "finding_count": 0,
+            "verdict": "approve"
+          },
+          "run_id": "20261104T021233742699Z",
+          "total_tokens": 22275
         },
         {
-          "run_id": "20261104T021303237058Z",
-          "profile": "verification",
-          "proposal_elapsed_seconds": 28.7906,
+          "acceptance_passed": 3,
+          "added_lines": 38,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 0,
           "input_tokens": 19105,
           "output_tokens": 3283,
-          "total_tokens": 22388,
+          "profile": "verification",
+          "proposal_elapsed_seconds": 28.7906,
           "proposed_files": 1,
-          "added_lines": 38,
-          "deleted_lines": 0,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T021303237058Z",
+          "total_tokens": 22388
         },
         {
-          "run_id": "20261104T021332110411Z",
-          "profile": "baseline",
-          "proposal_elapsed_seconds": 27.1799,
+          "acceptance_passed": 3,
+          "added_lines": 41,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 10,
           "input_tokens": 4412,
           "output_tokens": 3238,
-          "total_tokens": 7650,
+          "profile": "baseline",
+          "proposal_elapsed_seconds": 27.1799,
           "proposed_files": 1,
-          "added_lines": 41,
-          "deleted_lines": 10,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T021332110411Z",
+          "total_tokens": 7650
         },
         {
-          "run_id": "20261104T021359391379Z",
-          "profile": "context",
-          "proposal_elapsed_seconds": 29.6288,
+          "acceptance_passed": 3,
+          "added_lines": 38,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 0,
           "input_tokens": 18967,
           "output_tokens": 3308,
-          "total_tokens": 22275,
+          "profile": "context",
+          "proposal_elapsed_seconds": 29.6288,
           "proposed_files": 1,
-          "added_lines": 38,
-          "deleted_lines": 0,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T021359391379Z",
+          "total_tokens": 22275
         },
         {
-          "run_id": "20261104T021429103357Z",
-          "profile": "verification",
-          "proposal_elapsed_seconds": 28.5651,
+          "acceptance_passed": 3,
+          "added_lines": 12,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 0,
           "input_tokens": 19105,
           "output_tokens": 3045,
-          "total_tokens": 22150,
+          "profile": "verification",
+          "proposal_elapsed_seconds": 28.5651,
           "proposed_files": 1,
-          "added_lines": 12,
-          "deleted_lines": 0,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T021429103357Z",
+          "total_tokens": 22150
         },
         {
-          "run_id": "20261104T021457750618Z",
-          "profile": "baseline",
-          "proposal_elapsed_seconds": 26.097,
+          "acceptance_passed": 3,
+          "added_lines": 40,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 10,
           "input_tokens": 4412,
           "output_tokens": 3179,
-          "total_tokens": 7591,
+          "profile": "baseline",
+          "proposal_elapsed_seconds": 26.097,
           "proposed_files": 1,
-          "added_lines": 40,
-          "deleted_lines": 10,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T021457750618Z",
+          "total_tokens": 7591
         },
         {
-          "run_id": "20261104T021523929414Z",
-          "profile": "memory",
-          "proposal_elapsed_seconds": 24.8041,
+          "acceptance_passed": 3,
+          "added_lines": 39,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 0,
           "input_tokens": 19105,
           "output_tokens": 3166,
-          "total_tokens": 22271,
+          "profile": "memory",
+          "proposal_elapsed_seconds": 24.8041,
           "proposed_files": 1,
-          "added_lines": 39,
-          "deleted_lines": 0,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T021523929414Z",
+          "total_tokens": 22271
         },
         {
-          "run_id": "20261104T021548819109Z",
-          "profile": "review",
-          "proposal_elapsed_seconds": 27.0894,
+          "acceptance_passed": 3,
+          "added_lines": 38,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 0,
           "input_tokens": 19105,
           "output_tokens": 3220,
-          "total_tokens": 22325,
+          "profile": "review",
+          "proposal_elapsed_seconds": 27.0894,
           "proposed_files": 1,
-          "added_lines": 38,
-          "deleted_lines": 0,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
           "review": {
-            "verdict": "approve",
-            "finding_count": 0
-          }
+            "finding_count": 0,
+            "verdict": "approve"
+          },
+          "run_id": "20261104T021548819109Z",
+          "total_tokens": 22325
         },
         {
-          "run_id": "20261104T021615995398Z",
-          "profile": "verification",
-          "proposal_elapsed_seconds": 28.5841,
+          "acceptance_passed": 3,
+          "added_lines": 33,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 0,
           "input_tokens": 19105,
           "output_tokens": 3138,
-          "total_tokens": 22243,
+          "profile": "verification",
+          "proposal_elapsed_seconds": 28.5841,
           "proposed_files": 1,
-          "added_lines": 33,
-          "deleted_lines": 0,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T021615995398Z",
+          "total_tokens": 22243
         },
         {
-          "run_id": "20261104T021644674793Z",
-          "profile": "baseline",
-          "proposal_elapsed_seconds": 27.8581,
+          "acceptance_passed": 3,
+          "added_lines": 36,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 0,
           "input_tokens": 4412,
           "output_tokens": 3236,
-          "total_tokens": 7648,
+          "profile": "baseline",
+          "proposal_elapsed_seconds": 27.8581,
           "proposed_files": 1,
-          "added_lines": 36,
-          "deleted_lines": 0,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T021644674793Z",
+          "total_tokens": 7648
         },
         {
-          "run_id": "20261104T021712627064Z",
-          "profile": "context",
-          "proposal_elapsed_seconds": 27.6506,
+          "acceptance_passed": 3,
+          "added_lines": 41,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 10,
           "input_tokens": 18967,
           "output_tokens": 3151,
-          "total_tokens": 22118,
+          "profile": "context",
+          "proposal_elapsed_seconds": 27.6506,
           "proposed_files": 1,
-          "added_lines": 41,
-          "deleted_lines": 10,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T021712627064Z",
+          "total_tokens": 22118
         },
         {
-          "run_id": "20261104T021740361082Z",
-          "profile": "review",
-          "proposal_elapsed_seconds": 27.3848,
+          "acceptance_passed": 3,
+          "added_lines": 34,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 0,
           "input_tokens": 19105,
           "output_tokens": 3150,
-          "total_tokens": 22255,
+          "profile": "review",
+          "proposal_elapsed_seconds": 27.3848,
           "proposed_files": 1,
-          "added_lines": 34,
-          "deleted_lines": 0,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
           "review": {
-            "verdict": "approve",
-            "finding_count": 0
-          }
+            "finding_count": 0,
+            "verdict": "approve"
+          },
+          "run_id": "20261104T021740361082Z",
+          "total_tokens": 22255
         },
         {
-          "run_id": "20261104T021807830063Z",
-          "profile": "memory",
-          "proposal_elapsed_seconds": 31.0912,
+          "acceptance_passed": 3,
+          "added_lines": 38,
+          "all_checks_passed": true,
+          "combined_passed": 14,
+          "deleted_lines": 0,
           "input_tokens": 19105,
           "output_tokens": 3272,
-          "total_tokens": 22377,
+          "profile": "memory",
+          "proposal_elapsed_seconds": 31.0912,
           "proposed_files": 1,
-          "added_lines": 38,
-          "deleted_lines": 0,
-          "acceptance_passed": 3,
           "regression_passed": 11,
-          "combined_passed": 14,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T021807830063Z",
+          "total_tokens": 22377
         }
-      ]
-    },
-    {
-      "cohort_id": "cohort-express-delivery-2026-11-03-stage",
-      "proposal_runs": 15,
-      "task_acceptance_checks_per_run": 5,
-      "regression_checks_per_run": 14,
-      "acceptance_passed_total": 75,
-      "acceptance_total": 75,
-      "regression_passed_total": 210,
-      "regression_total": 210,
-      "all_checks_passed_runs": 15,
+      ],
+      "regression_checks_per_run": 11,
+      "regression_passed_total": 165,
+      "regression_total": 165,
       "review_calls_with_saved_responses": 3,
       "review_verdicts": {
         "approve": 3,
         "revise": 0,
         "unable_to_assess": 0
       },
+      "task_acceptance_checks_per_run": 3
+    },
+    {
+      "acceptance_passed_total": 75,
+      "acceptance_total": 75,
+      "all_checks_passed_runs": 15,
       "by_profile": {
         "baseline": {
-          "n": 3,
-          "all_checks_passed": 3,
           "acceptance_passed_total": 15,
-          "regression_passed_total": 42,
-          "proposal_elapsed_seconds": {
-            "mean": 28.535,
-            "median": 28.797,
-            "min": 27.6174,
-            "max": 29.1912
-          },
-          "input_tokens": {
-            "mean": 4877,
-            "median": 4877,
-            "min": 4877,
-            "max": 4877
-          },
-          "output_tokens": {
-            "mean": 3944.333,
-            "median": 3940,
-            "min": 3933,
-            "max": 3960
-          },
-          "total_tokens": {
-            "mean": 8821.333,
-            "median": 8817,
-            "min": 8810,
-            "max": 8837
-          },
-          "proposed_files": {
-            "mean": 2,
-            "median": 2,
-            "min": 2,
-            "max": 2
-          },
           "added_lines": {
+            "max": 39,
             "mean": 38,
             "median": 39,
-            "min": 36,
-            "max": 39
+            "min": 36
           },
+          "all_checks_passed": 3,
           "deleted_lines": {
+            "max": 12,
             "mean": 12,
             "median": 12,
-            "min": 12,
-            "max": 12
+            "min": 12
           },
+          "input_tokens": {
+            "max": 4877,
+            "mean": 4877,
+            "median": 4877,
+            "min": 4877
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3960,
+            "mean": 3944.333,
+            "median": 3940,
+            "min": 3933
+          },
+          "proposal_elapsed_seconds": {
+            "max": 29.1912,
+            "mean": 28.535,
+            "median": 28.797,
+            "min": 27.6174
+          },
+          "proposed_files": {
+            "max": 2,
+            "mean": 2,
+            "median": 2,
+            "min": 2
+          },
+          "regression_passed_total": 42,
           "review_verdicts": {
             "approve": 0,
             "revise": 0,
             "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 8837,
+            "mean": 8821.333,
+            "median": 8817,
+            "min": 8810
           }
         },
         "context": {
-          "n": 3,
-          "all_checks_passed": 3,
           "acceptance_passed_total": 15,
-          "regression_passed_total": 42,
-          "proposal_elapsed_seconds": {
-            "mean": 27.683,
-            "median": 27.564,
-            "min": 26.4696,
-            "max": 29.0137
-          },
-          "input_tokens": {
-            "mean": 26608,
-            "median": 26608,
-            "min": 26608,
-            "max": 26608
-          },
-          "output_tokens": {
-            "mean": 3874.333,
-            "median": 3880,
-            "min": 3851,
-            "max": 3892
-          },
-          "total_tokens": {
-            "mean": 30482.333,
-            "median": 30488,
-            "min": 30459,
-            "max": 30500
-          },
-          "proposed_files": {
-            "mean": 2,
-            "median": 2,
-            "min": 2,
-            "max": 2
-          },
           "added_lines": {
+            "max": 39,
             "mean": 37.333,
             "median": 39,
-            "min": 34,
-            "max": 39
+            "min": 34
           },
+          "all_checks_passed": 3,
           "deleted_lines": {
+            "max": 13,
             "mean": 12.333,
             "median": 12,
-            "min": 12,
-            "max": 13
+            "min": 12
           },
+          "input_tokens": {
+            "max": 26608,
+            "mean": 26608,
+            "median": 26608,
+            "min": 26608
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3892,
+            "mean": 3874.333,
+            "median": 3880,
+            "min": 3851
+          },
+          "proposal_elapsed_seconds": {
+            "max": 29.0137,
+            "mean": 27.683,
+            "median": 27.564,
+            "min": 26.4696
+          },
+          "proposed_files": {
+            "max": 2,
+            "mean": 2,
+            "median": 2,
+            "min": 2
+          },
+          "regression_passed_total": 42,
           "review_verdicts": {
             "approve": 0,
             "revise": 0,
             "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 30500,
+            "mean": 30482.333,
+            "median": 30488,
+            "min": 30459
           }
         },
         "memory": {
-          "n": 3,
-          "all_checks_passed": 3,
           "acceptance_passed_total": 15,
-          "regression_passed_total": 42,
-          "proposal_elapsed_seconds": {
-            "mean": 27.339,
-            "median": 27.606,
-            "min": 26.0247,
-            "max": 28.3861
-          },
-          "input_tokens": {
-            "mean": 26746,
-            "median": 26746,
-            "min": 26746,
-            "max": 26746
-          },
-          "output_tokens": {
-            "mean": 3898.667,
-            "median": 3903,
-            "min": 3887,
-            "max": 3906
-          },
-          "total_tokens": {
-            "mean": 30644.667,
-            "median": 30649,
-            "min": 30633,
-            "max": 30652
-          },
-          "proposed_files": {
-            "mean": 2,
-            "median": 2,
-            "min": 2,
-            "max": 2
-          },
           "added_lines": {
+            "max": 39,
             "mean": 37.333,
             "median": 37,
-            "min": 36,
-            "max": 39
+            "min": 36
           },
+          "all_checks_passed": 3,
           "deleted_lines": {
+            "max": 13,
             "mean": 12.333,
             "median": 12,
-            "min": 12,
-            "max": 13
+            "min": 12
           },
+          "input_tokens": {
+            "max": 26746,
+            "mean": 26746,
+            "median": 26746,
+            "min": 26746
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3906,
+            "mean": 3898.667,
+            "median": 3903,
+            "min": 3887
+          },
+          "proposal_elapsed_seconds": {
+            "max": 28.3861,
+            "mean": 27.339,
+            "median": 27.606,
+            "min": 26.0247
+          },
+          "proposed_files": {
+            "max": 2,
+            "mean": 2,
+            "median": 2,
+            "min": 2
+          },
+          "regression_passed_total": 42,
           "review_verdicts": {
             "approve": 0,
             "revise": 0,
             "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 30652,
+            "mean": 30644.667,
+            "median": 30649,
+            "min": 30633
           }
         },
         "review": {
-          "n": 3,
-          "all_checks_passed": 3,
           "acceptance_passed_total": 15,
-          "regression_passed_total": 42,
-          "proposal_elapsed_seconds": {
-            "mean": 28.411,
-            "median": 28.827,
-            "min": 27.3514,
-            "max": 29.053
-          },
-          "input_tokens": {
-            "mean": 26746,
-            "median": 26746,
-            "min": 26746,
-            "max": 26746
-          },
-          "output_tokens": {
-            "mean": 3932.667,
-            "median": 3939,
-            "min": 3909,
-            "max": 3950
-          },
-          "total_tokens": {
-            "mean": 30678.667,
-            "median": 30685,
-            "min": 30655,
-            "max": 30696
-          },
-          "proposed_files": {
-            "mean": 2,
-            "median": 2,
-            "min": 2,
-            "max": 2
-          },
           "added_lines": {
+            "max": 39,
             "mean": 38,
             "median": 39,
-            "min": 36,
-            "max": 39
+            "min": 36
           },
+          "all_checks_passed": 3,
           "deleted_lines": {
+            "max": 12,
             "mean": 12,
             "median": 12,
-            "min": 12,
-            "max": 12
+            "min": 12
           },
+          "input_tokens": {
+            "max": 26746,
+            "mean": 26746,
+            "median": 26746,
+            "min": 26746
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3950,
+            "mean": 3932.667,
+            "median": 3939,
+            "min": 3909
+          },
+          "proposal_elapsed_seconds": {
+            "max": 29.053,
+            "mean": 28.411,
+            "median": 28.827,
+            "min": 27.3514
+          },
+          "proposed_files": {
+            "max": 2,
+            "mean": 2,
+            "median": 2,
+            "min": 2
+          },
+          "regression_passed_total": 42,
           "review_verdicts": {
             "approve": 3,
             "revise": 0,
             "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 30696,
+            "mean": 30678.667,
+            "median": 30685,
+            "min": 30655
           }
         },
         "verification": {
-          "n": 3,
-          "all_checks_passed": 3,
           "acceptance_passed_total": 15,
-          "regression_passed_total": 42,
-          "proposal_elapsed_seconds": {
-            "mean": 28.599,
-            "median": 28.599,
-            "min": 27.7692,
-            "max": 29.4275
-          },
-          "input_tokens": {
-            "mean": 26746,
-            "median": 26746,
-            "min": 26746,
-            "max": 26746
-          },
-          "output_tokens": {
-            "mean": 3892.667,
-            "median": 3892,
-            "min": 3872,
-            "max": 3914
-          },
-          "total_tokens": {
-            "mean": 30638.667,
-            "median": 30638,
-            "min": 30618,
-            "max": 30660
-          },
-          "proposed_files": {
-            "mean": 2,
-            "median": 2,
-            "min": 2,
-            "max": 2
-          },
           "added_lines": {
+            "max": 37,
             "mean": 37,
             "median": 37,
-            "min": 37,
-            "max": 37
+            "min": 37
           },
+          "all_checks_passed": 3,
           "deleted_lines": {
+            "max": 13,
             "mean": 13,
             "median": 13,
-            "min": 13,
-            "max": 13
+            "min": 13
           },
+          "input_tokens": {
+            "max": 26746,
+            "mean": 26746,
+            "median": 26746,
+            "min": 26746
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3914,
+            "mean": 3892.667,
+            "median": 3892,
+            "min": 3872
+          },
+          "proposal_elapsed_seconds": {
+            "max": 29.4275,
+            "mean": 28.599,
+            "median": 28.599,
+            "min": 27.7692
+          },
+          "proposed_files": {
+            "max": 2,
+            "mean": 2,
+            "median": 2,
+            "min": 2
+          },
+          "regression_passed_total": 42,
           "review_verdicts": {
             "approve": 0,
             "revise": 0,
             "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 30660,
+            "mean": 30638.667,
+            "median": 30638,
+            "min": 30618
           }
         }
       },
+      "cohort_id": "cohort-express-delivery-2026-11-03-stage",
+      "proposal_runs": 15,
       "records": [
         {
-          "run_id": "20261104T024113122880Z",
-          "profile": "baseline",
-          "proposal_elapsed_seconds": 27.6174,
+          "acceptance_passed": 5,
+          "added_lines": 39,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 12,
           "input_tokens": 4877,
           "output_tokens": 3940,
-          "total_tokens": 8817,
+          "profile": "baseline",
+          "proposal_elapsed_seconds": 27.6174,
           "proposed_files": 2,
-          "added_lines": 39,
-          "deleted_lines": 12,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T024113122880Z",
+          "total_tokens": 8817
         },
         {
-          "run_id": "20261104T024140820083Z",
-          "profile": "context",
-          "proposal_elapsed_seconds": 29.0137,
+          "acceptance_passed": 5,
+          "added_lines": 34,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 13,
           "input_tokens": 26608,
           "output_tokens": 3880,
-          "total_tokens": 30488,
+          "profile": "context",
+          "proposal_elapsed_seconds": 29.0137,
           "proposed_files": 2,
-          "added_lines": 34,
-          "deleted_lines": 13,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T024140820083Z",
+          "total_tokens": 30488
         },
         {
-          "run_id": "20261104T024209915634Z",
-          "profile": "review",
-          "proposal_elapsed_seconds": 27.3514,
+          "acceptance_passed": 5,
+          "added_lines": 36,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 12,
           "input_tokens": 26746,
           "output_tokens": 3909,
-          "total_tokens": 30655,
+          "profile": "review",
+          "proposal_elapsed_seconds": 27.3514,
           "proposed_files": 2,
-          "added_lines": 36,
-          "deleted_lines": 12,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
           "review": {
-            "verdict": "approve",
-            "finding_count": 0
-          }
+            "finding_count": 0,
+            "verdict": "approve"
+          },
+          "run_id": "20261104T024209915634Z",
+          "total_tokens": 30655
         },
         {
-          "run_id": "20261104T024237349585Z",
-          "profile": "memory",
-          "proposal_elapsed_seconds": 27.6061,
+          "acceptance_passed": 5,
+          "added_lines": 37,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 13,
           "input_tokens": 26746,
           "output_tokens": 3903,
-          "total_tokens": 30649,
+          "profile": "memory",
+          "proposal_elapsed_seconds": 27.6061,
           "proposed_files": 2,
-          "added_lines": 37,
-          "deleted_lines": 13,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T024237349585Z",
+          "total_tokens": 30649
         },
         {
-          "run_id": "20261104T024305039399Z",
+          "acceptance_passed": 5,
+          "added_lines": 37,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 13,
+          "input_tokens": 26746,
+          "output_tokens": 3892,
           "profile": "verification",
           "proposal_elapsed_seconds": 29.4275,
-          "input_tokens": 26746,
-          "output_tokens": 3892,
-          "total_tokens": 30638,
           "proposed_files": 2,
-          "added_lines": 37,
-          "deleted_lines": 13,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T024305039399Z",
+          "total_tokens": 30638
         },
         {
-          "run_id": "20261104T024334549864Z",
-          "profile": "review",
-          "proposal_elapsed_seconds": 29.053,
+          "acceptance_passed": 5,
+          "added_lines": 39,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 12,
           "input_tokens": 26746,
           "output_tokens": 3950,
-          "total_tokens": 30696,
+          "profile": "review",
+          "proposal_elapsed_seconds": 29.053,
           "proposed_files": 2,
-          "added_lines": 39,
-          "deleted_lines": 12,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
           "review": {
-            "verdict": "approve",
-            "finding_count": 0
-          }
+            "finding_count": 0,
+            "verdict": "approve"
+          },
+          "run_id": "20261104T024334549864Z",
+          "total_tokens": 30696
         },
         {
-          "run_id": "20261104T024403686984Z",
-          "profile": "context",
-          "proposal_elapsed_seconds": 27.5645,
+          "acceptance_passed": 5,
+          "added_lines": 39,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 12,
           "input_tokens": 26608,
           "output_tokens": 3892,
-          "total_tokens": 30500,
+          "profile": "context",
+          "proposal_elapsed_seconds": 27.5645,
           "proposed_files": 2,
-          "added_lines": 39,
-          "deleted_lines": 12,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T024403686984Z",
+          "total_tokens": 30500
         },
         {
-          "run_id": "20261104T024431333388Z",
-          "profile": "baseline",
-          "proposal_elapsed_seconds": 28.7966,
+          "acceptance_passed": 5,
+          "added_lines": 36,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 12,
           "input_tokens": 4877,
           "output_tokens": 3933,
-          "total_tokens": 8810,
+          "profile": "baseline",
+          "proposal_elapsed_seconds": 28.7966,
           "proposed_files": 2,
-          "added_lines": 36,
-          "deleted_lines": 12,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T024431333388Z",
+          "total_tokens": 8810
         },
         {
-          "run_id": "20261104T024500212124Z",
-          "profile": "verification",
-          "proposal_elapsed_seconds": 27.7692,
+          "acceptance_passed": 5,
+          "added_lines": 37,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 13,
           "input_tokens": 26746,
           "output_tokens": 3872,
-          "total_tokens": 30618,
+          "profile": "verification",
+          "proposal_elapsed_seconds": 27.7692,
           "proposed_files": 2,
-          "added_lines": 37,
-          "deleted_lines": 13,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T024500212124Z",
+          "total_tokens": 30618
         },
         {
-          "run_id": "20261104T024528064564Z",
-          "profile": "memory",
-          "proposal_elapsed_seconds": 28.3861,
+          "acceptance_passed": 5,
+          "added_lines": 39,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 12,
           "input_tokens": 26746,
           "output_tokens": 3906,
-          "total_tokens": 30652,
+          "profile": "memory",
+          "proposal_elapsed_seconds": 28.3861,
           "proposed_files": 2,
-          "added_lines": 39,
-          "deleted_lines": 12,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T024528064564Z",
+          "total_tokens": 30652
         },
         {
-          "run_id": "20261104T024556532719Z",
-          "profile": "context",
-          "proposal_elapsed_seconds": 26.4696,
+          "acceptance_passed": 5,
+          "added_lines": 39,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 12,
           "input_tokens": 26608,
           "output_tokens": 3851,
-          "total_tokens": 30459,
+          "profile": "context",
+          "proposal_elapsed_seconds": 26.4696,
           "proposed_files": 2,
-          "added_lines": 39,
-          "deleted_lines": 12,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T024556532719Z",
+          "total_tokens": 30459
         },
         {
-          "run_id": "20261104T024623084786Z",
-          "profile": "verification",
-          "proposal_elapsed_seconds": 28.5991,
+          "acceptance_passed": 5,
+          "added_lines": 37,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 13,
           "input_tokens": 26746,
           "output_tokens": 3914,
-          "total_tokens": 30660,
+          "profile": "verification",
+          "proposal_elapsed_seconds": 28.5991,
           "proposed_files": 2,
-          "added_lines": 37,
-          "deleted_lines": 13,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T024623084786Z",
+          "total_tokens": 30660
         },
         {
-          "run_id": "20261104T024651770484Z",
-          "profile": "baseline",
-          "proposal_elapsed_seconds": 29.1912,
+          "acceptance_passed": 5,
+          "added_lines": 39,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 12,
           "input_tokens": 4877,
           "output_tokens": 3960,
-          "total_tokens": 8837,
+          "profile": "baseline",
+          "proposal_elapsed_seconds": 29.1912,
           "proposed_files": 2,
-          "added_lines": 39,
-          "deleted_lines": 12,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T024651770484Z",
+          "total_tokens": 8837
         },
         {
-          "run_id": "20261104T024721043814Z",
-          "profile": "review",
-          "proposal_elapsed_seconds": 28.8271,
+          "acceptance_passed": 5,
+          "added_lines": 39,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 12,
           "input_tokens": 26746,
           "output_tokens": 3939,
-          "total_tokens": 30685,
+          "profile": "review",
+          "proposal_elapsed_seconds": 28.8271,
           "proposed_files": 2,
-          "added_lines": 39,
-          "deleted_lines": 12,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
           "review": {
-            "verdict": "approve",
-            "finding_count": 0
-          }
+            "finding_count": 0,
+            "verdict": "approve"
+          },
+          "run_id": "20261104T024721043814Z",
+          "total_tokens": 30685
         },
         {
-          "run_id": "20261104T024749952744Z",
-          "profile": "memory",
-          "proposal_elapsed_seconds": 26.0247,
+          "acceptance_passed": 5,
+          "added_lines": 36,
+          "all_checks_passed": true,
+          "combined_passed": 19,
+          "deleted_lines": 12,
           "input_tokens": 26746,
           "output_tokens": 3887,
-          "total_tokens": 30633,
+          "profile": "memory",
+          "proposal_elapsed_seconds": 26.0247,
           "proposed_files": 2,
-          "added_lines": 36,
-          "deleted_lines": 12,
-          "acceptance_passed": 5,
           "regression_passed": 14,
-          "combined_passed": 19,
-          "all_checks_passed": true,
-          "review": null
+          "review": null,
+          "run_id": "20261104T024749952744Z",
+          "total_tokens": 30633
         }
-      ]
+      ],
+      "regression_checks_per_run": 14,
+      "regression_passed_total": 210,
+      "regression_total": 210,
+      "review_calls_with_saved_responses": 3,
+      "review_verdicts": {
+        "approve": 3,
+        "revise": 0,
+        "unable_to_assess": 0
+      },
+      "task_acceptance_checks_per_run": 5
+    },
+    {
+      "acceptance_passed_total": 105,
+      "acceptance_total": 105,
+      "all_checks_passed_runs": 15,
+      "by_profile": {
+        "baseline": {
+          "acceptance_passed_total": 21,
+          "added_lines": {
+            "max": 9,
+            "mean": 7,
+            "median": 6,
+            "min": 6
+          },
+          "all_checks_passed": 3,
+          "deleted_lines": {
+            "max": 2,
+            "mean": 2,
+            "median": 2,
+            "min": 2
+          },
+          "input_tokens": {
+            "max": 5210,
+            "mean": 5210,
+            "median": 5210,
+            "min": 5210
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3301,
+            "mean": 3269.333,
+            "median": 3280,
+            "min": 3227
+          },
+          "proposal_elapsed_seconds": {
+            "max": 26.0964,
+            "mean": 24.182,
+            "median": 23.553,
+            "min": 22.8955
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 57,
+          "review_verdicts": {
+            "approve": 0,
+            "revise": 0,
+            "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 8511,
+            "mean": 8479.333,
+            "median": 8490,
+            "min": 8437
+          }
+        },
+        "context": {
+          "acceptance_passed_total": 21,
+          "added_lines": {
+            "max": 7,
+            "mean": 7,
+            "median": 7,
+            "min": 7
+          },
+          "all_checks_passed": 3,
+          "deleted_lines": {
+            "max": 2,
+            "mean": 2,
+            "median": 2,
+            "min": 2
+          },
+          "input_tokens": {
+            "max": 28180,
+            "mean": 28180,
+            "median": 28180,
+            "min": 28180
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3266,
+            "mean": 3263.667,
+            "median": 3266,
+            "min": 3259
+          },
+          "proposal_elapsed_seconds": {
+            "max": 23.9479,
+            "mean": 23.125,
+            "median": 23.423,
+            "min": 22.0053
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 57,
+          "review_verdicts": {
+            "approve": 0,
+            "revise": 0,
+            "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 31446,
+            "mean": 31443.667,
+            "median": 31446,
+            "min": 31439
+          }
+        },
+        "memory": {
+          "acceptance_passed_total": 21,
+          "added_lines": {
+            "max": 10,
+            "mean": 7.667,
+            "median": 7,
+            "min": 6
+          },
+          "all_checks_passed": 3,
+          "deleted_lines": {
+            "max": 2,
+            "mean": 2,
+            "median": 2,
+            "min": 2
+          },
+          "input_tokens": {
+            "max": 28318,
+            "mean": 28318,
+            "median": 28318,
+            "min": 28318
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3343,
+            "mean": 3308.333,
+            "median": 3320,
+            "min": 3262
+          },
+          "proposal_elapsed_seconds": {
+            "max": 25.3459,
+            "mean": 24.325,
+            "median": 24.421,
+            "min": 23.2081
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 57,
+          "review_verdicts": {
+            "approve": 0,
+            "revise": 0,
+            "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 31661,
+            "mean": 31626.333,
+            "median": 31638,
+            "min": 31580
+          }
+        },
+        "review": {
+          "acceptance_passed_total": 21,
+          "added_lines": {
+            "max": 7,
+            "mean": 7,
+            "median": 7,
+            "min": 7
+          },
+          "all_checks_passed": 3,
+          "deleted_lines": {
+            "max": 2,
+            "mean": 2,
+            "median": 2,
+            "min": 2
+          },
+          "input_tokens": {
+            "max": 28318,
+            "mean": 28318,
+            "median": 28318,
+            "min": 28318
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3399,
+            "mean": 3321,
+            "median": 3286,
+            "min": 3278
+          },
+          "proposal_elapsed_seconds": {
+            "max": 26.8435,
+            "mean": 25.116,
+            "median": 24.252,
+            "min": 24.2513
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 57,
+          "review_verdicts": {
+            "approve": 3,
+            "revise": 0,
+            "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 31717,
+            "mean": 31639,
+            "median": 31604,
+            "min": 31596
+          }
+        },
+        "verification": {
+          "acceptance_passed_total": 21,
+          "added_lines": {
+            "max": 10,
+            "mean": 8,
+            "median": 7,
+            "min": 7
+          },
+          "all_checks_passed": 3,
+          "deleted_lines": {
+            "max": 2,
+            "mean": 2,
+            "median": 2,
+            "min": 2
+          },
+          "input_tokens": {
+            "max": 28318,
+            "mean": 28318,
+            "median": 28318,
+            "min": 28318
+          },
+          "n": 3,
+          "output_tokens": {
+            "max": 3275,
+            "mean": 3266.333,
+            "median": 3267,
+            "min": 3257
+          },
+          "proposal_elapsed_seconds": {
+            "max": 24.277,
+            "mean": 23.813,
+            "median": 23.74,
+            "min": 23.4229
+          },
+          "proposed_files": {
+            "max": 1,
+            "mean": 1,
+            "median": 1,
+            "min": 1
+          },
+          "regression_passed_total": 57,
+          "review_verdicts": {
+            "approve": 0,
+            "revise": 0,
+            "unable_to_assess": 0
+          },
+          "total_tokens": {
+            "max": 31593,
+            "mean": 31584.333,
+            "median": 31585,
+            "min": 31575
+          }
+        }
+      },
+      "cohort_id": "cohort-shipping-resilience-2026-11-04-stage",
+      "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+      "proposal_runs": 15,
+      "records": [
+        {
+          "acceptance_passed": 7,
+          "added_lines": 9,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 5210,
+          "output_tokens": 3280,
+          "profile": "baseline",
+          "proposal_elapsed_seconds": 23.5532,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": null,
+          "run_id": "20261104T032124175479Z",
+          "total_tokens": 8490
+        },
+        {
+          "acceptance_passed": 7,
+          "added_lines": 7,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 28318,
+          "output_tokens": 3275,
+          "profile": "verification",
+          "proposal_elapsed_seconds": 23.7404,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": null,
+          "run_id": "20261104T032406143118Z",
+          "total_tokens": 31593
+        },
+        {
+          "acceptance_passed": 7,
+          "added_lines": 7,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 28318,
+          "output_tokens": 3278,
+          "profile": "review",
+          "proposal_elapsed_seconds": 24.2513,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": {
+            "finding_count": 0,
+            "verdict": "approve"
+          },
+          "run_id": "20261104T032430088772Z",
+          "total_tokens": 31596
+        },
+        {
+          "acceptance_passed": 7,
+          "added_lines": 7,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 28318,
+          "output_tokens": 3343,
+          "profile": "memory",
+          "proposal_elapsed_seconds": 24.4206,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": null,
+          "run_id": "20261104T032459200831Z",
+          "total_tokens": 31661
+        },
+        {
+          "acceptance_passed": 7,
+          "added_lines": 7,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 28180,
+          "output_tokens": 3266,
+          "profile": "context",
+          "proposal_elapsed_seconds": 23.9479,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": null,
+          "run_id": "20261104T033000755447Z",
+          "total_tokens": 31446
+        },
+        {
+          "acceptance_passed": 7,
+          "added_lines": 6,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 28318,
+          "output_tokens": 3320,
+          "profile": "memory",
+          "proposal_elapsed_seconds": 25.3459,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": null,
+          "run_id": "20261104T033154260696Z",
+          "total_tokens": 31638
+        },
+        {
+          "acceptance_passed": 7,
+          "added_lines": 7,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 28180,
+          "output_tokens": 3266,
+          "profile": "context",
+          "proposal_elapsed_seconds": 22.0053,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": null,
+          "run_id": "20261104T033247273933Z",
+          "total_tokens": 31446
+        },
+        {
+          "acceptance_passed": 7,
+          "added_lines": 10,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 28318,
+          "output_tokens": 3267,
+          "profile": "verification",
+          "proposal_elapsed_seconds": 24.277,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": null,
+          "run_id": "20261104T033418365872Z",
+          "total_tokens": 31585
+        },
+        {
+          "acceptance_passed": 7,
+          "added_lines": 6,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 5210,
+          "output_tokens": 3301,
+          "profile": "baseline",
+          "proposal_elapsed_seconds": 26.0964,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": null,
+          "run_id": "20261104T043335188182Z",
+          "total_tokens": 8511
+        },
+        {
+          "acceptance_passed": 7,
+          "added_lines": 7,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 28318,
+          "output_tokens": 3399,
+          "profile": "review",
+          "proposal_elapsed_seconds": 26.8435,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": {
+            "finding_count": 0,
+            "verdict": "approve"
+          },
+          "run_id": "20261104T043443115551Z",
+          "total_tokens": 31717
+        },
+        {
+          "acceptance_passed": 7,
+          "added_lines": 7,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 28318,
+          "output_tokens": 3257,
+          "profile": "verification",
+          "proposal_elapsed_seconds": 23.4229,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": null,
+          "run_id": "20261104T043645218290Z",
+          "total_tokens": 31575
+        },
+        {
+          "acceptance_passed": 7,
+          "added_lines": 10,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 28318,
+          "output_tokens": 3262,
+          "profile": "memory",
+          "proposal_elapsed_seconds": 23.2081,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": null,
+          "run_id": "20261104T043725171740Z",
+          "total_tokens": 31580
+        },
+        {
+          "acceptance_passed": 7,
+          "added_lines": 7,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 28180,
+          "output_tokens": 3259,
+          "profile": "context",
+          "proposal_elapsed_seconds": 23.4229,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": null,
+          "run_id": "20261104T043806427587Z",
+          "total_tokens": 31439
+        },
+        {
+          "acceptance_passed": 7,
+          "added_lines": 7,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 28318,
+          "output_tokens": 3286,
+          "profile": "review",
+          "proposal_elapsed_seconds": 24.2522,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": {
+            "finding_count": 0,
+            "verdict": "approve"
+          },
+          "run_id": "20261104T043846563456Z",
+          "total_tokens": 31604
+        },
+        {
+          "acceptance_passed": 7,
+          "added_lines": 6,
+          "all_checks_passed": true,
+          "combined_passed": 26,
+          "deleted_lines": 2,
+          "input_tokens": 5210,
+          "output_tokens": 3227,
+          "profile": "baseline",
+          "proposal_elapsed_seconds": 22.8955,
+          "proposed_files": 1,
+          "regression_passed": 19,
+          "review": null,
+          "run_id": "20261104T043945055419Z",
+          "total_tokens": 8437
+        }
+      ],
+      "regression_checks_per_run": 19,
+      "regression_passed_total": 285,
+      "regression_total": 285,
+      "review_calls_with_saved_responses": 3,
+      "review_verdicts": {
+        "approve": 3,
+        "revise": 0,
+        "unable_to_assess": 0
+      },
+      "status": "complete",
+      "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+      "task_acceptance_checks_per_run": 7,
+      "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4"
     }
   ],
-  "interpretation": "All three task cohorts reached a pass ceiling on their corrected fixed suites. They provide repeatable examples of the staged workflow but do not separate capability profiles by binary test outcome. The three tasks use different target revisions and should be reported as distinct cohorts. Same-model reviews are not independent.",
   "integrity_notes": [
     "Order-detail TCP-based test pass was blocked by the restricted sandbox; preserved as environment-blocked and replaced for scoring by a documented AF_UNIX transport amendment.",
     "Express-delivery first score used an error-body assertion not stated in the task; preserved and corrected to match the task wording before final scoring.",
     "One interrupted earlier review request has no saved result or response ID; whether it reached the provider is unknown.",
-    "No generated proposal was transferred into application source."
+    "No generated proposal was transferred into application source.",
+    "Shipping-resilience cohort: 15 proposals (three per profile) and three saved same-model reviews; all 15 passed seven acceptance checks and 19 regression tests. Baseline passed one of seven acceptance checks. A Keychain retrieval attempt failed before provider invocation and was resumed after user approval; no API request or response was saved for that setup attempt."
   ],
-  "raw_archive_path": "evidence/run-archive/"
+  "interpretation": "Four separate task cohorts on pinned application revisions reached a pass ceiling on their corrected fixed suites. They illustrate repeatable execution and evidence capture but do not distinguish cumulative profiles by binary test outcome. Report process measures descriptively; same-model reviews are not independent validation.",
+  "proposal_runs": 70,
+  "raw_archive_path": "evidence/run-archive/",
+  "review_calls_with_saved_responses": 14,
+  "saved_successful_model_responses": 84
 }

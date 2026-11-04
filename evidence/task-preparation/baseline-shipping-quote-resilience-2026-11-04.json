@@ -1,0 +1,46 @@
+{
+  "acceptance_suite": "tests/test_shipping_quote_resilience_acceptance.py",
+  "api_calls": 0,
+  "cohort_id": "cohort-shipping-resilience-2026-11-04-stage",
+  "details": {
+    "KeyError": "missing shipping_cents is not caught by the current order implementation",
+    "TypeError": "top-level list JSON is indexed as though it were an object",
+    "unsafe accepted values": [
+      "numeric string converted to integer",
+      "fraction truncated",
+      "boolean accepted as integer",
+      "negative integer accepted"
+    ]
+  },
+  "result": {
+    "acceptance_tests": {
+      "errors": 2,
+      "failed": 4,
+      "passed": 1
+    },
+    "api_calls": 0,
+    "existing_regression_tests_passed": 19,
+    "failing_cases": [
+      "missing shipping_cents",
+      "non-object JSON",
+      "numeric string shipping_cents",
+      "fractional shipping_cents",
+      "boolean shipping_cents",
+      "negative shipping_cents"
+    ],
+    "full_suite_exit_code": 1,
+    "malformed_json_case_already_returns_503": true,
+    "recorded_against_target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+    "total_tests": 26
+  },
+  "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+  "test_command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ]
+}

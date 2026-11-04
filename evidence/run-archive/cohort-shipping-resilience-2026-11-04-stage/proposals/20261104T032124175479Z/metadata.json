@@ -1,0 +1,101 @@
+{
+  "capabilities": {
+    "persistent_memory": false,
+    "repository_map": false,
+    "review_pass": false,
+    "verification": false
+  },
+  "context_files": [
+    {
+      "bytes": 255,
+      "path": ".research-scope.json",
+      "sha256": "273fda68715c4b7a38a026befa326c6f3df49c69d3d90d7d5d24535802f9eaa1"
+    },
+    {
+      "bytes": 3816,
+      "path": "README.md",
+      "sha256": "645d0c466c451630bdb336506306a6ea381115695008bacb24378e0203e367fa"
+    },
+    {
+      "bytes": 63,
+      "path": "app/__init__.py",
+      "sha256": "19d9b020682cc9124f711939e7e873a2a8dd1a8033a42b1e68a550d098505e5d"
+    },
+    {
+      "bytes": 10729,
+      "path": "app/legacy_monolith.py",
+      "sha256": "bbb10f20f407860b9e11d2f33b10bbeec43e810cc088d8f34fd087037c3f4253"
+    },
+    {
+      "bytes": 2293,
+      "path": "app/shipping_service.py",
+      "sha256": "a69f966ef0024679ac20c844c32cd6f2d5dbfb4fdd63c61dbada30acb1df5648"
+    },
+    {
+      "bytes": 2157,
+      "path": "evidence/baseline/README.md",
+      "sha256": "d87ae55d6346b43ee38f4ef9b6fcba5fd9e4e7ac2507047825a480320051130e"
+    },
+    {
+      "bytes": 440,
+      "path": "evidence/run-archive/README.md",
+      "sha256": "95d900a22121a91d2823612a601419108f7c10366ea8dd115bd251f7f5078de6"
+    },
+    {
+      "bytes": 1109,
+      "path": "evidence/task-preparation/README.md",
+      "sha256": "0b9db2eb50f1cc549b6cf64fd5693d422d527c8437334e82d804d4047f0c9678"
+    },
+    {
+      "bytes": 78,
+      "path": "requirements.txt",
+      "sha256": "1fa0e3353911967eae0af06046791a3883f12019536393c32f12ecdc78b4d7a0"
+    }
+  ],
+  "context_manifest_sha256": "7aa56cd17234967705c8908c830ddb6e69322a26c50159980af8a5204524aeac",
+  "created_at_utc": "2026-11-04T03:21:47.717534+00:00",
+  "elapsed_seconds": 23.5532,
+  "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+  "factory_working_tree_clean": true,
+  "human_intervention": {
+    "accepted": false,
+    "notes": "Review patch and any model output before transferring changes.",
+    "required": true
+  },
+  "inventory_file_count": 310,
+  "model": "gpt-6.1-sol",
+  "profile": "baseline",
+  "prompt_sha256": "4d964854c6b01a0575a36569398f74a4ddaa06b8715ba7ddbc7dedf077895f4b",
+  "proposed_file_count": 1,
+  "provider_usage": {
+    "input_tokens": 5210,
+    "input_tokens_details": {
+      "cache_write_tokens": 5207,
+      "cached_tokens": 0
+    },
+    "output_tokens": 3280,
+    "output_tokens_details": {
+      "reasoning_tokens": 146
+    },
+    "total_tokens": 8490
+  },
+  "response_id": "resp_0b24d73778379a4f016aeaa4b4770887d0ae9680489a482d35",
+  "review_deferred": false,
+  "review_model": null,
+  "review_pass_performed": false,
+  "review_provider_usage": null,
+  "review_response_id": null,
+  "run_id": "20261104T032124175479Z",
+  "runtime": {
+    "platform": "macOS-26.6-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "target_marker": ".research-scope.json",
+  "target_modified": false,
+  "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+  "target_working_tree_clean": true,
+  "task": "# Task: validate shipping-service quote responses before order persistence\n\nThe order endpoint calls the integrated shipping service and trusts its JSON response. Harden this boundary in the existing brownfield application.\n\nAcceptance criteria:\n\n1. Treat a response as valid only when it is a JSON object containing `shipping_cents` whose value is a non-negative integer. Booleans, fractional values, numeric strings, missing fields, and non-object JSON are invalid.\n2. If the shipping response is malformed or violates that contract, return HTTP-layer status 503 with an error value of `shipping_unavailable`.\n3. On an invalid shipping response, create no order and leave product stock unchanged.\n4. Preserve current order creation behavior for valid standard and express shipping quotes, including totals and delivery-speed behavior.\n5. Change only `app/legacy_monolith.py`; do not edit tests, seed data, service behavior, or other files.\n\nThe target includes a fixed acceptance suite at `tests/test_shipping_quote_resilience_acceptance.py`. Use it together with the complete existing test suite.\n\nReturn a JSON proposal containing complete file contents only for files that must change. Do not execute commands or modify the target directly.",
+  "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+  "test_exit_code": null,
+  "verification_deferred": false
+}

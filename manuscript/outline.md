@@ -57,11 +57,12 @@ From Brownfield to Agentic: A Practical Method for Staged Onboarding of an Exist
 
 ### 6.4 Shipping quote resilience
 
-- Evidence placeholders: [frozen task and baseline], [15 scheduled proposals and any retained failures], [acceptance/regression results], [reviews], [per-profile descriptive measures]. Update only after the cohort is complete.
+- Evidence placeholders: [frozen task and baseline], [15 proposals; three per profile], [105/105 acceptance and 285/285 regression checks], [three same-model reviews], [per-profile descriptive measures].
+- Summary record: [`evidence/scored-cohort-shipping-resilience-2026-11-04.json`](../evidence/scored-cohort-shipping-resilience-2026-11-04.json).
 
 ### 6.5 Cross-cohort descriptive summary
 
-- Evidence placeholders: [`evidence/cross-cohort-evidence-matrix.md`](../evidence/cross-cohort-evidence-matrix.md), [fourth-cohort update], [raw archive manifest and digests].
+- Evidence placeholders: [`evidence/cross-cohort-evidence-matrix.md`](../evidence/cross-cohort-evidence-matrix.md), [raw archive manifest and digests].
 - Interpretation note for author: existing completed cohorts reached a pass ceiling; report separately and do not claim profile superiority.
 
 ## 7. Discussion

@@ -1821,6 +1821,478 @@
         }
       ],
       "attempt_summary_sha256": "7045af1e9dd48270abc5eb09806b4d6e42ec96f35d9534b804f095403932b2e8"
+    },
+    {
+      "cohort_id": "cohort-shipping-resilience-2026-11-04-stage",
+      "source_root": "/Users/soham/Projects/agentic-software-factory-study/runs/cohort-shipping-resilience-2026-11-04-stage/proposals",
+      "runs": [
+        {
+          "run_id": "20261104T032124175479Z",
+          "profile": "baseline",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 4422,
+              "sha256": "07e3d5f85602a9940c57bf17e61562d00dedaba8bcc7269e5d8b536f9719fd4f"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12204,
+              "sha256": "eec3b83df49e7691878ab195e3c141542ca7c373b1aead49b80a833de75ca447"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 897,
+              "sha256": "6059bad578e05fe253e164e239b25bf8e33c66269712780967093094a948a39b"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "5576db11168099101e11dab549f7eda4d7b77db815c7c888bafd67e4c68f4312"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T032406143118Z",
+          "profile": "verification",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 9349,
+              "sha256": "f8c6fe3ea432f12cc6f3f5cc1efeb95aaaf9275fce46b0c4c599e38b25d10d4a"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12251,
+              "sha256": "220f74e24e60d63da952d1eac0b662e7d71cc09a78bc3fcd85e1ff00d39def63"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 944,
+              "sha256": "8ecf31941f953488c41d7a501c0303a97a845de9bdea79f4764ff9371da667e4"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "b412eec2a12d57f071110449e51d161b6a1ab852a200113dede57020d514efd9"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T032430088772Z",
+          "profile": "review",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 9734,
+              "sha256": "4157c57324ec611b7f5fb536f34c9e51fc19b028a5ec851b29c3003f4e658d54"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12191,
+              "sha256": "c59517ec5a9ff4ab40d2ad8ae9d15154d411d0d64c9b6f63786b6acdcff42ac2"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 950,
+              "sha256": "d64e9d461c2f068344e59cf562686af07a587ec1d19ae13b2b91dbabe14369c7"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "a29b7404c8bad727b943666476b83ff8f4e42206928af91bfd9f83d00672bd78"
+            },
+            {
+              "file": "review.txt",
+              "bytes": 472,
+              "sha256": "f832109a52e4588e5f7111105852e8cee4a772c9945ec9024e6563a27694795e"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T032459200831Z",
+          "profile": "memory",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 9345,
+              "sha256": "b1d5e2ef514a7e71d63db16454c9600605bd6cc61888f745b826f07d59b03a49"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12279,
+              "sha256": "67789f25122881c28088c6e02e9c8a54459adefadd7cf16d2d446d289bb3bbb8"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 944,
+              "sha256": "f9f38d6cd8271cb5e13941f612754af5a14a6b770aa04cb8076c7f75a2a613f0"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "b412eec2a12d57f071110449e51d161b6a1ab852a200113dede57020d514efd9"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T033000755447Z",
+          "profile": "context",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 9347,
+              "sha256": "ef1cb393b8d2ea667c71ae875b8c967a46d97a2a367da2480e6099b6beda22e2"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12259,
+              "sha256": "6acd093ffeb60501ecf3b1fdfd0031d81b505e2993b94aef55dc788597e42340"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 953,
+              "sha256": "e331d5cb2fe330672f3d9fbc9bd2b61c112620dd148b910195c5bfce18dcb432"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "010954087b11c343b13571dab4a4cf147365ef747199474e130ff5f09e551367"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T033154260696Z",
+          "profile": "memory",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 9345,
+              "sha256": "ebe5f582140fab81e33e9564c989b44189bd55064d349e0a7a35883972f4eab9"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12147,
+              "sha256": "8df7dea6a1ea5792bde6cb98d847f4933fbb1b189dc3258f570e6df624f9f2de"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 867,
+              "sha256": "74d757158c4cdeac8b6ba18818895b305871476a1e9afa35b9500edaf9945b03"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "5516e56c37b7c33ba296aed49b0c6e0b0735f9210ff9532d2ecd64727c3b3f66"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T033247273933Z",
+          "profile": "context",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 9347,
+              "sha256": "7a0590f8c8f61cce45c9b78f45c9468a649eae1562be16828a67de33626a82d5"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12269,
+              "sha256": "1d73269a78247fe372b6387319a7465fd8137b68d4494c0fac77cd90754eeaaa"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 950,
+              "sha256": "d64e9d461c2f068344e59cf562686af07a587ec1d19ae13b2b91dbabe14369c7"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "46f1ca4ecc1223d53335ce9900954528caeec7d2cf90abc72928236302843900"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T033418365872Z",
+          "profile": "verification",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 9348,
+              "sha256": "b9072ea086fe15c050e4b12fc2e3b6e0c4285ec5e6e42ffe976f0bea1cc24add"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12206,
+              "sha256": "864959d12fcb79d5125398f62ac2a5a7902d238d3d3d7c8bc41407b6b2059f59"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 935,
+              "sha256": "dbe68f77a63adaef7281f8e15982f2e4872e8787911ef0201a8e3187e10e738f"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "5bcdac3a0d871bab47e67083ddecd5354834f387b8f839e0de2c67de3fce7dbe"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T043335188182Z",
+          "profile": "baseline",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 4422,
+              "sha256": "9c5aa62705d8a692d6daed25df779c016a57ed9cbeb31586702c2ba813ac48be"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12170,
+              "sha256": "7ce6943cf2fc47f18b15403c5b91b2d9b1bf0e8a29f264860c2785e4c75149cb"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 862,
+              "sha256": "8f08f90c4d1aa4d5b2d3a2bc0984e39e6d6d53c24b0ec4c39140a6e300d27166"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "010954087b11c343b13571dab4a4cf147365ef747199474e130ff5f09e551367"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T043443115551Z",
+          "profile": "review",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 9734,
+              "sha256": "f0236ece8350896bdb1cb40adcf363e8be34d4c550c8aa153075ed70036b726f"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12331,
+              "sha256": "7fe707a435ff7a94016643d067898406e4ba4b00a44142c39f6f92648ec6d71f"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 943,
+              "sha256": "265971db15add61ece1f46332e6bfa79caa3c3361c271f1e6b7a1275aaeee6ae"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "5bcdac3a0d871bab47e67083ddecd5354834f387b8f839e0de2c67de3fce7dbe"
+            },
+            {
+              "file": "review.txt",
+              "bytes": 497,
+              "sha256": "b0b32e29887f5cc3d03b64cba8f92a2ce46e7de8e9d3bd2094df807769b03641"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T043645218290Z",
+          "profile": "verification",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 9349,
+              "sha256": "b54f539d209c71aff12ad033a66bd46f33a15a3b341b610c124c654f017061f0"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12267,
+              "sha256": "d7bcad0781f33f40aa1b284ec6b12af1516af342b7f170eb56daa4814886477d"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 945,
+              "sha256": "f3443da7e5665ec200154d1b0091ed125a8928abae463962da1503e6587e9d64"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "d51db45b0dd6a0bc76c27549443c9e3cd9568d509ec7c7382ca45e87b7d5ff90"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T043725171740Z",
+          "profile": "memory",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 9345,
+              "sha256": "eb46604342727ac6ee357c8cbec6ca6f56eff0527d13da4c943583238845f7eb"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12313,
+              "sha256": "4e49e73c182d3faba2747ee1b73993a13226523b59c7dd610be2eda5dcd0f65e"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 937,
+              "sha256": "a67ae9bef780ede18e158f08fabd1529e89f39398c5cdd9b1510b6b2ba23d659"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "11fd3fd694da7728060e6594e154dc2577812baf16ad607866362f8d65e91909"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T043806427587Z",
+          "profile": "context",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 9347,
+              "sha256": "e43c081d9d042be02169b1f82177f31c056b3d9e0ff82a8833e51c3fc2752a97"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12227,
+              "sha256": "2c720ea4228b57e8bf0fe0f3cc1115f00e323e2910fe909febd83f0f0e5eb73f"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 940,
+              "sha256": "d498ff5a4ac9385574f7c20cde3c9730fc5d551e8210c066be0793517e970660"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "5bcdac3a0d871bab47e67083ddecd5354834f387b8f839e0de2c67de3fce7dbe"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T043846563456Z",
+          "profile": "review",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 9734,
+              "sha256": "2a790075e0389634ba647d9ab7176396cf79dea7c019f1053dbfb7d4d8a98a95"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12320,
+              "sha256": "1b4922ca8213a730adbcc12736200cc4d9ac4e8107f786588aa0e47493c04de2"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 963,
+              "sha256": "323d720f35df8a2332867b75e9239c8d4e63f00b6cd28d78410882f403726613"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "010954087b11c343b13571dab4a4cf147365ef747199474e130ff5f09e551367"
+            },
+            {
+              "file": "review.txt",
+              "bytes": 551,
+              "sha256": "23c944957fd64cc820b42150ea5cd3decd600ead0110946d93fdef872f270d07"
+            }
+          ]
+        },
+        {
+          "run_id": "20261104T043945055419Z",
+          "profile": "baseline",
+          "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+          "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+          "model": "gpt-6.1-sol",
+          "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+          "files": [
+            {
+              "file": "metadata.json",
+              "bytes": 4422,
+              "sha256": "05d039a482f03a93f4ad24a35e8a9cb6252116c1a015effb1be2c18532611023"
+            },
+            {
+              "file": "proposal.json",
+              "bytes": 12134,
+              "sha256": "eb245a281b980cf4ede07077b5c7acb8ff3555a2fd40b2ea88c5c7aba28b1b4f"
+            },
+            {
+              "file": "patch.diff",
+              "bytes": 867,
+              "sha256": "74d757158c4cdeac8b6ba18818895b305871476a1e9afa35b9500edaf9945b03"
+            },
+            {
+              "file": "verification.posthoc.json",
+              "bytes": 4108,
+              "sha256": "5576db11168099101e11dab549f7eda4d7b77db815c7c888bafd67e4c68f4312"
+            }
+          ]
+        }
+      ],
+      "status": "complete"
     }
   ]
 }

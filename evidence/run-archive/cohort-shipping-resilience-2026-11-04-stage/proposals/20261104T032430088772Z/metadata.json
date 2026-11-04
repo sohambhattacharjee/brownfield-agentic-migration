@@ -1,0 +1,224 @@
+{
+  "capabilities": {
+    "persistent_memory": true,
+    "repository_map": true,
+    "review_pass": true,
+    "verification": true
+  },
+  "context_files": [
+    {
+      "bytes": 255,
+      "path": ".research-scope.json",
+      "sha256": "273fda68715c4b7a38a026befa326c6f3df49c69d3d90d7d5d24535802f9eaa1"
+    },
+    {
+      "bytes": 3816,
+      "path": "README.md",
+      "sha256": "645d0c466c451630bdb336506306a6ea381115695008bacb24378e0203e367fa"
+    },
+    {
+      "bytes": 63,
+      "path": "app/__init__.py",
+      "sha256": "19d9b020682cc9124f711939e7e873a2a8dd1a8033a42b1e68a550d098505e5d"
+    },
+    {
+      "bytes": 10729,
+      "path": "app/legacy_monolith.py",
+      "sha256": "bbb10f20f407860b9e11d2f33b10bbeec43e810cc088d8f34fd087037c3f4253"
+    },
+    {
+      "bytes": 2293,
+      "path": "app/shipping_service.py",
+      "sha256": "a69f966ef0024679ac20c844c32cd6f2d5dbfb4fdd63c61dbada30acb1df5648"
+    },
+    {
+      "bytes": 252,
+      "path": "data/seed_products.json",
+      "sha256": "941cd4ed66b702455897a3cb164e92dacf548664bdb82bc664c77155ea1f9b6a"
+    },
+    {
+      "bytes": 2157,
+      "path": "evidence/baseline/README.md",
+      "sha256": "d87ae55d6346b43ee38f4ef9b6fcba5fd9e4e7ac2507047825a480320051130e"
+    },
+    {
+      "bytes": 1407,
+      "path": "evidence/baseline/run-2026-10-31.json",
+      "sha256": "650302c27e4af0d1f797bd8a93647ca983097c4dc02b5f7b0cc92c5b1ee1a19e"
+    },
+    {
+      "bytes": 745,
+      "path": "evidence/baseline/verification-2026-11-03.json",
+      "sha256": "500f764dcaf84b633a6731ec9463d9c2efcf3968789fda03785d1744831454a0"
+    },
+    {
+      "bytes": 1352,
+      "path": "evidence/cross-cohort-evidence-matrix.md",
+      "sha256": "d83d8ededbdbf84efb5e2fb09fa0b83ef112e2105167dba3afd678c7d15cf692"
+    },
+    {
+      "bytes": 3364,
+      "path": "evidence/research-literature-map.md",
+      "sha256": "63b7146ea29320c8bfc389202e92b67640feeccb94c00a5a586a7c1bc64cdc3f"
+    },
+    {
+      "bytes": 440,
+      "path": "evidence/run-archive/README.md",
+      "sha256": "95d900a22121a91d2823612a601419108f7c10366ea8dd115bd251f7f5078de6"
+    },
+    {
+      "bytes": 3808,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004804914307Z/metadata.json",
+      "sha256": "c9835dd911348e3b8d6a597335412997b9291dee30ebf8abea8d650063a26901"
+    },
+    {
+      "bytes": 10039,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004804914307Z/proposal.json",
+      "sha256": "fcf4bcbe4d719b40461d0c6a2edafef64bb9e59e0596409e44e3434ceec2dd1f"
+    },
+    {
+      "bytes": 1237,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004804914307Z/verification.posthoc.json",
+      "sha256": "466fa97d249934fa27b37d58b3d45b6a200f45601a816ca0c59f46e85398950d"
+    },
+    {
+      "bytes": 5123,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004830854844Z/metadata.json",
+      "sha256": "fabb3db2329f2549fc057576c0540cc69db24885d713e51dfa757dc7be9fa7ff"
+    },
+    {
+      "bytes": 9982,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004830854844Z/proposal.json",
+      "sha256": "9812be9de6d7d59dc8c01b4e7cd5f66f08e10afbda19704c5cf60f99203204b7"
+    },
+    {
+      "bytes": 1236,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004830854844Z/verification.posthoc.json",
+      "sha256": "1e5509863d72f18734f6bf9b90f43c41efa488ef280108d1b4db4068ec36003b"
+    },
+    {
+      "bytes": 5510,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004859116772Z/metadata.json",
+      "sha256": "f742cfff8f58dc70bec3d45af985891a9aeb272a1002cf64d4f897aa9d82fd59"
+    },
+    {
+      "bytes": 9787,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004859116772Z/proposal.json",
+      "sha256": "8f4f8dda3bd5f42e76a3cce99e0d6edb2af9fa5412121a8501fd6f34796f28da"
+    },
+    {
+      "bytes": 482,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004859116772Z/review.txt",
+      "sha256": "71dac7202773893c1b60050959ea7fabb52d254092c9047090472ad0107cd480"
+    },
+    {
+      "bytes": 1237,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004859116772Z/verification.posthoc.json",
+      "sha256": "0a5fba84658a4d4d790d1b43146750e575d871cb3e6a4f7aa44055c3c93e614b"
+    },
+    {
+      "bytes": 5121,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004923572166Z/metadata.json",
+      "sha256": "47145c1a4250be905010ce8e0c5c92374d8273f2bf461cd6e510fba3d5d35760"
+    },
+    {
+      "bytes": 10265,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004923572166Z/proposal.json",
+      "sha256": "5192d8c8f1de380d829b6d73b5d8d45b79939a31ca21fd9cb3021a39297da446"
+    },
+    {
+      "bytes": 1236,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004923572166Z/verification.posthoc.json",
+      "sha256": "5e754349b418a10ed854a9cae8bc28011492d0ee2a6d2fdbc8c4dcb41b2230c6"
+    },
+    {
+      "bytes": 5125,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004947001743Z/metadata.json",
+      "sha256": "062ce15cb5d7832b62b8147ddae7a458fb3802a7155d0d60521fbd4948e53602"
+    },
+    {
+      "bytes": 1237,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T004947001743Z/verification.posthoc.json",
+      "sha256": "9896a7bd4a1db3ea1447363a6fd6bf1b8dd8f672cec0b7c71784a9163beecaea"
+    },
+    {
+      "bytes": 532,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T005013995120Z/review.txt",
+      "sha256": "ef6967cd2bcc13b07256c4794ae7b1536049101fbb8e27ecec715746115ecfaf"
+    },
+    {
+      "bytes": 408,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T005349672713Z/review.txt",
+      "sha256": "99679d05582fd63b04af58e7e3149e81d9493e2ecf97b11235f06cd89723483a"
+    },
+    {
+      "bytes": 473,
+      "path": "evidence/run-archive/cohort-2026-11-03-key-verified/proposals/20261104T005506362087Z/review.txt",
+      "sha256": "24933bf5148879681f193dc4fa44cd8bd4d66f6a0c9149e93ba9db38d750541b"
+    },
+    {
+      "bytes": 78,
+      "path": "requirements.txt",
+      "sha256": "1fa0e3353911967eae0af06046791a3883f12019536393c32f12ecdc78b4d7a0"
+    }
+  ],
+  "context_manifest_sha256": "44784db38a92ba45d55a23a9c1fac768adec79088ac3f1b3159dd750efe6f7c7",
+  "created_at_utc": "2026-11-04T03:24:54.332664+00:00",
+  "elapsed_seconds": 24.2513,
+  "factory_revision": "7bf63253bd78878b12bd4b2c4792d1e6c31d2536",
+  "factory_working_tree_clean": true,
+  "human_intervention": {
+    "accepted": false,
+    "notes": "Review patch and any model output before transferring changes.",
+    "required": true
+  },
+  "inventory_file_count": 310,
+  "model": "gpt-6.1-sol",
+  "profile": "review",
+  "prompt_sha256": "0489e361ce47d6cb59f4095ab5764408996157998a883d8d8789186679a8ff95",
+  "proposed_file_count": 1,
+  "provider_usage": {
+    "input_tokens": 28318,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 28315
+    },
+    "output_tokens": 3278,
+    "output_tokens_details": {
+      "reasoning_tokens": 157
+    },
+    "total_tokens": 31596
+  },
+  "response_id": "resp_06ed7f1d7493d689016aeaa56e647087d0b5b84381736bf935",
+  "review_deferred": false,
+  "review_elapsed_seconds": 4.5961,
+  "review_model": "gpt-6.1-sol",
+  "review_pass_performed": true,
+  "review_provider_usage": {
+    "input_tokens": 1353,
+    "input_tokens_details": {
+      "cache_write_tokens": 1350,
+      "cached_tokens": 0
+    },
+    "output_tokens": 134,
+    "output_tokens_details": {
+      "reasoning_tokens": 43
+    },
+    "total_tokens": 1487
+  },
+  "review_response_id": "resp_08c6b87523089e80016aeaa586ae3087d0b27e583fe88f77f5",
+  "run_id": "20261104T032430088772Z",
+  "runtime": {
+    "platform": "macOS-26.6-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "target_marker": ".research-scope.json",
+  "target_modified": false,
+  "target_revision": "a3c0aa7ea316daa30547358139280344de5ccc67",
+  "target_working_tree_clean": true,
+  "task": "# Task: validate shipping-service quote responses before order persistence\n\nThe order endpoint calls the integrated shipping service and trusts its JSON response. Harden this boundary in the existing brownfield application.\n\nAcceptance criteria:\n\n1. Treat a response as valid only when it is a JSON object containing `shipping_cents` whose value is a non-negative integer. Booleans, fractional values, numeric strings, missing fields, and non-object JSON are invalid.\n2. If the shipping response is malformed or violates that contract, return HTTP-layer status 503 with an error value of `shipping_unavailable`.\n3. On an invalid shipping response, create no order and leave product stock unchanged.\n4. Preserve current order creation behavior for valid standard and express shipping quotes, including totals and delivery-speed behavior.\n5. Change only `app/legacy_monolith.py`; do not edit tests, seed data, service behavior, or other files.\n\nThe target includes a fixed acceptance suite at `tests/test_shipping_quote_resilience_acceptance.py`. Use it together with the complete existing test suite.\n\nReturn a JSON proposal containing complete file contents only for files that must change. Do not execute commands or modify the target directly.",
+  "task_sha256": "b42591e90ca0243e72a1d4b0e2d175f5161b5bebf7b83747cda57663624678c4",
+  "test_exit_code": null,
+  "verification_deferred": true,
+  "verification_record": "verification.posthoc.json"
+}

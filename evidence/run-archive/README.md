@@ -1,5 +1,5 @@
 # Raw run archive
 
-This archive preserves the synthetic study’s proposal, patch, metadata, verification, and review files from three cohorts. The full scratch copies are omitted; they can be reconstructed from each recorded target revision and proposal. Per-file SHA-256 digests appear in `archive-manifest.json`.
+This archive preserves synthetic proposal, patch, metadata, verification, and review files from the completed task cohorts. The shipping-resilience cohort is included with all 15 proposals and three reviews. Full scratch copies are omitted because they are reconstructable from pinned revisions and saved proposals. Per-file SHA-256 digests appear in `archive-manifest.json`.
 
-No employer material is included. API credentials are not included. The archive is stored only in this private repository.
+No employer material or API credential is included. The archive is stored only in this private repository.

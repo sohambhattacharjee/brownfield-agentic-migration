@@ -1,0 +1,20 @@
+--- a/app/legacy_monolith.py
++++ b/app/legacy_monolith.py
+@@ -175,11 +175,15 @@
+     try:
+         with urlopen(request, timeout=2) as response:
+             shipping = json.loads(response.read().decode("utf-8"))
+-    except (URLError, TimeoutError, json.JSONDecodeError) as exc:
++        if not isinstance(shipping, dict):
++            raise ValueError("shipping quote must be a JSON object")
++        shipping_cost = shipping.get("shipping_cents")
++        if type(shipping_cost) is not int or shipping_cost < 0:
++            raise ValueError("shipping_cents must be a non-negative integer")
++    except (URLError, TimeoutError, ValueError) as exc:
+         db.close()
+         return 503, {"error": "shipping_unavailable", "detail": str(exc)}
+ 
+-    shipping_cost = int(shipping["shipping_cents"])
+     try:
+         db.execute("BEGIN")
+         cur = db.execute(

@@ -1,0 +1,23 @@
+--- a/app/legacy_monolith.py
++++ b/app/legacy_monolith.py
+@@ -175,11 +175,18 @@
+     try:
+         with urlopen(request, timeout=2) as response:
+             shipping = json.loads(response.read().decode("utf-8"))
+-    except (URLError, TimeoutError, json.JSONDecodeError) as exc:
++    except (URLError, TimeoutError, ValueError) as exc:
+         db.close()
+         return 503, {"error": "shipping_unavailable", "detail": str(exc)}
+ 
+-    shipping_cost = int(shipping["shipping_cents"])
++    if not isinstance(shipping, dict):
++        db.close()
++        return 503, {"error": "shipping_unavailable"}
++    shipping_cost = shipping.get("shipping_cents")
++    if not isinstance(shipping_cost, int) or isinstance(shipping_cost, bool) or shipping_cost < 0:
++        db.close()
++        return 503, {"error": "shipping_unavailable"}
++
+     try:
+         db.execute("BEGIN")
+         cur = db.execute(
