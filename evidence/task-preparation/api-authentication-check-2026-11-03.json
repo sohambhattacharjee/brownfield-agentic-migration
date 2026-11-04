@@ -1,0 +1,18 @@
+{
+  "captured_local_date": "2026-11-03",
+  "classification": "preregistered first attempt; authorization failure, no scored model output",
+  "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+  "factory_revision": "41bba9a57f9d7a2ffea076f6ab4a06b5afdb54d0",
+  "block": 1,
+  "position": 1,
+  "profile": "baseline",
+  "model_id": "gpt-6.1-sol",
+  "http_status": 401,
+  "provider_response_id": null,
+  "provider_usage": null,
+  "model_output_received": false,
+  "target_modified": false,
+  "retry_performed": false,
+  "remaining_preregistered_attempts_started": 0,
+  "interpretation": "The API rejected the request before returning a model response. This is recorded as an authorization/setup failure, not a migration result. The pilot stopped; further runs require resolving the key or project authorization and freezing a new cohort plan. No secret value is stored in this record."
+}
