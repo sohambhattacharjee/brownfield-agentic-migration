@@ -1,0 +1,18 @@
+{
+  "captured_local_date": "2026-11-04",
+  "cohort_id": "cohort-order-detail-2026-11-04-followup",
+  "amendment_type": "verification-environment correction before scoring",
+  "reason": "The preregistered HTTP integration tests attempted to bind loopback TCP ports. The restricted test sandbox denied socket bind, producing PermissionError for all HTTP tests; those results cannot score model proposals.",
+  "original_proposal_target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+  "amended_verification_target_revision": "18871992998bb88d7dc239adb072efb820b3f9f7",
+  "changes": "The three order-detail acceptance assertions and the cancellation HTTP-handler assertion are unchanged in intent. A shared test helper now sends raw HTTP/1.0 over an AF_UNIX socket pair to exercise BaseHTTPRequestHandler parsing, routing, and response framing without TCP listeners. No application source code or task acceptance criterion changed.",
+  "original_restricted_evaluation": "Preserve the initial 15 per-run results separately as environment-blocked evidence; they are not task scores because tests failed to bind TCP sockets.",
+  "amended_evaluation": "Re-evaluate the same 15 saved proposal snapshots against the amended fixed test tree. Do not generate replacement proposals or count this as a new cohort. The original context/target revisions remain in proposal metadata; report the verification test revision separately.",
+  "baseline_result": {
+    "passed": 11,
+    "failed": 3,
+    "errors": 0,
+    "expected_failures": "The three order-detail acceptance tests, because the endpoint is not implemented at the pre-feature revision."
+  },
+  "security": "Evaluation runs remain inside the restricted sandbox with OPENAI_API_KEY and OPENAI_MODEL removed. No test run is granted internet access."
+}
