@@ -31,7 +31,8 @@ def initialize():
         CREATE TABLE IF NOT EXISTS orders (
             id INTEGER PRIMARY KEY AUTOINCREMENT, customer TEXT NOT NULL,
             city TEXT NOT NULL, subtotal_cents INTEGER NOT NULL,
-            shipping_cents INTEGER NOT NULL, total_cents INTEGER NOT NULL
+            shipping_cents INTEGER NOT NULL, total_cents INTEGER NOT NULL,
+            status TEXT NOT NULL DEFAULT 'active'
         );
         CREATE TABLE IF NOT EXISTS order_items (
             order_id INTEGER NOT NULL, sku TEXT NOT NULL, qty INTEGER NOT NULL,
@@ -39,6 +40,9 @@ def initialize():
             FOREIGN KEY(order_id) REFERENCES orders(id)
         );
     """)
+    order_columns = {row["name"] for row in db.execute("PRAGMA table_info(orders)")}
+    if "status" not in order_columns:
+        db.execute("ALTER TABLE orders ADD COLUMN status TEXT NOT NULL DEFAULT 'active'")
     if db.execute("SELECT COUNT(*) FROM products").fetchone()[0] == 0:
         with open(SEED_PATH, encoding="utf-8") as seed_file:
             products = json.load(seed_file)
@@ -65,9 +69,38 @@ def all_orders():
         order["items"] = [dict(item) for item in db.execute(
             "SELECT sku, qty, unit_price_cents FROM order_items WHERE order_id = ?", (order["id"],)
         ).fetchall()]
+        state = db.execute("SELECT status FROM orders WHERE id = ?", (order["id"],)).fetchone()[0]
+        if state != "active":
+            order["status"] = state
         result.append(order)
     db.close()
     return result
+
+
+def cancel_order(order_id):
+    """Cancel one order atomically and restore its inventory exactly once."""
+    db = connect()
+    try:
+        db.execute("BEGIN IMMEDIATE")
+        order = db.execute("SELECT status FROM orders WHERE id = ?", (order_id,)).fetchone()
+        if order is None:
+            db.rollback()
+            return 404, {"error": "order_not_found"}
+        if order["status"] == "canceled":
+            db.rollback()
+            return 409, {"error": "already_canceled"}
+        db.execute("UPDATE orders SET status = 'canceled' WHERE id = ?", (order_id,))
+        items = db.execute("SELECT sku, qty FROM order_items WHERE order_id = ?", (order_id,)).fetchall()
+        for item in items:
+            db.execute("UPDATE products SET stock = stock + ? WHERE sku = ?",
+                       (item["qty"], item["sku"]))
+        db.commit()
+        return 200, {"status": "canceled"}
+    except sqlite3.Error as exc:
+        db.rollback()
+        return 500, {"error": "persistence_error", "detail": str(exc)}
+    finally:
+        db.close()
 
 
 def place_order(payload, shipping_url=None):
@@ -145,6 +178,18 @@ class Handler(BaseHTTPRequestHandler):
             self._send(200, all_orders())
         else:
             self._send(404, {"error": "not_found"})
+
+    def do_DELETE(self):
+        prefix = "/api/orders/"
+        if not self.path.startswith(prefix):
+            self._send(404, {"error": "not_found"})
+            return
+        raw_id = self.path[len(prefix):]
+        if not raw_id.isdigit():
+            self._send(400, {"error": "invalid_order_id"})
+            return
+        status, payload = cancel_order(int(raw_id))
+        self._send(status, payload)
 
     def do_POST(self):
         if self.path != "/api/orders":
