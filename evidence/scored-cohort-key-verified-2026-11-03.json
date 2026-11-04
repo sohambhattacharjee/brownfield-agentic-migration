@@ -7,7 +7,7 @@
   "proposal_runs_completed": 25,
   "planned_review_calls": 5,
   "review_calls_completed": 0,
-  "review_status": "not performed: the expected Keychain lookup was unavailable in the review process; no review request was sent",
+  "review_status": "not completed: no review response or response ID was saved. A direct Keychain lookup afterward could not find the expected item; local evidence cannot establish whether the first waiting request reached the API before interruption.",
   "evaluation_method": "Each proposal snapshot was copied to a separate local directory; its proposed tests were replaced with the pinned baseline tests before unittest discovery. OPENAI_API_KEY and OPENAI_MODEL were removed from test subprocess environments.",
   "pinned_test_tree_sha256": "6687d3950f6b3bacca8117151cc34ab9d2746a4deb96d1f04e7cf58fbe9b8232",
   "overall": {
