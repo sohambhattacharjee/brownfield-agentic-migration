@@ -1,0 +1,36 @@
+{
+  "captured_local_date": "2026-11-03",
+  "classification": "frozen exploratory pilot plan; recorded before scored model runs",
+  "target_revision": "8ad4aa635e5288b2889814f294c86c861e32341e",
+  "factory_revision": "f87c54b52520466029d0fa007645e6b498da8aa4",
+  "task_file": "tasks/add-cancellation.md",
+  "model_id": "gpt-6.1-sol",
+  "api": "OpenAI Responses API",
+  "request_settings": {"store": false, "other_generation_parameters": "API defaults"},
+  "repetitions_per_profile": 5,
+  "profiles": ["baseline", "context", "memory", "verification", "review"],
+  "planned_model_responses": 30,
+  "review_profile_responses_per_run": 2,
+  "order_randomization": {
+    "algorithm": "Python random.Random(seed).sample(all_profiles, 5), independently per block",
+    "seed": 20261103,
+    "blocks": [
+      ["baseline", "context", "review", "memory", "verification"],
+      ["review", "context", "baseline", "verification", "memory"],
+      ["context", "verification", "baseline", "review", "memory"],
+      ["memory", "review", "context", "verification", "baseline"],
+      ["context", "review", "memory", "baseline", "verification"]
+    ]
+  },
+  "per_run_outcomes": {
+    "primary": "Count of the 3 cancellation acceptance checks passed (0-3).",
+    "regression": "Count of the 5 existing characterization checks passed (0-5).",
+    "combined": "Count passed across all 8 fixed checks (0-8); also report all-8-passed.",
+    "review": "Record reviewer findings separately; reviewer uses the same model and is not independent."
+  },
+  "evaluation_procedure": "After each profile produces its proposal, run the same fixed full unittest suite in that run's disposable scratch copy. Do not feed this post-run evaluation back into the proposal. The verification and review profiles also record their built-in suite execution.",
+  "failure_policy": "Record API errors, invalid JSON, timeouts, and test failures as observed; do not silently retry or replace an attempt.",
+  "interpretation": "Exploratory single-task synthetic case study; this pilot is not powered to support broad causal claims.",
+  "excluded_runs": ["All earlier scripted-fixture smoke runs; they are protocol checks, not scored results."],
+  "privacy_and_scope": "Only independently created synthetic repository content and task text are sent. No employer material is included. The API request sets store=false."
+}
