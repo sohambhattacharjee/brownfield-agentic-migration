@@ -43,6 +43,8 @@ def initialize():
     order_columns = {row["name"] for row in db.execute("PRAGMA table_info(orders)")}
     if "status" not in order_columns:
         db.execute("ALTER TABLE orders ADD COLUMN status TEXT NOT NULL DEFAULT 'active'")
+    if "delivery_speed" not in order_columns:
+        db.execute("ALTER TABLE orders ADD COLUMN delivery_speed TEXT NOT NULL DEFAULT 'standard'")
     if db.execute("SELECT COUNT(*) FROM products").fetchone()[0] == 0:
         with open(SEED_PATH, encoding="utf-8") as seed_file:
             products = json.load(seed_file)
@@ -62,10 +64,13 @@ def all_products():
 
 def all_orders():
     db = connect()
-    rows = db.execute("SELECT id, customer, city, subtotal_cents, shipping_cents, total_cents FROM orders ORDER BY id").fetchall()
+    rows = db.execute("SELECT id, customer, city, subtotal_cents, shipping_cents, total_cents, delivery_speed FROM orders ORDER BY id").fetchall()
     result = []
     for row in rows:
         order = dict(row)
+        speed = order.pop("delivery_speed")
+        if speed != "standard":
+            order["delivery_speed"] = speed
         order["items"] = [dict(item) for item in db.execute(
             "SELECT sku, qty, unit_price_cents FROM order_items WHERE order_id = ?", (order["id"],)
         ).fetchall()]
@@ -82,7 +87,7 @@ def order_by_id(order_id):
     db = connect()
     try:
         row = db.execute(
-            "SELECT id, customer, city, subtotal_cents, shipping_cents, total_cents, status "
+            "SELECT id, customer, city, subtotal_cents, shipping_cents, total_cents, status, delivery_speed "
             "FROM orders WHERE id = ?", (order_id,)
         ).fetchone()
         if row is None:
@@ -90,6 +95,9 @@ def order_by_id(order_id):
         order = dict(row)
         if order["status"] == "active":
             order.pop("status")
+        speed = order.pop("delivery_speed")
+        if speed != "standard":
+            order["delivery_speed"] = speed
         order["items"] = [dict(item) for item in db.execute(
             "SELECT sku, qty, unit_price_cents FROM order_items WHERE order_id = ?", (order_id,)
         ).fetchall()]
@@ -131,6 +139,9 @@ def place_order(payload, shipping_url=None):
     customer = payload.get("customer")
     city = payload.get("city")
     items = payload.get("items")
+    delivery_speed = payload.get("delivery_speed", "standard")
+    if delivery_speed not in ("standard", "express"):
+        return 400, {"error": "invalid_delivery_speed"}
     if not isinstance(customer, str) or not customer.strip() or not isinstance(city, str) or not city.strip():
         return 400, {"error": "customer_and_city_required"}
     if not isinstance(items, list) or not items:
@@ -158,7 +169,8 @@ def place_order(payload, shipping_url=None):
         normalized.append((sku, qty, product["price_cents"]))
         subtotal += product["price_cents"] * qty
 
-    encoded = json.dumps({"city": city, "subtotal_cents": subtotal}).encode("utf-8")
+    encoded = json.dumps({"city": city, "subtotal_cents": subtotal,
+                          "delivery_speed": delivery_speed}).encode("utf-8")
     request = Request(shipping_url or SHIP_URL, data=encoded, headers={"Content-Type": "application/json"})
     try:
         with urlopen(request, timeout=2) as response:
@@ -171,8 +183,9 @@ def place_order(payload, shipping_url=None):
     try:
         db.execute("BEGIN")
         cur = db.execute(
-            "INSERT INTO orders (customer, city, subtotal_cents, shipping_cents, total_cents) VALUES (?, ?, ?, ?, ?)",
-            (customer.strip(), city.strip(), subtotal, shipping_cost, subtotal + shipping_cost),
+            "INSERT INTO orders (customer, city, subtotal_cents, shipping_cents, total_cents, delivery_speed) "
+            "VALUES (?, ?, ?, ?, ?, ?)",
+            (customer.strip(), city.strip(), subtotal, shipping_cost, subtotal + shipping_cost, delivery_speed),
         )
         order_id = cur.lastrowid
         for sku, qty, price in normalized:
@@ -184,9 +197,12 @@ def place_order(payload, shipping_url=None):
         db.close()
         return 500, {"error": "persistence_error", "detail": str(exc)}
     db.close()
-    return 201, {"id": order_id, "customer": customer.strip(), "city": city.strip(),
-                 "subtotal_cents": subtotal, "shipping_cents": shipping_cost,
-                 "total_cents": subtotal + shipping_cost}
+    result = {"id": order_id, "customer": customer.strip(), "city": city.strip(),
+              "subtotal_cents": subtotal, "shipping_cents": shipping_cost,
+              "total_cents": subtotal + shipping_cost}
+    if delivery_speed != "standard":
+        result["delivery_speed"] = delivery_speed
+    return 201, result
 
 
 class Handler(BaseHTTPRequestHandler):
