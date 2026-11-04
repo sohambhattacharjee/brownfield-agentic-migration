@@ -4,9 +4,8 @@ import sqlite3
 import tempfile
 import threading
 import unittest
-from http.server import ThreadingHTTPServer
-from urllib.request import Request, urlopen
-from urllib.error import HTTPError
+
+from http_harness import request_json
 
 from app import legacy_monolith as legacy
 
@@ -85,26 +84,15 @@ class CancellationHardeningTests(unittest.TestCase):
         self.assertCountEqual([status for status, _ in results], [200, 409])
         self.assertEqual(self.mug_stock(), 18)
 
-    def test_http_server_routes_delete_and_returns_canceled_order_status(self):
-        server = ThreadingHTTPServer(("127.0.0.1", 0), legacy.Handler)
-        thread = threading.Thread(target=server.serve_forever, daemon=True)
-        thread.start()
-        base = "http://127.0.0.1:%d" % server.server_address[1]
-        try:
-            request = Request(base + "/api/orders/%d" % self.order_id, method="DELETE")
-            with urlopen(request, timeout=3) as response:
-                self.assertEqual(response.status, 200)
-                deleted = json.loads(response.read().decode("utf-8"))
-            self.assertEqual(deleted["status"], "canceled")
+    def test_http_handler_routes_delete_and_returns_canceled_order_status(self):
+        status, deleted = request_json(legacy.Handler, "DELETE", "/api/orders/%d" % self.order_id)
+        self.assertEqual(status, 200)
+        self.assertEqual(deleted["status"], "canceled")
 
-            with urlopen(base + "/api/orders", timeout=3) as response:
-                orders = json.loads(response.read().decode("utf-8"))
-            self.assertEqual(orders[0]["status"], "canceled")
-            self.assertEqual(self.mug_stock(), 18)
-        finally:
-            server.shutdown()
-            server.server_close()
-            thread.join(timeout=3)
+        list_status, orders = request_json(legacy.Handler, "GET", "/api/orders")
+        self.assertEqual(list_status, 200)
+        self.assertEqual(orders[0]["status"], "canceled")
+        self.assertEqual(self.mug_stock(), 18)
 
 
 if __name__ == "__main__":
