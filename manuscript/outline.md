@@ -12,58 +12,77 @@ From Brownfield to Agentic: A Practical Method for Staged Onboarding of an Exist
 
 ## 1. Introduction
 
-- Purpose: establish the brownfield onboarding problem and its practical relevance.
+- Purpose: frame the practical problem of preparing an existing application for agent-assisted maintenance without rewriting it.
+- Author prompts: define the intended reader; state the bounded contribution; avoid promising general effectiveness.
 - Evidence placeholders: [motivation], [scope], [contribution statement].
 
 ## 2. Background and Related Work
 
-- Purpose: situate agentic software engineering, brownfield modernization, and software-factory approaches.
-- Evidence placeholders: [literature search protocol], [related work table], [distinction from prior work].
+- Purpose: position coding-agent evaluation, repository context, brownfield maintenance, and practice-facing evidence.
+- Evidence placeholders: [literature review method], [related-work comparison], [difference from benchmarks and field studies].
+- Reading aid: [`evidence/research-literature-map.md`](../evidence/research-literature-map.md).
 
-## 3. Study Context and Independently Built Systems
+## 3. Study Setting and Independently Built Systems
 
-- Purpose: describe the independently created order-management monolith, integrated shipping service, and companion factory built from scratch.
-- Evidence placeholders: [application architecture], [factory architecture], [requirements], [baseline revisions], [data-generation rules].
+- Purpose: describe the synthetic order-management application and the independently built local factory prototype.
+- Evidence placeholders: [architecture diagram], [requirements and seeded data], [initial baseline revision], [synthetic-only scope marker], [factory workflow].
 
 ## 4. Staged Onboarding Method
 
-- Purpose: explain each independently implemented factory capability introduced to the synthetic application, its rationale, and completion criteria.
-- Evidence placeholders: [stage definitions], [factory configuration], [human checkpoints], [no employer system access].
-
-### Candidate research questions — author to refine
-
-- RQ1: Which repository context, execution, and verification capabilities are introduced at each onboarding stage?
-- RQ2: How do task outcomes and verification results change across the stages for the fixed task suite?
-- RQ3: What failures and human interventions occur as agent autonomy increases?
+- Purpose: document the sequence of repository discovery, curated context, study memory, isolated proposal generation, fixed verification, review, and human disposition.
+- Evidence placeholders: [stage gates], [profile capability matrix], [immutable branch/revision map], [human checkpoints], [proposal isolation and API-key removal during tests].
+- Scope note for author: factory was built for this project; no employer factory or employer materials were used.
 
 ## 5. Evaluation Design
 
-- Purpose: define fixed engineering tasks, comparison conditions, outcome measures, and repeatability controls.
-- Evidence placeholders: [task suite], [runs per condition], [quality measures], [time/cost measures], [intervention coding].
+- Purpose: define the unit of analysis, fixed tasks, cumulative profiles, repeated runs, outcome measures, and protocol changes.
+- Evidence placeholders: [frozen task text and hashes], [repetition/order schedule], [acceptance and regression suites], [time/token/patch-size measures], [failure/intervention coding].
+- Interpretation note for author: keep task cohorts separate because each task has its own target revision; the profiles are cumulative bundles.
 
 ## 6. Results
 
-- Evidence placeholder: [order-detail follow-up cohort, protocol amendment, baseline and per-run records].
-- Evidence placeholder: [express-delivery cross-service cohort, test/spec amendment, per-run evidence, and independent implementation verification].
+- Purpose: report each cohort independently, including unsuccessful attempts and protocol amendments.
 
-- Purpose: report outcomes across stages, including failures and human interventions.
-- Evidence placeholders: [task success], [regressions], [test outcomes], [time], [interventions], [reproducibility artifacts].
+### 6.1 Order cancellation
+
+- Evidence placeholders: [25 proposals; five per profile], [acceptance and characterization results], [review records], [pinned target revision].
+
+### 6.2 Order detail retrieval
+
+- Evidence placeholders: [15 proposals; three per profile], [AF_UNIX transport amendment], [acceptance/regression results], [same-model reviews], [independent implementation verification].
+
+### 6.3 Express delivery across services
+
+- Evidence placeholders: [15 proposals; three per profile], [corrected test/spec amendment], [acceptance/regression results], [same-model reviews], [independent implementation verification].
+
+### 6.4 Shipping quote resilience
+
+- Evidence placeholders: [frozen task and baseline], [15 scheduled proposals and any retained failures], [acceptance/regression results], [reviews], [per-profile descriptive measures]. Update only after the cohort is complete.
+
+### 6.5 Cross-cohort descriptive summary
+
+- Evidence placeholders: [`evidence/cross-cohort-evidence-matrix.md`](../evidence/cross-cohort-evidence-matrix.md), [fourth-cohort update], [raw archive manifest and digests].
+- Interpretation note for author: existing completed cohorts reached a pass ceiling; report separately and do not claim profile superiority.
 
 ## 7. Discussion
 
-- Purpose: interpret which onboarding capabilities appear useful and where the evidence is limited.
-- Evidence placeholders: [observed mechanisms], [trade-offs], [practical implications].
+- Purpose: interpret what the staged process exposed, where verification helped, and where the study process required amendment.
+- Evidence placeholders: [observed mechanisms], [practical lessons], [trade-offs], [next evaluation].
+- Claim boundary: same-model reviews are not independent validation; descriptive differences are not causal evidence.
 
 ## 8. Threats to Validity and Limitations
 
-- Purpose: address synthetic setting, task selection, model variability, researcher effects, and transferability.
+- Purpose: address the synthetic single-application setting, small samples, cumulative profiles, researcher effects, model/version dependence, ceiling effects, same-model review, protocol amendments, and external validity.
 - Evidence placeholders: [construct], [internal], [external], [reliability].
 
-## 9. Conclusion and Future Work
+## 9. Conclusion and Future Work — author to draft
 
-- Purpose: summarize the contribution and identify next evaluation steps.
-- Evidence placeholders: [author-written conclusion], [future work].
+- Evidence placeholders: [bounded contribution], [follow-up studies with independent reviewers, more varied tasks, and longer-term maintenance].
 
 ## References
 
-- Placeholder: add verified, relevant sources after the literature review.
+- Placeholder: add verified sources after the focused literature review and confirm the chosen IEEE Software call's current requirements.
+
+## Reproducibility and artifact notes
+
+- Evidence placeholders: [private repository links while under review], [commit IDs], [data/artifact release plan], [privacy and IP review by the author as applicable].
