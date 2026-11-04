@@ -1,0 +1,18 @@
+{
+  "captured_local_date": "2026-11-03",
+  "cohort_id": "cohort-express-delivery-2026-11-03-stage",
+  "amendment_type": "test/task alignment before final scoring",
+  "reason": "The original test required the shipping service error body to equal invalid_request, while the frozen task requires only HTTP 400 for invalid speed. Proposal runs returned HTTP 400 with the more specific invalid_delivery_speed body, satisfying the task text.",
+  "proposal_target_revision": "e430a4c8c69e6f262637dfa8f1cf840f4d496953",
+  "verification_target_revision": "cdd78a3671120e99fdb8ef96711895186d859cbd",
+  "change": "Removed only the unpreregistered exact error-body assertion. The HTTP 400 assertion, all business assertions, application source, and task wording are unchanged.",
+  "original_evaluation": "Preserve first evaluation scores separately: all 14 regression checks passed in every run; one run passed all five acceptance checks; the other 14 each missed only the overly specific error-body assertion. Do not overwrite these records.",
+  "amended_evaluation": "Re-evaluate the same saved 15 proposal snapshots with the corrected fixed tests. No new model proposal calls or replacements. Report both target revisions and the amendment.",
+  "baseline_result": {
+    "passed": 14,
+    "failed": 5,
+    "errors": 0,
+    "expected_failures": "The five express-delivery acceptance checks at pre-feature revision."
+  },
+  "security": "All evaluation remains local in the restricted sandbox; no API key or model variable is present in test subprocesses."
+}
