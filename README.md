@@ -44,6 +44,8 @@ The cancellation task has a separate fixed acceptance suite at `tests/test_cance
 
 The private follow-up branch `codex/followup-onboarding` adds a schema upgrade for legacy databases, idempotent order cancellation, a read-only order-detail endpoint, and sandbox-compatible HTTP handler tests. Its 14-test verification record is in [`evidence/stages/order-detail-implementation-verification.json`](evidence/stages/order-detail-implementation-verification.json). The original `main` baseline and first scored cohort remain unchanged.
 
+The next private stage branch, `codex/stage-shipping-contract`, adds an optional express-delivery contract across the legacy order API and newer shipping service. Standard rates and response shapes stay the same, and existing orders migrate to the standard default. Its implementation verification is in [`evidence/stages/express-delivery-implementation-verification.json`](evidence/stages/express-delivery-implementation-verification.json).
+
 ## Repository map
 
 - `app/legacy_monolith.py` — legacy order workflow, persistence, validation, and shipping-service client in one module.

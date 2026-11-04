@@ -44,6 +44,7 @@ From Brownfield to Agentic: A Practical Method for Staged Onboarding of an Exist
 ## 6. Results
 
 - Evidence placeholder: [order-detail follow-up cohort, protocol amendment, baseline and per-run records].
+- Evidence placeholder: [express-delivery cross-service cohort, test/spec amendment, per-run evidence, and independent implementation verification].
 
 - Purpose: report outcomes across stages, including failures and human interventions.
 - Evidence placeholders: [task success], [regressions], [test outcomes], [time], [interventions], [reproducibility artifacts].
