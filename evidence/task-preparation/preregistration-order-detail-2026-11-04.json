@@ -1,0 +1,67 @@
+{
+  "captured_local_date": "2026-11-04",
+  "classification": "frozen exploratory follow-up pilot plan; recorded before scored model runs",
+  "cohort_id": "cohort-order-detail-2026-11-04-followup",
+  "target_revision": "94b6faa734356ba9f1f79f65e070b0530e320fd5",
+  "factory_revision": "28335930c9d49843877131b4eb4ae99771874525",
+  "task_file": "tasks/get-order-detail.md",
+  "model_id": "gpt-6.1-sol",
+  "api": "OpenAI Responses API",
+  "request_settings": {
+    "store": false,
+    "other_generation_parameters": "API defaults"
+  },
+  "repetitions_per_profile": 3,
+  "profiles": [
+    "baseline",
+    "context",
+    "memory",
+    "verification",
+    "review"
+  ],
+  "planned_proposal_responses": 15,
+  "planned_review_responses": 3,
+  "planned_model_responses": 18,
+  "order_randomization": {
+    "algorithm": "Python random.Random(seed).sample(all_profiles, 5), independently per block",
+    "seed": 20261104,
+    "blocks": [
+      [
+        "context",
+        "memory",
+        "review",
+        "verification",
+        "baseline"
+      ],
+      [
+        "context",
+        "verification",
+        "baseline",
+        "memory",
+        "review"
+      ],
+      [
+        "verification",
+        "baseline",
+        "context",
+        "review",
+        "memory"
+      ]
+    ]
+  },
+  "per_run_outcomes": {
+    "primary": "Count of 3 fixed order-detail acceptance tests passed (0-3).",
+    "regression": "Count of 11 fixed cancellation-hardening and characterization tests passed (0-11).",
+    "combined": "Count across all 14 fixed tests (0-14), plus all-tests-passed indicator.",
+    "review": "Record findings separately; same provider/model is not independent review."
+  },
+  "baseline_record": "evidence/task-preparation/order-detail-baseline-2026-11-04.json",
+  "evaluation_procedure": "Generate proposals with test execution deferred from the API-enabled process. Evaluate each disposable proposal against the exact pinned target tests, restored from revision 94b6faa. Remove API credential and model variables from test subprocesses. For review-profile runs, send the saved diff and verification record to the separate review command; it executes no target code.",
+  "failure_policy": "Record API errors, invalid JSON, timeouts, and test failures as observed; do not silently retry or replace attempts.",
+  "interpretation": "Exploratory single-task follow-up case study with three repetitions per profile; not powered for broad causal claims. Report that the target already includes a human-authored cancellation feature and hardening tests.",
+  "excluded_runs": [
+    "Original cancellation cohort and its reviews; distinct task/revision and cohort.",
+    "API credential diagnostics; not scored."
+  ],
+  "privacy_and_scope": "Only independently created synthetic repository content and the synthetic order-detail task are sent. No employer material is included. Requests set store=false. Both repositories remain private during this work."
+}
